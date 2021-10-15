@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rokanthemes_ProductTab::producttab" title="Widget Product Tabs" module="Rokanthemes_ProductTab" sortOrder="10" parent="Rokanthemes_RokanBase::rokanbase_setting" resource="Rokanthemes_ProductTab::producttab" action="adminhtml/system_config/edit/section/producttab" />
+    </menu>
+</config>

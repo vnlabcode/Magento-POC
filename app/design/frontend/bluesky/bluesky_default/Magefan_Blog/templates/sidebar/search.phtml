@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © 2015 RokanThemes.com. All rights reserved.
+
+ * @author RokanThemes Team <contact@rokanthemes.com>
+ */
+?>
+<?php
+/**
+ * Blog sidebar search form template
+ *
+ * @var $block \Rokanthemes\Blog\Block\Sidebar\Search
+ */
+?>
+
+<div class="sidebar-widget widget block block-search block-search-customcss filter-options-item" data-bind="scope: 'blog-search'">
+	<div class="filter-options-title" for="search" data-role="minisearch-label">
+		<strong><?php echo __('Blog Search') ?></strong>
+	</div>
+	<div class="block-content filter-options-content">
+		<form class="form minisearch" id="blog_search_mini_form" action="<?php echo $this->getUrl('blog/search/') ?>" method="get">
+            <div class="field search">
+                <div class="control">
+                    <input id="blog_search" type="text" name="q" value="<?php echo $block->escapeHtml($block->getQuery()) ?>" placeholder="<?php echo __('Start typing ...') ?>" class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit" onclick="return goBlogSearch(this);" title="<?php echo __('Search') ?>" class="action search">
+                    <span><?php echo __('Search') ?></span>
+                </button>
+            </div>
+        </form>
+	</div>
+</div>
+<script >
+	function goBlogSearch(e)
+	{
+		var value = document.getElementById('blog_search').value;
+		if (value) {
+			window.location = e.form.action + value + '/';
+		}
+		return false;
+	}
+</script>

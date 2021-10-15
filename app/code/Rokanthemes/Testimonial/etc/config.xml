@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 tokitheme.com. All rights reserved.
+
+* @author Blue Sky Team <contact@tokitheme.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+	    <testimonial>
+	        <general>
+	        	<enable_frontend>1</enable_frontend>
+	            <title>WHAT THEY SAY</title>
+				<des>Testimonials</des>
+	            <qty>5</qty>
+	            <customers_submit>1</customers_submit>
+	            <allow_guest>1</allow_guest>
+	            <approve_testimonials>1</approve_testimonials>
+	            <per_page>5</per_page>
+	            <footer_link>0</footer_link>
+	            <auto>1</auto>
+	            <dots>1</dots>
+	            <nav>0</nav>
+	            <rows>1</rows>
+                <owl_item_default>1</owl_item_default>
+                <owl_item_desktop>1</owl_item_desktop>
+                <owl_item_small_desktop>1</owl_item_small_desktop>
+                <owl_item_big_tablet>1</owl_item_big_tablet>
+                <owl_item_tablet>1</owl_item_tablet>
+                <owl_item_small_tablet>1</owl_item_small_tablet>
+                <owl_item_mobile>1</owl_item_mobile>
+	        </general>
+	    </testimonial>
+	</default>
+</config>

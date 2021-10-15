@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job instance="Rokanthemes\ProductTab\Cron\Populate\BestSeller" method="execute" name="populate_bestseller">
+            <schedule>0 1 * * *</schedule>
+        </job>
+        <job instance="Rokanthemes\ProductTab\Cron\Populate\MostViewed" method="execute" name="populate_rokanthemes_sorting_most_viewed">
+            <schedule>30 1 * * *</schedule>
+        </job>
+        <job instance="Rokanthemes\ProductTab\Cron\Populate\ReviewRate" method="execute" name="populate_rokanthemes_sorting_review_rate">
+            <schedule>0 2 * * *</schedule>
+        </job>
+    </group>
+</config>

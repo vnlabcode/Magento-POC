@@ -1,0 +1,166 @@
+<?php
+/**
+ * @var  $block \Rokanthemes\ProductTab\Block\Widget\Tabs
+ *
+ */
+
+$idBlock = 'product_tab_' . rand();
+$height_default_loading = ($block->getData('height_default_loading')) ? $block->getData('height_default_loading') : 300;
+$number_row = $block->getData('number_row');
+$height_default = $height_default_loading*$number_row;
+?>
+<?php if($block->getSettingStatus()): ?>
+<?php $tabs = $block->getTabs(); ?>
+<div class="section section-products-blue wrapper_product_tabs container_<?= $block->getData('tab_postions') ?>_tab_postions count_product_tab_<?= count($tabs); ?>" id="<?= $idBlock ?>">
+	<div class="rokan-title">
+		<?php if($block->getData('title')): ?><h3 class="module-title"><?= $block->escapeHtml($block->getData('title')) ?></h3><?php endif; ?>
+		<?php if($block->getData('short_description')): ?><div class="short_description"><?= $block->escapeHtml($block->getData('short_description')) ?></div><?php endif; ?>
+	</div>
+    <?php
+    if($tabs && count($tabs) > 1): ?>
+    <div class="widget-tabs">
+        <ul>
+            <?php foreach ($tabs as $tab): ?>
+            <li>
+                <a href="<?= $block->getUrl('producttab/tab/view',
+                        [
+                            'type' => $tab['value'],
+                            'limit'=> $block->getData('limit'),
+                            'imgT'=> $block->getData('product_image'),
+                            'imgW'=> $block->getData('image_width'),
+                            'imgH'=> $block->getData('image_height'),
+                            'imgHover'=> $block->getData('product_image_hover'),
+                            'product_list_mode'=> $block->getData('mode_view'),
+                            'number_row'=> $block->getData('number_row'),
+                            'product_list_order'=>$block->getData('sorting')
+                        ])?>">
+                    <span><?= $tab['label']; ?></span>
+                </a>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php elseif($tabs && count($tabs)  == 1): $tab = $tabs[0];   ?>
+    <div class="content_block" data-url="<?= $block->getUrl('producttab/tab/view',
+        [
+            'type' => $tab['value'],
+            'limit'=> $block->getData('limit'),
+            'imgT'=> $block->getData('product_image'),
+            'imgW'=> $block->getData('image_width'),
+            'imgH'=> $block->getData('image_height'),
+            'imgHover'=> $block->getData('product_image_hover'),
+            'product_list_mode'=> $block->getData('mode_view'),
+            'number_row'=> $block->getData('number_row'),
+            'product_list_order'=>$block->getData('sorting')
+        ])?>">
+
+    </div>
+    <?php endif; ?>
+</div>
+<script>
+    require(['jquery','jquery-ui-modules/tabs',
+        'rokanthemes/owl'], function ($) {
+            <?php if($tabs && count($tabs)  == 1):   ?>
+            $('#<?= $idBlock ?> .content_block').each(function(){
+                var url = $(this).attr('data-url');
+                var element = $(this);
+                if(!$(this).hasClass('loaded'))
+                {
+                    $.ajax({
+                        url: url,
+                        beforeSend: function() {
+                            element.append('<div class="tab-loadding" style="min-height: <?= $height_default;?>px;"><div class="loading-icon"><span></span><span></span><span></span><span></span></div></div>');
+                        }
+                    }).done(function( data ) {
+                        element.html(data);
+                        <?php foreach($block->getData() as $key=>$value): ?>
+                        <?php if(strpos($key, 'owl_') !== FALSE):  ?>
+                            <?php if(is_numeric($value) || in_array($value, ['true', 'false'])): ?>
+                            element.find('.owl-carousel').data('<?= str_replace('owl_', '', $key) ?>', <?= $value ?>);
+                            <?php else: ?>
+                            element.find('.owl-carousel').data('<?= str_replace('owl_', '', $key) ?>', '<?= $value ?>');
+                            <?php endif; ?>
+                        <?php elseif (strpos($key, 'hide_') !== FALSE  && $value): ?>
+                        element.find('.<?= str_replace('hide_', '', $key) ?>').hide();
+                        element.addClass('<?= $key ?>');
+                        <?php endif; ?>
+                        <?php endforeach; ?>
+						var id = '#<?= $idBlock ?>';
+                        element.trigger('contentUpdated',[id]);
+                    });
+                }
+                $(this).addClass('loaded');
+            });
+            <?php else: ?>
+            $('#<?= $idBlock ?> .widget-tabs').tabs(
+                {
+                    cache:true,
+                    activate: function( event, ui ) {
+                        $(window).trigger('resize');
+                    },
+                    /* Called before tab content is loaded */
+                    beforeLoad: function(event, ui) { 
+						$('#<?= $idBlock ?> .tab-loadding').remove();
+                        var height_defaut = <?= $height_default ?>;
+                        if ( ui.tab.data( "loaded" ) ) {
+                            $('#<?= $idBlock ?>').addClass('loadding');
+                            var aria_controls_active = $('#<?= $idBlock ?> .ui-tabs-active').attr('aria-controls');
+
+                            var aria_controls = ui.tab.attr('aria-controls');
+                            var height = $('#<?= $idBlock ?> #'+aria_controls_active+' .item-row').height();
+                            var set_height = height_defaut;
+                            if(height > 0){  
+                                set_height = height;
+                            }
+
+                            ui.panel.append('<div class="tab-loadding tab-loadded-back-click" style="min-height: '+set_height+'px;"><div class="loading-icon"><span></span><span></span><span></span><span></span></div></div>');
+                        }
+                        else{
+                        
+                            $('#<?= $idBlock ?>').addClass('loadding');
+                            var aria_controls = $('#<?= $idBlock ?> .ui-tabs-active').attr('aria-controls');
+                            var set_height = height_defaut;
+                            if(aria_controls){
+                                var height = $('#<?= $idBlock ?> #'+aria_controls+' .item-row').height();
+                                if(height > 0){
+                                    set_height = height;
+                                }
+                            }
+
+                            ui.panel.append('<div class="tab-loadding" style="min-height: '+set_height+'px;"><div class="loading-icon"><span></span><span></span><span></span><span></span></div></div>');
+
+                            /* if ajax call to retrieve tab content failed */
+                            ui.jqXHR.error(function() {
+                                $('#<?= $idBlock ?>').removeClass('loadding');
+                                ui.tab.find('.tab-loadding').hide();
+                                ui.panel.html("<?= __('An error occured while loading store infos'); ?>");
+                            });
+                        }
+                    },
+                    /* Called when tab is loaded */
+                    load: function(event, ui) {
+                        ui.tab.data("loaded",true);
+                        ui.tab.find('.tab-loadding').hide();
+                        $('#<?= $idBlock ?>').removeClass('loadding');
+                        <?php foreach($block->getData() as $key=>$value): ?>
+                            <?php if(strpos($key, 'owl_') !== FALSE):  ?>
+                                <?php if(is_numeric($value) || in_array($value, ['true', 'false'])): ?>
+                        ui.panel.find('.owl-carousel').data('<?= str_replace('owl_', '', $key) ?>', <?= $value ?>);
+                                <?php else: ?>
+                        ui.panel.find('.owl-carousel').data('<?= str_replace('owl_', '', $key) ?>', '<?= $value ?>');
+                                <?php endif; ?>
+                            <?php elseif (strpos($key, 'hide_') !== FALSE  && $value): ?>
+                        ui.panel.find('.<?= str_replace('hide_', '', $key) ?>').hide()
+                        ui.panel.addClass('<?= $key ?>');
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                        var id = '#'+ui.tab.attr('aria-controls')+'';
+                        ui.panel.trigger('contentUpdated',[id]);
+                    }
+                }
+            );
+        <?php endif; ?>
+        }
+    );
+</script>
+<?php endif; ?>

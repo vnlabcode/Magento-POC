@@ -1,0 +1,22 @@
+<?php 
+	$data = $block->getConfig();
+?>
+<?php if (isset($data['general']['enable_preloaded']) && $data['general']['enable_preloaded'] == 1){ ?>
+<div id="loading-page-ready-browser">
+	<div class="browser-loader"></div>
+</div>
+<script>
+		require([
+			'jquery'
+		], function ($) {
+			'use strict';
+			
+			if(document.readyState === "complete") onPrePageLoaded();
+			else addEventListener("load", onPrePageLoaded);
+
+			function onPrePageLoaded(){
+				$('#loading-page-ready-browser').delay(500).fadeOut('slow');
+			}
+		});
+	</script>
+<?php } ?>

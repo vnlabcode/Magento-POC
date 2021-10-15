@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="storelocator" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Store Locator</label>
+            <tab>rokanthemes</tab>
+			<resource>Rokanthemes_StoreLocator::configuration</resource>
+            <group id="google_api_key" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>General</label>
+                <field id="frontend" translate="label" sortOrder="10" type="text" showInDefault="1">
+                    <label>Google Api Key</label>
+                    <validate>required-entry</validate>
+                </field>
+				<field id="bg_image" translate="label" type="image" sortOrder="170" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Banner Image</label>
+                    <comment>Allowed file types:PNG, JPG, JPEG.</comment>
+                    <backend_model>Rokanthemes\StoreLocator\Model\Config\Banner</backend_model>
+                    <base_url type="media" scope_info="1">rokanthemes/storelocatorbanner</base_url>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

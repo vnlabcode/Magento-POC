@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rokanthemes_QuickView::quickview" title="Quick View" module="Rokanthemes_QuickView" sortOrder="10" parent="Rokanthemes_RokanBase::rokanbase_setting" resource="Rokanthemes_QuickView::quickview" action="adminhtml/system_config/edit/section/quickview" />
+    </menu>
+</config>

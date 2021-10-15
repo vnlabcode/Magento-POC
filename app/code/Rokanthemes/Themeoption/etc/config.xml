@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<themeoption>
+			<general>
+				<enable_preloaded>0</enable_preloaded>
+			</general>
+			<font>
+				<font_size>14px</font_size>
+				<google_font_weight>400</google_font_weight>
+				<font_family>google</font_family>
+				<google_font_family>Poppins</google_font_family>
+				<customize>400,500,600,700</customize>
+				<char_subset>latin-ext</char_subset>
+				<char_subset_heading_family>latin-ext</char_subset_heading_family>
+				<heading_family>google</heading_family>
+				<google_heading_family>Poppins</google_heading_family>
+				<heading_font_weight>500</heading_font_weight>
+				<menu_family>google</menu_family>
+				<google_menu_family>Poppins</google_menu_family>
+				<menu_font_weight>500</menu_font_weight>
+			</font>
+			<colors>
+				<base_color_custom>0</base_color_custom>
+				<links_color_custom>0</links_color_custom>
+				<button_color_custom>0</button_color_custom>
+				<horizontal_custom>0</horizontal_custom>
+				<vertical_custom>0</vertical_custom>
+				<menu_category_custom>0</menu_category_custom>
+				<sub_menu_category_custom>0</sub_menu_category_custom>
+			</colors>
+			<header>
+				<sticky_enabled>1</sticky_enabled>
+				<header_custom>0</header_custom>
+			</header>
+			<footer>
+				<footer_custom>0</footer_custom>
+			</footer>
+			<search_category>
+				<enable_search_category>0</enable_search_category>
+			</search_category>
+			<page>
+				<page_wrapper_custom>0</page_wrapper_custom>
+			</page>
+			<main>
+				<main_content_container_custom>0</main_content_container_custom>
+			</main>
+			<newsletter>
+				<enable>0</enable>
+				<width>770</width>
+				<height>509</height>
+				<bg_color>F4F4F4</bg_color>
+				<text_color>FFFFFF</text_color>
+				<bg_image>default/car-part-slidermobile1.jpg</bg_image>
+				<content><![CDATA[<h2>Subscribe to our Newsletter</h2> <p>Get the latest updates on news products and<br/> upcoming sales</p>]]></content>
+			</newsletter>
+			<newsletter_form>
+				<bg_newsletter_image>default/carpart-bg-newsletter.jpg</bg_newsletter_image>
+				<title_content_form><![CDATA[Stay in the <span>Know!</span>]]></title_content_form>
+				<content_form><![CDATA[Be the first to receive exclusive promotions, updates and product <br/>announcements. Subscribe to our mailing list now!]]></content_form>
+			</newsletter_form>
+			<fake_order>
+				<enable_f_o>1</enable_f_o>
+				<seconds_displayed>10</seconds_displayed>
+				<seconds_hide>5</seconds_hide>
+				<messages>Someone purchased a</messages>
+			</fake_order>
+		</themeoption>
+	</default>
+</config>

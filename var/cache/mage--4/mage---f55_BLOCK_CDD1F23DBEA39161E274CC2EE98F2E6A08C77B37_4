@@ -1,0 +1,32 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1634208015;s:6:"expire";i:1634211615;s:4:"tags";s:45:"f55_BLOCK_HTML,f55_CAT_P_4,f55_CAT_P,f55_MAGE";}
+                <div class="swatch-opt-4"
+         data-role="swatch-option-4"></div>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=swatch-option-4]": {
+                "Magento_Swatches/js/swatch-renderer": {
+                    "selectorProduct": ".product-item-details",
+                    "onlySwatches": true,
+                    "enableControlLabel": false,
+                    "numberToShow": 16,
+                    "jsonConfig": {"attributes":{"93":{"id":"93","code":"color","label":"Color","options":[{"id":"4","label":"Red","products":["17"]},{"id":"5","label":"Yellow","products":["18"]},{"id":"6","label":"Blue","products":["19"]}],"position":"0"}},"template":"$<%- data.price %>","currencyFormat":"$%s","optionPrices":{"17":{"baseOldPrice":{"amount":169},"oldPrice":{"amount":169},"basePrice":{"amount":100},"finalPrice":{"amount":100},"tierPrices":[],"msrpPrice":{"amount":0}},"18":{"baseOldPrice":{"amount":169},"oldPrice":{"amount":169},"basePrice":{"amount":100},"finalPrice":{"amount":100},"tierPrices":[],"msrpPrice":{"amount":0}},"19":{"baseOldPrice":{"amount":169},"oldPrice":{"amount":169},"basePrice":{"amount":100},"finalPrice":{"amount":100},"tierPrices":[],"msrpPrice":{"amount":0}}},"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"prices":{"baseOldPrice":{"amount":169},"oldPrice":{"amount":169},"basePrice":{"amount":100},"finalPrice":{"amount":100}},"productId":"4","chooseText":"Choose an Option...","images":[],"index":{"17":{"93":"4"},"18":{"93":"5"},"19":{"93":"6"}},"channel":"website","salesChannelCode":"base","sku":{"17":"Bottle Grinder With Steel Lid-Red","18":"Bottle Grinder With Steel Lid-Yellow","19":"Bottle Grinder With Steel Lid-Blue"}},
+                    "jsonSwatchConfig": [],
+                    "mediaCallback": "http\u003A\u002F\u002Fmagentopoc.com\u002Fen\u002Fswatches\u002Fajax\u002Fmedia\u002F",
+                    "jsonSwatchImageSizeConfig": {"swatchImage":{"width":30,"height":20},"swatchThumb":{"height":90,"width":110}},
+                    "showTooltip": 1                }
+            }
+        }
+    </script>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=priceBox][data-price-box=product-id-4]": {
+                "priceBox": {
+                    "priceConfig": {
+                        "priceFormat": {"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},
+                        "prices": {"baseOldPrice":{"amount":169},"oldPrice":{"amount":169},"basePrice":{"amount":100},"finalPrice":{"amount":100}}                    }
+                }
+            }
+        }
+    </script>

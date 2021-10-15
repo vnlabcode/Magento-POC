@@ -1,0 +1,55 @@
+<div class="header-container layout-11">
+
+	<div class="topbar">
+		<div class="topbar-inner ">
+			<div class="container-fluid">
+				<div class="flex-layout space-between center_vertical center-mobile">
+						<div class="col-left col-top-link flex-layout center_vertical hidden-sm no-wrap-desktop">
+							<div class="language-currency">
+								<div class="container-setting-language-currency">
+									<?php echo $this->getChildHtml("currency"); ?> 
+									<?php echo $this->getChildHtml("store_language"); ?>  
+									
+								</div>		
+							</div>
+							
+						</div>
+						<div class="topbar-text"><?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_outstock_funiture_11_topbarCenter')->toHtml(); ?></div>
+						<div class="col-right col-top-link flex-layout center_vertical">
+							<div class="topbar-menu ">
+								<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_outstock_funiture_11_topbar_menu')->toHtml(); ?>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-middle sticky-header center-element">
+		<div class="container-fluid">
+			<div class="flex-layout for-full-width-menu space-between center_vertical">
+				<div class="logo-container">
+					<div class="logo-site">
+						<?php echo $this->getChildHtml('logo'); ?>
+					</div>
+				</div>
+				<div class="col-menu-on-left flex-layout col-menu">
+					<div class="primary-menu-container col-left">
+						<?php echo $this->getChildHtml("rokanthemes.horizontal.menu"); ?>
+					</div>
+				</div>
+				<div class="col-action col-right show-on-sticky flex-layout">
+					<ul class="flex-layout action-header">
+						<li><?php echo $this->getChildHtml("top.links"); ?></li>
+						<?php echo $this->getChildHtml("mageworx-search-autocomplete-wrapper"); ?>
+						<?php echo $block->getLayout()->createBlock('Magento\Wishlist\Block\Link')->setTemplate('Magento_Wishlist::link.phtml')->toHtml();?>
+						<li class="minicart-li-content-show-hide">
+							<?php echo $this->getChildHtml('minicart'); ?>
+						</li>
+						
+					</ul>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</div>

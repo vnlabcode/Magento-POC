@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/app/design/frontend/bluesky/bluesky_outstock_default/Magento_Theme/web/js/theme.js

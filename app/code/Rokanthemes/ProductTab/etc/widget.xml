@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="producttab_list" class="Rokanthemes\ProductTab\Block\Widget\Tabs" is_email_compatible="true"
+            placeholder_image="Magento_Catalog::images/category_widget_link.png" ttl="86400">
+        <label translate="true">Products Tabs</label>
+        <description translate="true">List Products of Categories</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="false" visible="true" sort_order="0">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="short_description" xsi:type="block" visible="true" required="false" sort_order="10">
+                <label translate="true">Shore Description</label>
+                <block class="Rokanthemes\ProductTab\Block\Adminhtml\Widget\Textarea" />
+            </parameter>
+           <parameter name="types" xsi:type="block" visible="true" required="true" sort_order="20">
+                <label translate="true">Categories</label>
+                <block class="Rokanthemes\ProductTab\Block\Adminhtml\Widget\Types" />
+            </parameter>
+            <parameter name="limit" xsi:type="text" required="false" visible="true" sort_order="30">
+                <label translate="true">Limit Product On Tab</label>
+                <description>Max value = total items on page listing</description>
+                <value>10</value>
+            </parameter>
+            <parameter name="sorting" xsi:type="select" required="false" visible="true" sort_order="40" source_model="Magento\Catalog\Model\Config\Source\ListSort">
+                <label translate="true">Sorting</label>
+            </parameter>
+            <parameter name="tab_postions" xsi:type="select" required="false" visible="true" sort_order="45">
+                <label translate="true">Tab Position</label>
+                <options>
+                    <option name="horizontal" value="horizontal" selected="true">
+                        <label translate="true">Horizontal</label>
+                    </option>
+                    <option name="vertical" value="vertical">
+                        <label translate="true">Vertical</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="number_row" xsi:type="select" required="false" visible="true" sort_order="50">
+                <label translate="true">Rows On Tab</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">1 Row</label>
+                    </option>
+                    <option name="item2" value="2">
+                        <label translate="true">2 Rows</label>
+                    </option>
+                    <option name="item3" value="3">
+                        <label translate="true">3 Rows</label>
+                    </option>
+                    <option name="item4" value="4">
+                        <label translate="true">4 Rows</label>
+                    </option>
+                    <option name="item5" value="5">
+                        <label translate="true">5 Rows</label>
+                    </option>
+					 <option name="item5" value="6">
+                        <label translate="true">6 Rows</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="height_default_loading" xsi:type="text" required="false" visible="true" sort_order="55">
+                <label translate="true">Height default loading</label>
+				<description translate="true">Height default loading for the first time the page loads</description>
+                <value>300</value>
+            </parameter>
+            <parameter name="mode_view" xsi:type="select" required="true" visible="true" sort_order="60">
+                <label>Mode View</label>
+                <options>
+                    <option name="grid" value="grid" selected="true">
+                        <label translate="true">Grid</label>
+                    </option>
+                    <option name="list" value="list">
+                        <label translate="true">List</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="hide_tocart" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="70">
+                <label translate="true">Hide Add To Cart</label>
+                <depends>
+                    <parameter name="mode_view" value="grid" /> 
+                </depends>
+            </parameter>
+            <parameter name="hide_tocompare" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="80">
+                <label translate="true">Hide Add To Compare</label>
+            </parameter>
+            <parameter name="hide_towishlist" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="90">
+                <label translate="true">Hide Add To Wishlist</label>
+            </parameter>
+            <parameter name="hide_quickview" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno" sort_order="100">
+                <label translate="true">Hide Quickview</label>
+				<depends>
+                    <parameter name="mode_view" value="grid" /> 
+                </depends>
+            </parameter>
+            <parameter name="product_image" xsi:type="select" visible="true" sort_order="110">
+                <label>Product Image</label>
+                <options>
+					<option name="small_image" value="small_image" selected="true">
+                        <label translate="true">Small Image</label>
+                    </option>
+
+                    <option name="image" value="image">
+                        <label translate="true">Base Image</label>
+                    </option>
+                    <option name="thumbnail" value="thumbnail">
+                        <label translate="true">Thumbnail</label>
+                    </option>
+                    <option name="swatch_image" value="swatch_image">
+                        <label translate="true">Swatch Image</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="product_image_hover" xsi:type="select" required="false" visible="true" sort_order="120">
+                <label>Product Hover Image</label>
+                <options>
+                    <option name="noselect" value="" selected="true">
+                        <label translate="true">No selection</label>
+                    </option>
+                    <option name="thumbnail" value="thumbnail">
+                        <label translate="true">Thumbnail</label>
+                    </option>
+                    <option name="image" value="image">
+                        <label translate="true">Base Image</label>
+                    </option>
+                    <option name="small_image" value="small_image">
+                        <label translate="true">Small Image</label>
+                    </option>
+                    <option name="swatch_image" value="swatch_image">
+                        <label translate="true">Swatch Image</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="image_width" xsi:type="text" required="true" visible="true" sort_order="123">
+                <label translate="true">Image Width</label>
+                <value>300</value>
+            </parameter>
+            <parameter name="image_height" xsi:type="text" required="true" visible="true" sort_order="125">
+                <label translate="true">Image Height</label>
+                <value>300</value>
+            </parameter>
+            <parameter name="owl_nav" xsi:type="select" visible="true" sort_order="130">
+                <label translate="true">Owl Nav</label>
+                <options>
+                    <option name="false" value="false">
+                        <label translate="true">False</label>
+                    </option>
+                    <option name="true" value="true">
+                        <label translate="true">True</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="owl_dots" xsi:type="select" visible="true" sort_order="131">
+                <label translate="true">Owl Dots</label>
+                <options>
+                    <option name="false" value="false">
+                        <label translate="true">False</label>
+                    </option>
+                    <option name="true" value="true">
+                        <label translate="true">True</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="owl_center" xsi:type="select" visible="true" sort_order="133">
+                <label translate="true">Owl Center</label>
+                <options>
+                    <option name="false" value="false">
+                        <label translate="true">False</label>
+                    </option>
+                    <option name="true" value="true">
+                        <label translate="true">True</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="owl_loop" xsi:type="select" visible="true" sort_order="134">
+                <label translate="true">Loop</label>
+                <options>
+                    <option name="false" value="false">
+                        <label translate="true">False</label>
+                    </option>
+                    <option name="true" value="true">
+                        <label translate="true">True</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="owl_bigdesktop" xsi:type="text" required="true" visible="true" sort_order="135">
+                <label translate="true">Owl Items On Big Desktop</label>
+				<description translate="true">Big desktop: Over 1440 pixels</description>
+                <value>4</value>
+            </parameter>
+            <parameter name="owl_items" xsi:type="text" required="true" visible="true" sort_order="135">
+                <label translate="true">Owl Items Desktop</label>
+				<description translate="true">Desktop: 1200px - 1439px</description>
+                <value>4</value>
+            </parameter>
+           
+            <parameter name="owl_smalldesktop" xsi:type="text" required="true" visible="true" sort_order="145">
+                <label translate="true">Owl Items On Desktop Small</label>
+				<description translate="true">Desktop Small: 1024px - 1199px</description>
+                <value>3</value>
+            </parameter>
+            <parameter name="owl_bigtablet" xsi:type="text" required="true" visible="true" sort_order="147">
+                <label translate="true">Owl Items On Big Tablet</label>
+				<description translate="true">Big Tablet: 992px - 1023px</description>
+                <value>3</value>
+            </parameter>
+            <parameter name="owl_tablet" xsi:type="text" required="true" visible="true" sort_order="150">
+                <label translate="true">Owl Items On Tablet</label>
+				<description translate="true">Tablet: 768px - 991px</description>
+                <value>3</value>
+            </parameter>
+            <parameter name="owl_smalltablet" xsi:type="text" required="true" visible="true" sort_order="160">
+                <label translate="true">Owl Items On Small Tablet</label>
+				<description translate="true">Tablet Small: 576px - 767px</description>
+                <value>2</value>
+            </parameter>
+            <parameter name="owl_mobile" xsi:type="text" required="true" visible="true" sort_order="170">
+                <label translate="true">Owl Items On Mobile</label>
+				<description translate="true"> Mobile: Under 575px</description>
+                <value>1</value>
+            </parameter>
+            <parameter name="owl_margin" xsi:type="text" required="false" visible="true" sort_order="180">
+                <label translate="true">Owl Margin</label>
+            </parameter>
+        </parameters>
+        <containers>
+            <container name="content">
+                <template name="grid" value="default" />
+            </container>
+            <container name="content.top">
+                <template name="grid" value="default" />
+            </container>
+            <container name="content.bottom">
+                <template name="grid" value="default" />
+            </container>
+        </containers>
+    </widget>
+</widgets>

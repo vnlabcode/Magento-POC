@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rokanthemes_OptimizeSpeed::optimizespeed" title="Optimize Speed" translate="title" module="Rokanthemes_OptimizeSpeed" sortOrder="610" parent="Rokanthemes_RokanBase::rokanbase" resource="Rokanthemes_OptimizeSpeed::optimizespeed" />
+		<add id="Rokanthemes_OptimizeSpeed::configuration" title="Configuration" translate="title" module="Rokanthemes_OptimizeSpeed" sortOrder="640" parent="Rokanthemes_OptimizeSpeed::optimizespeed" action="adminhtml/system_config/edit/section/optimizespeed" resource="Rokanthemes_OptimizeSpeed::configuration" />
+	</menu>
+</config>

@@ -1,0 +1,58 @@
+<div class="header-container layout-12">
+	<div class="header-middle sticky-header center-element">
+		<div class="container-fluid">
+			<div class="flex-layout for-full-width-menu space-between center_vertical">
+				<div class="logo-container">
+					<div class="logo-site">
+						<?php echo $this->getChildHtml('logo'); ?>
+					</div>
+				</div>
+				<div class="col-menu-on-left flex-layout col-menu">
+					<div class="primary-menu-container col-left">
+						<?php echo $this->getChildHtml("rokanthemes.horizontal.menu"); ?>
+					</div>
+				</div>
+				<div class="col-action col-right show-on-sticky flex-layout">
+					<ul class="flex-layout action-header">
+						<li><?php echo $this->getChildHtml("top.links"); ?></li>
+						<?php echo $this->getChildHtml("mageworx-search-autocomplete-wrapper"); ?>
+						<?php echo $block->getLayout()->createBlock('Magento\Wishlist\Block\Link')->setTemplate('Magento_Wishlist::link.phtml')->toHtml();?>
+						<li class="minicart-li-content-show-hide">
+							<?php echo $this->getChildHtml('minicart'); ?>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	require(['jquery'], function($) {
+		$(document).ready(function() {
+			$('.setting-view').click(function() {
+				$(this).toggleClass('open-setting');
+				var hClass = $(this).hasClass('open-setting');
+				if (hClass) {
+					$(this).parents('body').find('.header-setting').addClass('box-setting');
+				} else {
+					$(this).parents('body').find('.header-setting').removeClass('box-setting');
+
+				}
+			});
+			$('.settings-close').click(function() {
+				$(this).parents('body').find('.header-setting').removeClass('box-setting');
+				$(this).parents('body').find('.setting-view').removeClass('open-setting');
+			});
+		});
+		$(function() {
+			$('body').each(function() {
+				var hClass = $(this).hasClass('cms-index-index');
+				if (!hClass) {
+					$("#sticky-home").addClass("sticky-header");
+				}
+			});
+		});
+	});
+</script>

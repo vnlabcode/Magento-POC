@@ -1,0 +1,80 @@
+<?php
+$qty = $this->getConfig('qty');
+$auto = $this->getConfig('auto') ? 'true' : 'false';
+$dots = $this->getConfig('dots') ? 'true' : 'false';
+$nav = $this->getConfig('nav') ? 'true' : 'false';
+$owl_loop = (1 == $this->getConfig('owl_loop')) ? 'true' : 'false';
+$owl_center = (1 == $this->getConfig('owl_center')) ? 'true' : 'false';
+$speed = $this->getConfig('speed');
+$owl_margin = $this->getConfig('owl_margin');
+$title = $block->getConfig('title');
+$des = $block->getConfig('des');
+$owl_item_default = $block->getConfig('owl_item_default');
+$owl_item_desktop = $block->getConfig('owl_item_desktop');
+$owl_item_small_desktop = $block->getConfig('owl_item_small_desktop');
+$owl_item_big_tablet = $block->getConfig('owl_item_big_tablet');
+$owl_item_tablet = $block->getConfig('owl_item_tablet');
+$owl_item_small_tablet = $block->getConfig('owl_item_small_tablet');
+$owl_item_mobile = $block->getConfig('owl_item_mobile');
+$rows = $block->getConfig('rows');
+$testimonials = $this->getTestimonial($qty);
+$back_img = '';
+if($block->getConfig('background_image') != ''){
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+	$imageUrl = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA).$block->getConfig('background_image');
+	$back_img = ' style="background-image: url('.$imageUrl.');"';
+}
+?>
+<section class="testimo-slider"<?= $back_img ?>>
+	<div class="container">
+		<?php if($title && $title != '' || $des && $des != ''): ?>
+			<div class="rokan-title">
+				<?php if($title && $title != ''): ?>
+					<h3 class="module-title"><span><?= $title ?></span></h3>
+				<?php endif; ?> 
+				<?php if($des && $des != ''): ?>
+					<p class="des"><?= nl2br($des) ?> </p>
+				<?php endif; ?> 
+			</div> 
+		<?php endif; ?> 
+		<div class="pt-testimonial-container">
+			<?php $i = 0; ?>	
+			<div class="owl-carousel owl-theme" data-rtl="false" data-items="<?= $owl_item_default ?>" data-bigdesktop="<?= $owl_item_desktop ?>" data-smalldesktop="<?= $owl_item_small_desktop ?>" data-bigtablet="<?= $owl_item_big_tablet ?>" 
+				data-tablet="<?= $owl_item_tablet ?>" data-smalltablet="<?= $owl_item_small_tablet ?>" data-mobile="<?= $owl_item_mobile ?>"  
+				data-margin="<?= $owl_margin ?>" data-loop="<?= $owl_loop ?>" data-center="<?= $owl_center ?>" 
+				data-mousedrag="true" data-touchdrag="true" data-stagepadding="1" 
+				data-nav="<?= $nav ?>" data-navnext="" data-navprev="" data-rewind="true" 
+				data-dots="<?= $dots ?>" data-autoplay="<?= $auto ?>" data-speed="<?= $speed ?>"> 
+				<?php foreach ($testimonials as $testimonial): ?>	
+				<?php $url_image = $this->getMediaFolder().$testimonial['avatar']; ?>
+				<?php 
+					if($i %$rows == 0){
+						echo '<div class="item-load group-rows-fixed-testimonial">';
+					}
+					$i ++;
+				?>
+				<div class="pt-testimonial">
+					<div class="content-tes">			
+						<div class="flex-layout center_vertical">
+							<a href="<?php echo $this->getUrl('testimonial'); ?>" class="image"><img alt="<?php echo $testimonial['name'] ?>" src="<?php echo $url_image; ?>"/></a>
+							<div class="info"><a href="<?php echo $this->getUrl('testimonial'); ?>" class="name"><span class="name"><?php echo $testimonial['name']; ?></span><span class="job"><?php echo $testimonial['job']; ?></span></a></div>
+						</div>			
+						<div class="des">
+							<?= $testimonial['testimonial']; ?>
+						</div> 
+					</div>
+					
+				</div>
+					<?php if($i %$rows == 0) echo "</div>"; ?>
+				<?php endforeach; ?>
+				<?php if($i %$rows != 0) echo "</div>"; ?>
+			</div>
+			<?php if(count($testimonials) == 0){ ?>
+			<div class="alert alert-danger">
+				<p><?= __('Testimonial does not exist. Please login admin go to Rokanthemes > Testimonial > Manage Testimonials > Add New Testimonial.'); ?></p>
+			</div>
+			<?php } ?>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,78 @@
+<div class="header-container layout-5">
+	<div class="header-middle sticky-header center-element">
+		<div class="container">
+			<div class="flex-layout for-full-width-menu space-between center_vertical">
+				<div class="logo-container">
+					<div class="logo-site">
+						<?php echo $this->getChildHtml('logo'); ?>
+					</div>
+				</div>
+				<div class="col-menu-on-left flex-layout col-menu">
+					<div class="primary-menu-container col-left">
+						<?php echo $this->getChildHtml("rokanthemes.horizontal.menu"); ?>
+					</div>
+				</div>
+				<div class="col-action col-right show-on-sticky flex-layout">
+					<ul class="flex-layout action-header">
+						<?php echo $this->getChildHtml("mageworx-search-autocomplete-wrapper"); ?>
+						<li class="minicart-li-content-show-hide">
+							<?php echo $this->getChildHtml('minicart'); ?>
+						</li>
+						<li class="setting-view">
+							<span class="ion ion-navicon"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="header-setting">
+					<div class="settings-head">
+						<div class="settings-close"><span class="main-icon-close"></span></div>
+					</div>
+					<div class="settings-inner">
+						<?php echo $this->getChildHtml("top.links"); ?>
+						<div class="language-currency">
+							<div class="container-setting-language-currency">
+								<?php echo $this->getChildHtml("store_language"); ?>
+								<?php echo $this->getChildHtml("currency"); ?>
+							</div>
+						</div>
+						<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_header_contact')->toHtml(); ?>
+						<div class="setting-social">
+							<h3 class="title-setting">
+								<?php echo __('Connect on Social') ?> :
+							</h3>
+							<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_social_icon')->toHtml(); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	require(['jquery'], function($) {
+		$(document).ready(function() {
+			$('.setting-view').click(function() {
+				$(this).toggleClass('open-setting');
+				var hClass = $(this).hasClass('open-setting');
+				if (hClass) {
+					$(this).parents('body').find('.header-setting').addClass('box-setting');
+				} else {
+					$(this).parents('body').find('.header-setting').removeClass('box-setting');
+
+				}
+			});
+			$('.settings-close').click(function() {
+				$(this).parents('body').find('.header-setting').removeClass('box-setting');
+				$(this).parents('body').find('.setting-view').removeClass('open-setting');
+			});
+		});
+		$(function() {
+			$('body').each(function() {
+				var hClass = $(this).hasClass('cms-index-index');
+				if (!hClass) {
+					$("#sticky-home").addClass("sticky-header");
+				}
+			});
+		});
+	});
+</script>

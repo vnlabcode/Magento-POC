@@ -1,0 +1,16 @@
+<?php 
+$helper = $this->helper('Rokanthemes\Themeoption\Helper\Verifypurchasecode');
+if($helper->checkEnvatoPurchaseCode()){
+?>
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        $(document).ready(function(){
+            if($("#row_activationcode_activation_purchasecode p.note").length > 0){
+                $("#row_activationcode_activation_purchasecode p.note").html('<span style="color: green; font-weight: bold; font-style: italic;"><?= __("Theme successfully activated using manual activation. Thanks for buying our theme.");?></span>');
+            }
+        });
+    });
+</script>
+<?php } ?>

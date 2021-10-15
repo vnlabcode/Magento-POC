@@ -1,0 +1,66 @@
+<?php
+/**
+ * @var  $block \Rokanthemes\WidgetSubCategory\Block\Widget\CateTabs
+ *
+ */
+$idBlock = 'category_thumb' . rand();
+$i = 0;
+$rows = $block->getData('number_row');
+$classOnlyParent = '';
+if($block->getData('max_level') == null or $block->getData('max_level') == '')
+{
+$classOnlyParent = 'onlyparent';
+}
+$data = [];
+foreach ($block->getData() as $key=>$value):
+	if(strpos($key, 'owl_') !== FALSE):
+		if(is_numeric($value) || in_array($value, ['true', 'false'])):
+			$data[] = ''.str_replace('owl_', 'data-', $key).' = "'.$value.'"';
+		else:
+			$data[] = ''.str_replace('owl_', 'data-', $key).' = "'.$value.'"';
+		 endif;
+	endif;
+endforeach;
+?>  
+<?php if($block->getSettingStatus()): ?>
+    <div class="section wrapper_sub_category_tabs container_<?= $block->getData('tab_postions') ?>_tab_postions <?=  $classOnlyParent  ?>"
+         id="<?= $idBlock; ?>" <?= $block->getStyleBackground(); ?>>
+		<div class="category-thumb-section">
+			<div class="rokan-title">
+				<?php if($block->getData('title')): ?><h3 class="module-title"><?= $block->escapeHtml($block->getData('title')) ?></h3><?php endif; ?>
+				<?php if($block->getData('short_description')): ?><p class="short-des"><?= $block->escapeHtml($block->getData('short_description')) ?></p><?php endif; ?>
+			</div>
+			<?php if($categories = $block->getCategories()): ?> 
+				<div class="widget-tabs">
+					<?php if($this->getData('enable_owl')){ ?> <div class="owl-carousel owl-theme list-category-item" <?php echo implode(" ",$data); ?>> <?php }else{ ?><ul><?php } ?>
+						<?php foreach ($categories as $category): ?>
+						<?php if($this->getData('enable_owl') && $i++ % $rows == 0): ?>
+						<div class="item-load item-row">
+							<?php endif; ?>
+							<?php if($this->getData('enable_owl')){ ?> <div class="category-item"> <?php }else{ ?><li><?php } ?>
+								<a href="<?= $category->getUrl()?>" class="<?= $block->getData('show_category_image_type') ?>">
+									<figure><?= $block->getImageHtml($category) ?></figure>
+									<span class="thumb-infor">
+										<span class="cate-name cate-count">
+											<span><?= $category->getName(); ?></span>
+											<?php echo $block->getCountProductCategory($category); ?>
+										</span>
+									</span> 
+								</a> 
+								<?= $block->getSubCategoriesHtml($category); ?>
+							<?php if($this->getData('enable_owl')){ ?> </div> <?php }else{ ?></li><?php } ?>
+							<?php if($this->getData('enable_owl') && ($i == count($categories) || $i % $rows == 0)): ?>
+							</div>
+						<?php endif; ?>
+						<?php endforeach; ?>
+					<?php if($this->getData('enable_owl')){ ?> </div> <?php }else{ ?></ul><?php } ?>
+				</div>
+			</div>
+        <?php endif; ?>
+         <?php if(count($categories) == 0){ ?>
+        <div class="alert alert-danger">
+            <p><?= __('Categories with ID: %1 does not exist. Please login admin go to Content > Elements > Pages choose edit page then double click on Sub Category Columns to select the categories.', $block->getData('category_ids')); ?></p>
+        </div>
+        <?php } ?>
+    </div>
+<?php endif; ?>

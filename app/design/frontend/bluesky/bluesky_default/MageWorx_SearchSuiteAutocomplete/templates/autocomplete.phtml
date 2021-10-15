@@ -1,0 +1,116 @@
+<?php /**@var MageWorx\SearchSuiteAutocomplete\Block\Autocomplete $block  */?>
+<?php
+$helper = $this->helper('Magento\Search\Helper\Data');
+$helpersearch = $this->helper('Rokanthemes\RokanBase\Helper\Data');
+$enableSearchByCat = $helpersearch->getConfigData('themeoption/search_category/enable_search_category');
+?>
+<li class="block_search">
+<div class="block block-search">
+    <div class="block-content">
+		<div class="dropdown">
+			<div class="dropdown-toggle">
+				<div class="top-search">
+					<i class="ion ion-ios-search-strong"></i>
+					<span class="text"><?php /* @escapeNotVerified */ echo __('Search'); ?></span>
+				</div>
+			</div>
+			<form class="form minisearch search-content <?php if($enableSearchByCat){ ?>cat-search<?php } ?>" id="search_mini_form" action="<?php /* @escapeNotVerified */ echo $helper->getResultUrl() ?>" method="get">
+				<div class="search-form">
+					<?php if($enableSearchByCat){ ?>
+					<div class="field-by-cat-search">    
+						<select name="cat" id="choose_category">
+								<option value=""><?php echo __('All Categories'); ?></option>
+							<?php $categories = $block->getCategories(); 
+							foreach($categories as $cat)
+							{
+								if(isset($_GET['cat']) && $_GET['cat'] == $cat->getId()){
+									echo '<option value="'.$cat->getId().'" selected="selected">'.$cat->getName().'</option>';
+								}
+								else{
+									echo '<option value="'.$cat->getId().'">'.$cat->getName().'</option>';
+								}
+							}
+							?>
+							</select>
+					</div>
+					<?php } ?>
+					<div class="field search">
+						<label class="label" for="search-input-autocomplate" data-role="minisearch-label">
+							<span><?php /* @escapeNotVerified */ echo __('Search'); ?></span>
+						</label>
+						<div class="control">
+							<input id="search-input-autocomplate" data-mage-init='{"quickSearch":{
+										"formSelector":"#search_mini_form",
+										"url":"<?php /* @escapeNotVerified */ echo $block->getUrl('search/ajax/suggest'); ?>",
+										"destinationSelector":"#search_autocomplete"}
+								   }' type="text" name="<?php /* @escapeNotVerified */ echo $helper->getQueryParamName() ?>" value="<?php /* @escapeNotVerified */ echo $helper->getEscapedQueryText() ?>" placeholder="<?php /* @escapeNotVerified */ echo __('Search entire store here...'); ?>" class="input-text" maxlength="<?php /* @escapeNotVerified */ echo $helper->getMaxQueryLength();?>" role="combobox" aria-haspopup="false" aria-autocomplete="both"  aria-expanded="false" autocomplete="off" />
+							<div id="search_autocomplete" class="search-autocomplete"></div>
+							<div data-bind="scope: 'searchsuiteautocomplete_form'">
+								<!-- ko template: getTemplate() --><!-- /ko -->
+							</div>
+						</div>
+						<div class="actions">
+							<button type="submit"
+									title="<?php echo $block->escapeHtml(__('Search')) ?>"
+									class="action search">
+								<span><?php /* @escapeNotVerified */ echo __('Search'); ?></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</li>
+<?php if($enableSearchByCat){ ?>
+<script>
+    require([
+        'jquery',
+        'rokanthemes/choose'
+    ], function ($) {
+		'use strict';
+        $("#choose_category").chosen();
+    });
+</script>
+<?php } ?>
+<script>
+	require([
+		'jquery'
+	], function ($) {
+		'use strict';
+		$( document ).ready(function() {
+			$('.block-search .dropdown-toggle > .top-search').click(function(event){
+				$('.block-search #search_mini_form').slideToggle();
+			});
+		}); 
+	});
+</script>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "searchsuiteautocomplete_form": {
+                    "component": "MageWorx_SearchSuiteAutocomplete/js/autocomplete"
+                },
+                "searchsuiteautocompleteBindEvents": {
+                    "component": "MageWorx_SearchSuiteAutocomplete/js/bindEvents",
+                    "config": {
+                        "searchFormSelector": "#search_mini_form",
+                        "searchButtonSelector": "button.search",
+                        "inputSelector": "#search, #mobile_search, .minisearch .search input[type=\"text\"]",
+                        "searchDelay": "<?php echo $block->escapeHtml($block->getSearchDelay()) ?>"
+                    }
+                },
+                "searchsuiteautocompleteDataProvider": {
+                    "component": "MageWorx_SearchSuiteAutocomplete/js/dataProvider",
+                    "config": {
+                        "url": "<?php echo $block->escapeUrl($block->getSearchUrl()) ?>"
+                    }
+                }
+            }
+        }
+    }
+}
+</script>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ *
+ * Glory to Ukraine! Glory to the heroes!
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="blog_default"/>
+    <update handle="blog_post_list"/>
+    <body>
+        <attribute name="class" value="blog-page" />
+        <referenceContainer name="page.top">
+            <block class="Magento\Framework\View\Element\Template" name="custom.banner.blog" before="page.main.title" template="Magefan_Blog::sidebar/banner.phtml" />
+        </referenceContainer>
+        <move element="page.main.title" destination="custom.banner.blog"/>
+        <move element="breadcrumbs" destination="page.main.title" before="-"/>
+    </body>
+</page>

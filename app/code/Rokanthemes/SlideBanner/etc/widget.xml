@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="rokanthemes_slidebanner_widget" class="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" placeholder_image="Magento_Catalog::images/category_widget_link.png" ttl="86400">
+        <label translate="true">Rokanthemes - Slide Banner Widget</label>
+        <description>Rokanthemes - Slide Banner Widget</description>
+        <parameters>
+            <parameter name="slider_id" xsi:type="select" source_model="Rokanthemes\SlideBanner\Model\Config\Source\SlideBannerWidget" visible="true" sort_order="10" >
+                <label translate="true">Select Slider</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rokanthemes_Themeoption::theme" title="Rokanthemes Theme" module="Rokanthemes_Themeoption" sortOrder="1" parent="Rokanthemes_RokanBase::rokanbase" resource="Rokanthemes_Themeoption::theme"/>
+        <add id="Rokanthemes_Themeoption::themeoption" title="Theme Options" module="Rokanthemes_Themeoption" sortOrder="10" parent="Rokanthemes_Themeoption::theme" action="adminhtml/system_config/edit/section/themeoption" resource="Rokanthemes_Themeoption::themeoption"/>
+        <add id="Rokanthemes_Themeoption::exportoptions" title="Export Options" module="Rokanthemes_Themeoption" sortOrder="20" parent="Rokanthemes_Themeoption::theme" action="adminhtml/system_config/edit/section/exportoptions" resource="Rokanthemes_Themeoption::exportoptions"/>
+        <add id="Rokanthemes_Themeoption::demoimporter" title="Demo Importer" module="Rokanthemes_Themeoption" sortOrder="30" parent="Rokanthemes_Themeoption::theme" action="adminhtml/system_config/edit/section/demoimporter" resource="Rokanthemes_Themeoption::demoimporter"/>
+        <add id="Rokanthemes_Themeoption::activationcode" title="Activation Purchase Code" module="Rokanthemes_Themeoption" sortOrder="40" parent="Rokanthemes_Themeoption::theme" action="adminhtml/system_config/edit/section/activationcode" resource="Rokanthemes_Themeoption::activationcode"/>
+    </menu>
+</config>

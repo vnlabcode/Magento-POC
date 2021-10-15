@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-swatches/view/base/web/js/swatch-renderer.js

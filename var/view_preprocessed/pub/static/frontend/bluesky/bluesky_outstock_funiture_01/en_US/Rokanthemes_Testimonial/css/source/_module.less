@@ -1,0 +1,209 @@
+// revo rapper-the-blue-sky-slider
+@testimo-slider_padding: false;
+@testimo-slider_mobile_padding: false;
+
+@testimonial-text-align: false;
+@testi-bg: @color-white;
+@testi-padding: false;
+
+@testimonial_des-color: @text__color;
+@testimonial_des-size: 1.5rem;
+@testimonial_des-fammily: false;
+@testimonial_des-font-weight: false;
+@testimonial_des-margin: 2.8rem;
+
+@testimonial-image-margin-bottom: 1rem;
+@testimonial-image-width: 9rem;
+@testimonial-image-border-radius: 50%;
+
+@testimonial-name-color: @heading__color__base;
+@testimonial-name-size: 1.6rem;
+@testimonial-name-letter-spacing: false;
+@testimonial-name-text-transform: capitalize; 
+@testimonial-name-font-weight: 600;
+// Testimonial module
+//  _____________________________________________
+& when (@media-common = true) {
+	.pt-testimonial{
+		.lib-css(text-align, @testimonial-text-align);
+		.lib-css(background, @testi-bg);
+		.des{
+			.lib-css(text-align, @testimonial-text-align);
+			.lib-css(font-size, @testimonial_des-size);
+			.lib-css(font-family, @testimonial_des-fammily);
+			.lib-css(color, @testimonial_des-color);
+			.lib-css(font-weight, @testimonial_des-font-weight);
+			.lib-css(margin-bottom, @testimonial_des-margin);
+			line-height: 1.4;
+		}
+		.info{
+			a{
+				&:not(:hover){
+					.lib-css(color, @heading__color__base);
+				}
+			}
+			.name{
+				.lib-css(font-size, @testimonial-name-size);
+				.lib-css(letter-spacing, @testimonial-name-letter-spacing);
+				.lib-css(text-transform, @testimonial-name-text-transform);
+				.lib-css(font-weight, @testimonial-name-font-weight);
+			}
+			.job{
+				display: block;
+				color: @text__color;
+			}
+		}
+		.content-tes{
+			.lib-css(padding, @testi-padding);
+			.image{
+				img{
+					.lib-css(max-width, @testimonial-image-width);
+					.lib-css(border-radius, @testimonial-image-border-radius);
+					margin: auto;
+					.lib-css(margin-bottom, @testimonial-image-margin-bottom);
+					display: block;
+				}
+			}
+		}
+	}
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+	.testimo-slider{
+		.lib-css(padding, @testimo-slider_padding);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+	.testimo-slider{
+		.lib-css(padding, @testimo-slider_mobile_padding);
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+	.testimo-slider{
+		.pt-testimonial .des {
+			display: -webkit-box;
+		    -webkit-line-clamp: 3;
+		    -webkit-box-orient: vertical;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		}
+	}
+}
+// Testimonial page
+//  _____________________________________________
+& when (@media-common = true) {
+	.testimonial-index-index{
+		.pt-testimonial-item{
+			ul{
+				list-style: none;
+				padding-left: 0;
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			    display: -ms-flexbox;      /* TWEENER - IE 10 */
+			    display: -webkit-flex;     /* NEW - Chrome */
+			    display: flex;   
+			    flex-wrap: wrap;
+			    margin-left: -@layout-indent__width;
+			    margin-bottom: -@layout-indent__width;
+				&:before,
+				&:after{
+					content: '';
+					display: table;
+					clear: both;
+				}
+				li{
+					float: left;
+					padding: 0 @layout-indent__width;
+					margin-bottom: 4rem;
+					.lib-font-size(15);
+					> *{
+						margin-bottom: 0.5rem;
+					}
+					.testimonial-name{
+						.lib-font-size(22);
+						font-family: @font-family__base;
+						font-weight: @font-weight__semibold;
+						margin-bottom: 1rem;
+						text-transform: capitalize;
+					}
+					.testimonial-created-time{
+						font-style: italic;
+						.lib-font-size(13);
+						color: @heading__color__base;
+					}
+					.testimonial-testimonial{
+						margin-top: 0.7rem;
+						br{
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.add-more-testimonial{
+			text-align: center;
+			margin-top: 2rem;
+		}
+		.order-products-toolbar{
+			.pager{
+				.toolbar-number{
+					display: none;
+				}
+				.pager{
+					margin-top: 5rem;
+				}
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+	.testimonial-index-index{
+		.pt-testimonial-item{
+			ul{
+				li{
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+	.testimonial-index-index{
+		.pt-testimonial-item{
+			ul{
+				li{
+					flex: 0 0 33.3333%;
+					max-width: 33.3333%;
+				}
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+	.testimonial-index-index{
+		.pt-testimonial-item{
+			ul{
+				li{
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+			}
+		}
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xxs) {
+	.testimonial-index-index{
+		.pt-testimonial-item{
+			ul{
+				li{
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+		}
+	}
+}

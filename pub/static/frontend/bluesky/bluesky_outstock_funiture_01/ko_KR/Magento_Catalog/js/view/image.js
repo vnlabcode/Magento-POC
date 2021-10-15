@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-catalog/view/frontend/web/js/view/image.js

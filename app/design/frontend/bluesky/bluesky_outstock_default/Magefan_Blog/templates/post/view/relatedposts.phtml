@@ -1,0 +1,77 @@
+<?php if ($block->displayPosts()) { ?>
+	<?php $_postCollection = $block->getPostCollection();
+	$_post = $this->getPost();
+	$_postUrl = $_post->getPostUrl();
+	$_postNameStripped = $block->stripTags($_post->getTitle(), null, true);
+	?>
+	<?php if ($_postCollection->count()) {
+		$helper = $this->helper('Rokanthemes\RokanBase\Helper\Data');
+		$enable = $helper->getConfigData('mfblog/general/enable_frontend');
+		$auto = $helper->getConfigData('mfblog/general/auto') ? 'true' : 'false';
+		$autoplaytimeout = $helper->getConfigData('mfblog/general/autoplaytimeout');
+		$autoplayhoverpause = $helper->getConfigData('mfblog/general/autoplayhoverpause') ? 'true' : 'false';
+		$dots = $helper->getConfigData('mfblog/general/dots') ? 'true' : 'false';
+		$rewind = $helper->getConfigData('mfblog/general/rewind') ? 'true' : 'false';
+		$navnext = $helper->getConfigData('mfblog/general/navnext');
+		$navprev = $helper->getConfigData('mfblog/general/navprev');
+		$stagepadding = $helper->getConfigData('mfblog/general/stagepadding');
+		$touchdrag = $helper->getConfigData('mfblog/general/touchdrag') ? 'true' : 'false';
+		$mousedrag = $helper->getConfigData('mfblog/general/mousedrag') ? 'true' : 'false';
+		$center = $helper->getConfigData('mfblog/general/center') ? 'true' : 'false';
+		$speed = $helper->getConfigData('mfblog/general/speed');
+		$rtl = $helper->getConfigData('mfblog/general/rtl') ? 'true' : 'false';
+	?>
+
+		<div class="block related">
+			<div class="block-title title rokan-title">
+				<h3>
+					<strong id="block-relatedposts-heading">
+						<?php echo __('You Might Also Like') ?>
+					</strong>
+				</h3>
+			</div>
+			<div class="block-content">
+				<div class="owl-carousel owl-theme" data-rtl="false" data-items="2" data-bigdesktop="2" data-smalldesktop="2" data-bigtablet="2" data-tablet="2" data-smalltablet="2" data-mobile="1" data-margin="30" data-loop="false" data-center="false" data-mousedrag="true" data-touchdrag="true" data-stagepadding="0" data-nav="true" data-navnext="" data-navprev="" data-rewind="true" data-dots="<?php echo $dots; ?>" data-autoplay="false" data-speed="250">
+					<?php foreach ($_postCollection as $_post) { ?>
+						<?php
+						$_postUrl = $block->escapeUrl($_post->getPostUrl());
+						$_postName = $block->escapeHtml($_post->getTitle());
+						?>
+						<div class="item-load item-post-full">
+							<div class="blog-post-thumb">
+								<a href="<?php echo $_post->getPostUrl() ?>">
+									<?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+										<?php
+										$featuredImgAlt = $_post->getData('featured_img_alt');
+										if (!$featuredImgAlt) {
+											$featuredImgAlt = $_postName;
+										}
+										?>
+										<img src="<?= $block->escapeUrl($featuredImage) ?>" alt="<?= $block->escapeHtml($featuredImgAlt) ?>" />
+									<?php } ?>
+								</a>
+							</div>
+							<div class="blog-post-info">
+								<p class="post-title">
+									<a class="post-item-link" href="<?= /*@noEscape*/ $_postUrl ?>">
+										<?= /*@noEscape*/ $_postName ?>
+									</a>
+								</p>
+								<div class="blog-post-date">
+									<div class="post-info-by">
+										<div class="post-by"><span class="title-by"><?php echo __('Post By: ') ?></span><span class="name"><?php echo __('Admin') ?></span></div>
+									</div>
+									<span> <?php echo __('/') ?> </span>
+									<div class="post-info-extra">
+										<div class="post-date"><span><?php echo date('F', strtotime($_post->getPublishTime())); ?><?php echo date(' d, Y', strtotime($_post->getPublishTime())); ?></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					<?php } ?>
+				</div>
+			</div>
+		</div>
+	<?php } ?>
+<?php } ?>

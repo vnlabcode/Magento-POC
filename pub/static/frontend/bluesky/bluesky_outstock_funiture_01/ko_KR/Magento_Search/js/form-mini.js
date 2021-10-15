@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-search/view/frontend/web/js/form-mini.js

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="optimizespeed" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Optimize Speed</label>
+            <tab>rokanthemes</tab>
+			<resource>Rokanthemes_OptimizeSpeed::configuration</resource>
+            <group id="optimizespeed_html" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="30">
+                <label>HTML Optimization</label> 
+				<field id="enabled_minifi" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <comment>Enables Minifi HTML.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="preload" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Preload</label>
+                    <frontend_model>Rokanthemes\OptimizeSpeed\Block\Adminhtml\Config\Field\Preload</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment><![CDATA[
+                        Insert paths for fonts that should be preloaded.<br/>
+                        Example: /pub/static/version1617089957/frontend/Magento/luma/en_US/fonts/Luma-Icons.woff2<br/>
+                        Note: version will be resolved automaticaly.
+                        ]]></comment>
+                </field>
+            </group>
+			<group id="lazyload" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="30">
+                <label>Lazy Load Image</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Lazy Load</label> 
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="ignore" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Ignore Class and Id Images</label>
+                    <comment>Ignore Images that Contain</comment>
+                </field>
+				<field id="url_image" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Ignore Url Images</label>
+                    <frontend_model>Rokanthemes\OptimizeSpeed\Block\Adminhtml\Config\Field\UrlImage</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment><![CDATA[
+                        Insert paths for image that should be ignore.<br/>
+                        Example: /pub/media/logo/stores/1/logo-cart-part_212b7f4d5cf1ea32b0d8d4baf48823d7_1_.png<br/>
+                        Note: version will be resolved automaticaly.
+                        ]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

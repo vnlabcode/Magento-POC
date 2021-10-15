@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <superdeals>
+            <configuration>
+                <enabled>1</enabled>
+                <title>Super Deals</title>
+                <sub_title>DEAL OF THE DAY!</sub_title>
+                <set_category>2</set_category>
+                <image_type>product_base_image</image_type>
+				<width>550</width>
+				<height>550</height>
+				<enabled_hover>1</enabled_hover>
+				<image_type_hover>product_base_image</image_type_hover>
+                <end_date>05/18/2021 13:11</end_date>
+                <rows>1</rows>
+                <owl_item_default>1</owl_item_default>
+                <owl_item_desktop>1</owl_item_desktop>
+                <owl_item_small_desktop>1</owl_item_small_desktop>
+                <owl_item_big_tablet>1</owl_item_big_tablet>
+                <owl_item_tablet>1</owl_item_tablet>
+                <owl_item_small_tablet>1</owl_item_small_tablet>
+                <owl_item_mobile>1</owl_item_mobile>
+            </configuration>
+        </superdeals>
+    </default>
+</config>

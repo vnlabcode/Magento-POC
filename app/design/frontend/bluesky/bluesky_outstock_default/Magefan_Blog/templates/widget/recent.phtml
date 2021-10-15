@@ -1,0 +1,123 @@
+<?php
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ *
+ * Glory to Ukraine! Glory to the heroes!
+ */
+?>
+<?php
+$helper = $this->helper('Rokanthemes\RokanBase\Helper\Data');
+	$description = $helper->getConfigData('themeoption/bloggeneral/description');
+	$items = $helper->getConfigData('themeoption/bloggeneral/blog_items');
+	$items_bigdesktop = $helper->getConfigData('themeoption/bloggeneral/blog_items_bigdesktop');
+	$items_smalldesktop = $helper->getConfigData('themeoption/bloggeneral/blog_items_smalldesktop');
+	$items_bigtablet = $helper->getConfigData('themeoption/bloggeneral/blog_items_bigtablet');
+	$items_tablet = $helper->getConfigData('themeoption/bloggeneral/blog_items_tablet');
+	$items_smalltablet = $helper->getConfigData('themeoption/bloggeneral/blog_items_smalltablet');
+	$items_mobile = $helper->getConfigData('themeoption/bloggeneral/blog_items_mobile');
+	$auto = $helper->getConfigData('themeoption/bloggeneral/blog_auto') ? 'true' : 'false';
+	$autoplayhoverpause = $helper->getConfigData('themeoption/bloggeneral/blog_autoplayhoverpause') ? 'true' : 'false';
+	$dots = $helper->getConfigData('themeoption/bloggeneral/dots') ? 'true' : 'false';
+	$rewind = $helper->getConfigData('themeoption/bloggeneral/blog_rewind') ? 'true' : 'false';
+	$nav = $helper->getConfigData('themeoption/bloggeneral/blog_nav') ? 'true' : 'false';
+	$margin = $helper->getConfigData('themeoption/bloggeneral/blog_margin');
+	
+
+	$background = '';
+	if($this->getConfig('background_image')){
+		$folderName = \Rokanthemes\Themeoption\Model\Config\Blogsliderbackground::UPLOAD_DIR;
+		$path = $folderName . '/' . $this->getConfig('background_image');
+		$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+		$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+		$imageUrl = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA).$path;
+		$background = "style='background-image: url(".$imageUrl.");'";
+	}
+?>
+<?php
+/**
+ * Blog recent posts widget
+ *
+ * @var $block \Magefan\Blog\Block\Widget\Recent
+ */
+?>
+
+<?php
+    $_postCollection = $block->getPostCollection();
+?>
+<?php if ($_postCollection->count()) { ?>
+<div class="widget box-section block-recent-posts section" <?php echo $background ?>>
+	<div class="rokan-title">
+		<h3 class="module-title"><?= $block->escapeHtml($block->getTitle()) ?></h3>
+			<div class="rokan-description blog-description"><p><?php echo nl2br($description);?></p></div>
+	</div>
+	<div class="post-list-wrapper">
+			<div class="blog-list-post">
+				<div class="owl-carousel owl-theme" data-rtl="false" data-items="<?php echo $items;?>" data-bigdesktop="<?php echo $items_bigdesktop;?>" data-smalldesktop="<?php echo $items_smalldesktop;?>" data-bigtablet="<?php echo $items_bigtablet;?>" data-tablet="<?php echo $items_tablet;?>" data-smalltablet="<?php echo $items_smalltablet;?>" data-mobile="<?php echo $items_mobile;?>" data-margin="<?php echo $margin;?>" data-loop="false" data-center="false" data-mousedrag="true" data-touchdrag="true" data-stagepadding="0" data-nav="<?php echo $nav;?>" data-navnext="" data-navprev="" data-rewind="true" data-dots="<?php echo $dots;?>" data-autoplay="<?php echo $auto;?>" data-speed="250">
+			<?php foreach ($_postCollection as $_post) { ?>
+				<?php
+					$_postUrl = $block->escapeUrl($_post->getPostUrl());
+					$_postName = $block->escapeHtml($_post->getTitle());
+				?>
+				<div class="item-load item-post-full"> 
+							<div class="blog-post-thumb">
+								<a href="<?php echo $_post->getPostUrl() ?>">
+								 <?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+									<?php
+										$featuredImgAlt = $_post->getData('featured_img_alt');
+									if (!$featuredImgAlt) {
+										$featuredImgAlt = $_postName;
+									}
+									?>
+										<img src="<?= $block->escapeUrl($featuredImage) ?>"
+											 alt="<?= $block->escapeHtml($featuredImgAlt) ?>" />
+								<?php } ?>
+								</a>
+							</div>
+							<div class="blog-post-info">
+								<div class="post-category-name"> 
+									<?php if ($_categoriesCount = $_post->getCategoriesCount()) { ?>
+									  <?php $n = 0;
+										foreach ($_post->getParentCategories() as $ct) { $n++; ?>
+											<a title="<?= $block->escapeHtml($ct->getTitle()) ?>"
+											   href="<?= $block->escapeUrl($ct->getCategoryUrl()) ?>">
+												<?= $block->escapeHtml($ct->getTitle()) ?>
+											</a>
+											<?php if ($n != $_categoriesCount) { ?>, <?php } ?>
+										<?php } ?>
+									<?php } ?>
+								</div>
+								<h3 class="post-title">
+									<a class="post-item-link"
+										   href="<?= /*@noEscape*/ $_postUrl ?>">
+										<?= /*@noEscape*/ $_postName ?>
+									</a>
+								</h3>
+
+						<div class="post-info clear">
+							<?php if ($_post->isPublishDateEnabled()) { ?>
+								<div class="time-conment">
+									<span class="label"><?= $block->escapeHtml(__('Posted:')) ?></span>
+									<span class="value"><?= $block->escapeHtml($_post->getPublishDate()) ?></span>
+								</div>
+							<?php } ?>
+							
+						</div>
+						<div class="desc"><?= /*@noEscape*/ $block->getShorContent($_post) ?></div>
+						<div class="post-info-bottom clearfix">
+									<a class="post-readmore btn"
+							   href="<?= /*@noEscape*/ $_postUrl ?>"
+							   title="<?= /*@noEscape*/ $_postName ?>"
+							   >
+							   <?= $block->escapeHtml(__('Read more')) ?>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			<?php } ?>
+		</div>
+		</div>
+	</div>
+</div>
+<?php } ?>

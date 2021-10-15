@@ -1,0 +1,121 @@
+/* Custom Theme 2021-10-12 04:48:09: Do not change this file. */
+
+/* Page Width */
+
+/* Body Font */
+body {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Poppins, sans-serif;
+}
+button, .cart.table-wrapper .actions-toolbar > .action, .action-gift,
+.action.primary, .action-primary, .btn{
+	font-family: Poppins, sans-serif;
+}
+	/* Heading Font */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.block-widget-rokanthemes-brand .brand-item .brand-name,
+	.rokanthemes-onepagecheckout .step-title,
+	.rokanthemes-onepagecheckout #opc-sidebar .title,
+	.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .table-totals,
+	.container_vertical_tab_postions.wrapper_category_product_tabs .ui-tabs-nav li a,
+	.container_vertical_tab_postions.wrapper_product_tabs .ui-tabs-nav li a,
+	.super-deal-banner-content .super-deal-countdown .time_circles .number,
+	.super-deal .super-deal-banner-content .super-deal-countdown .number,
+	.super-deal-banner .super-deal-banner-content .super-deal-countdown .number,
+	.super-deal .item-deal-product .info-price-deal label,
+	.wrapper_sub_category_tabs .widget-tabs ul > ul > li > a,
+	.wrapper_sub_category_tabs.onlyparent .list-category-item .category-item a .cate-name.cate-count,
+	.customer-account-create .form-create-account .fieldset:not(.additional_info) .legend,
+	.customer-account-forgotpassword .forget .fieldset:not(.additional_info) .legend,
+	.filter-options .filter-options-title, .sidebar .block .filter-options-title,
+	.filter-options .block-title:not(.filter-title) strong,
+	.sidebar .block .block-title:not(.filter-title) strong{
+			font-family: Poppins, sans-serif;
+		}
+/* Heading Font Weight*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.rokanthemes-onepagecheckout .step-title,
+.rokanthemes-onepagecheckout #opc-sidebar .title,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .items-in-cart .title,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .table-totals,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .table-totals .mark,
+.super-deal .super-deal-banner-content .super-deal-countdown .number,
+.super-deal .item-deal-product .info-price-deal label,
+.wrapper_sub_category_tabs .widget-tabs ul > ul > li > a,
+blockquote,
+.super-deal-banner .super-deal-banner-content .super-deal-countdown .number,
+.super-deal .item-deal-product .info-price-deal label,
+.wrapper_sub_category_tabs .widget-tabs ul > ul > li > a,
+.product-item .product-label,
+.customer-account-create .form-create-account .fieldset:not(.additional_info) .legend,
+.customer-account-forgotpassword .forget .fieldset:not(.additional_info) .legend,
+.filter-options .filter-options-title, .sidebar .block .filter-options-title,
+.filter-options .block-title:not(.filter-title) strong,
+.sidebar .block .block-title:not(.filter-title) strong,
+.modal-popup .modal-title {
+	font-weight: 500;
+}
+
+	/* Menu Font */
+	.navigation.custommenu li.level0 .level-top,
+	.navigation li.level0.parent .submenu .mega-columns .level1.parent > a,
+	.verticalmenu.navigation .list-category-dropdown li.level0 > .submenu .title-cat-mega-menu span,
+	.verticalmenu.navigation .list-category-dropdown li.level0.classic .parent .subchildmenu .title-cat-mega-menu span,
+	.verticalmenu.navigation li.level0 > a{
+			font-family: Poppins, sans-serif;
+		}
+
+/* Price Font Family */
+
+.price, .col-newsletter-popup .content-popup *{
+		font-family: Rubik;
+	}
+.product-info-main .price-box .price-wrapper .price, .product-options-bottom .price-box .price-wrapper .price{
+		font-weight: 400;
+	}
+/* Menu Font Weight*/
+.navigation.custommenu li.level0 .level-top,
+.navigation li.level0.parent .submenu .mega-columns .level1.parent > a,
+.verticalmenu.navigation li.level0>a{
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* Newsletter popup */
+	#newsletter_pop_up{
+	width: 450px;height: 590px;background-color: FFFFFF;color: 222222;	}
+	#newsletter_pop_up .col-newsletter-popup .col-img-bg-pupup{
+	background-image: url(http://magentopoc.com/media/rokanthemes/newsletter/background/default/newletter.jpg); background-size: cover; background-position: center;	}
+.block-newsletter-form{
+}
+.contact-index-index .page-title-wrapper{
+background-image: url(http://magentopoc.com/media/rokanthemes/Contactusbanner/default/shop-1.jpg); padding: 20.15rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: center center;width: 100vw;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-cart-index .page-title-wrapper{
+background-image: url(http://magentopoc.com/media/rokanthemes/Cartbackground/default/shop-1_1.jpg); padding: 20.15rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: center center;width: 100vw;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-index-index .page-title-wrapper{
+background-image: url(http://magentopoc.com/media/rokanthemes/Cartbackground/default/shop-1_1.jpg); padding: 20.15rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: center center;width: 100vw !important;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-cart-index .header-container.layout-1 {position: absolute}.checkout-index-index .header-container.layout-1 {position: absolute}.checkout-cart-index .header-container.layout-7 {position: absolute}.checkout-index-index .header-container.layout-7 {position: absolute}.checkout-index-index .authentication-wrapper {z-index: 3}.contact-index-index .header-container.layout-1 {position: absolute}.contact-index-index .header-container.layout-7 {position: absolute}.rokanthemes-onepagecheckout .page-wrapper .page-title-wrapper {margin-top: 0}

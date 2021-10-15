@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var $block Rokanthemes\QuickView\Block\Js
+ */
+?>
+<?php
+if ($block->getSettingStatus()): ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "rokanthemes/quickview"    : {
+                "quickviewUrl": "<?php echo $block->getUrl('quickview/product/view'); ?>",
+                "buttonText": "<?php echo $block->getModuleConfigValue('general/label'); ?>",
+                "classInsertPosition": "<?php echo $block->getModuleConfigValue('general/class_position'); ?>",
+                "actionInsert": "<?php echo $block->getModuleConfigValue('general/position'); ?>",
+                "isEnabled": "<?php echo $block->getSettingStatus(); ?>"
+            }
+    }
+}
+</script>
+<?php endif; ?>

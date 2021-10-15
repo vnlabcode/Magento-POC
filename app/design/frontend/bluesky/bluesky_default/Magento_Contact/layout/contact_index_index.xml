@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+			<container name="contact.content" htmlTag="div" htmlClass="row contact-us">
+				<container name="contact.Infor" htmlTag="div" htmlClass="col-sm-6" before="form.additional">
+					<block name="contactInfor" before="contactForm" class="Magento\Cms\Block\Block">    
+							 <arguments>
+								  <argument name="block_id" xsi:type="string">default-contact-info</argument>
+							 </arguments>
+					</block>
+				</container>
+				<container name="form.additional" htmlTag="div" htmlClass="col-sm-6">
+					<block class="Magento\Contact\Block\ContactForm" name="contactForm" template="Magento_Contact::form.phtml">
+						<container name="form.additional.info" label="Form Additional Info"/>
+					</block>
+				</container>
+			</container>
+        </referenceContainer>
+		<referenceBlock name="breadcrumbs">
+			<action method="addCrumb">
+				<argument name="crumbName" xsi:type="string">Home</argument>
+				<argument name="crumbInfo" xsi:type="array">
+					<item name="title" xsi:type="string">Home</item>
+					<item name="label" xsi:type="string">Home</item>
+					<item name="link" xsi:type="string">{{baseUrl}}</item>
+				</argument>
+			</action>
+			<action method="addCrumb">
+				<argument name="crumbName" xsi:type="string">Contact us</argument>
+				<argument name="crumbInfo" xsi:type="array">
+					<item name="title" xsi:type="string">Contact us</item>
+					<item name="label" xsi:type="string">Contact us</item>
+				</argument>
+			</action>
+		</referenceBlock>
+		<move element="breadcrumbs" destination="page.main.title" after="-"/>
+		<referenceContainer name="page.wrapper">
+            <block name="maps" after="main.content" class="Magento\Cms\Block\Block">    
+                 <arguments>
+                      <argument name="block_id" xsi:type="string">default-contact-map</argument>
+                 </arguments>
+            </block>
+        </referenceContainer>    
+    </body>
+</page>

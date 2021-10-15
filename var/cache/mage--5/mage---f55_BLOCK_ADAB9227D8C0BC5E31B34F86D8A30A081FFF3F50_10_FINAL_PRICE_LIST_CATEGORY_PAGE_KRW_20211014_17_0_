@@ -1,0 +1,28 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1634207948;s:6:"expire";i:1634294348;s:4:"tags";s:46:"f55_BLOCK_HTML,f55_CAT_P_10,f55_CAT_P,f55_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="10" data-price-box="product-id-10">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="product-price-10"                data-price-amount="107487.13"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">₩107,487.13</span></span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-10"                data-price-amount="113458.64"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+    ><span class="price">₩113,458.64</span></span>
+        </span>
+    </span>
+
+</div>

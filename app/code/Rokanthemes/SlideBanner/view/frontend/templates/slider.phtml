@@ -1,0 +1,152 @@
+<?php 
+	$slider = $block->getSlider();
+	if($slider){
+		$banner_col = $block->getBannerCollection($slider->getId());
+		if($banner_col->count() > 0){
+			$store_id = $block->getStoreId();
+			$data_setting = $slider->getSliderSetting();
+			$effect = (isset($data_setting['effect'])) ? $data_setting['effect'] : 'random';
+			$slices = (isset($data_setting['slices'])) ? $data_setting['slices'] : '15';
+			$boxCols = (isset($data_setting['boxCols'])) ? $data_setting['boxCols'] : '8';
+			$boxRows = (isset($data_setting['boxRows'])) ? $data_setting['boxRows'] : '4';
+			$animSpeed = (isset($data_setting['animSpeed'])) ? $data_setting['animSpeed'] : '500';
+			$pauseTime = (isset($data_setting['pauseTime'])) ? $data_setting['pauseTime'] : '3000';
+			$startSlide = (isset($data_setting['startSlide'])) ? $data_setting['startSlide'] : '0';
+			$directionNav = (isset($data_setting['directionNav'])) ? $data_setting['directionNav'] : 'true';
+			$controlNav = (isset($data_setting['controlNav'])) ? $data_setting['controlNav'] : 'false';
+			$controlNavThumbs = (isset($data_setting['controlNavThumbs'])) ? $data_setting['controlNavThumbs'] : 'false';
+			$pauseOnHover = (isset($data_setting['pauseOnHover'])) ? $data_setting['pauseOnHover'] : 'true';
+			$manualAdvance = (isset($data_setting['manualAdvance'])) ? $data_setting['manualAdvance'] : 'false';
+			$prevText = (isset($data_setting['prevText'])) ? $data_setting['prevText'] : __('Prev');
+			$nextText = (isset($data_setting['nextText'])) ? $data_setting['nextText'] : __('Next');
+			$randomStart = (isset($data_setting['randomStart'])) ? $data_setting['randomStart'] : 'false';
+			$progressBar = (isset($data_setting['progressBar'])) ? $data_setting['progressBar'] : 'false';
+			$mediaUrl = $block->getMediaUrl();
+			$full_width = (isset($data_setting['fullwidth']) && $data_setting['fullwidth'] == '0') ? 'no-full-width' : 'full-width';
+?>
+	<div class="section <?= $full_width; ?> slider-wrapper theme-default wrapper-the-blue-sky-slider">
+		<div id="rokanthemes-slidebanner-<?php echo $slider->getId(); ?>">
+			<div class="nivoSlider-loading-page-still-unsuc">
+				<div class="nivoslider-show-loading-in-web d-none d-md-block" style="min-height: 400px;"></div>
+				<div class="nivoslider-show-loading-in-mobile d-block d-md-none" style="min-height: 300px;"></div>
+				<span></span>
+			</div>
+			<div class="container-the-blue-sky-slider nivoSlider">
+			<?php 
+			foreach ($banner_col as $banner) {
+				$stores_ids = json_decode($banner->getStoreIds(), true);
+				if(in_array($store_id, $stores_ids) || in_array(0, $stores_ids)){
+			?>	
+				<?php
+				$src = $banner->getSlideImage();
+				$src_mobile = $banner->getSlideImageMobile();
+				$html = ''; 
+				$text_animate = '';
+				$show_caption_title = '';
+				if($banner->getSlideText() != '' && $banner->getTextAnimate() == 'yes'){
+					$text_animate = 'htmlcaption'.$banner->getID();
+					$show_caption_title = ' title="#'.$text_animate.'"';
+				}
+				if($banner->getSlideLink()){
+					$taget = '';
+					if($banner->getOpennewtab() == 'yes'){
+						$taget = ' target="_blank"';
+					}
+					$html .= '<a href="'.$banner->getSlideLink().'" title="'.$slider->getSliderTitle().'"><img class="banner-nivo-slider-mobile-and-web no-lazy" alt="' . $slider->getSliderTitle() . '"'.$show_caption_title.' data-src-mobile="'. $mediaUrl . $src_mobile . '" data-src-desktop="'. $mediaUrl . $src . '" src="'. $mediaUrl . $src . '" /></a>';
+				}
+				else{
+					$html .= '<img class="banner-nivo-slider-mobile-and-web no-lazy" alt="' . $slider->getSliderTitle() . '"'.$show_caption_title.' data-src-mobile="'. $mediaUrl . $src_mobile . '" data-src-desktop="'. $mediaUrl . $src . '" src="'. $mediaUrl . $src . '" />';
+				}
+				
+				echo $html;
+				?>
+			<?php 
+				}
+			}
+			?>
+			</div>
+			<?php 
+				foreach ($banner_col as $banner) {
+				$stores_ids = json_decode($banner->getStoreIds(), true);
+				if(in_array($store_id, $stores_ids) || in_array(0, $stores_ids)){ ?>
+					<?php if($banner->getSlideText() != '' && $banner->getTextAnimate() == 'yes'){ 
+						$text_animate = 'htmlcaption'.$banner->getID();
+					?>
+					<div class="container-the-blue-sky-banner-text nivo-html-caption nivo-caption" id="<?= $text_animate;?>">
+						<?php if($progressBar && $progressBar == 'true'){?>
+						<div class="timeline-loading-item" style="-webkit-animation: nivolodinglinetime <?= $pauseTime;?>ms ease-in-out; -moz-animation: nivolodinglinetime <?= $pauseTime;?>ms ease-in-out; -ms-animation: nivolodinglinetime <?= $pauseTime;?>ms ease-in-out; animation: nivolodinglinetime <?= $pauseTime;?>ms ease-in-out; "></div>
+						<?php } ?>
+						<div class="banner-postion-fixed the-blue-sky-banner-text <?= $banner->getTextPosition();?>">
+							<div class="container">
+								<?php 
+									$texts = json_decode($banner->getSlideText(), true);
+									foreach ($texts as $key_t => $val_t) {
+										$custom_html = (isset($val_t['customclass']) && $val_t['customclass'] != '') ? ' '.$val_t['customclass'] : '';
+										if($val_t['display'] >= '2' && $val_t['display'] <= 5){
+											echo '<h'.$val_t['display'].' class="animate__animated animate__'.$val_t['animated'].$custom_html.'" style="color:'.$val_t['color'].'">'.$block->getContentText($val_t['text']).'</h'.$val_t['display'].'>';
+										}
+										elseif($val_t['display'] == '6'){
+											echo '<p class="animate__animated animate__'.$val_t['animated'].$custom_html.'" style="color:'.$val_t['color'].'">'.$block->getContentText($val_t['text']).'</p>';
+										}
+										elseif($val_t['display'] == '7'){
+											if($banner->getSlideLink()){
+												$taget = '';
+												if($banner->getOpennewtab() == 'yes'){
+													$taget = ' target="_blank"';
+												}
+												echo '<a href="'.$banner->getSlideLink().'" title="'.$block->getContentText($val_t['text']).'" class="btn button-style-nivo-slider animate__animated animate__'.$val_t['animated'].$custom_html.'" style="color:'.$val_t['color'].'"'.$taget.'>'.$block->getContentText($val_t['text']).'</a>';
+											}
+											else{
+												echo '<a href="#" title="'.$block->getContentText($val_t['text']).'" class="btn button-style-nivo-slider animate__animated animate__'.$val_t['animated'].$custom_html.'" style="color:'.$val_t['color'].'">'.$block->getContentText($val_t['text']).'</a>';
+											}
+										}
+								} ?>
+							</div> 
+						</div>
+					</div>
+					<?php } ?>
+			<?php 
+				}
+			}
+			?>
+		</div>
+	</div>
+	<script>
+		require([
+			'jquery',
+			'rokanthemes/nivoSlider'
+		], function ($, nivoSlider) {
+			'use strict';
+			
+			$( document ).ready(function() {
+				$('#rokanthemes-slidebanner-<?php echo $slider->getId(); ?> .nivoSlider').nivoSlider({
+				    effect: '<?= $effect ;?>',
+				    slices: <?= $slices ;?>,
+				    boxCols: <?= $boxCols ;?>,
+				    boxRows: <?= $boxRows ;?>,
+				    animSpeed: <?= $animSpeed ;?>,
+				    pauseTime: <?= $pauseTime ;?>,
+				    startSlide: <?= $startSlide ;?>,
+				    directionNav: <?= $directionNav ;?>,
+				    controlNav: <?= $controlNav ;?>,
+				    controlNavThumbs: <?= $controlNavThumbs ;?>,
+				    pauseOnHover: <?= $pauseOnHover ;?>,
+				    manualAdvance: <?= $manualAdvance ;?>,
+				    prevText: '<?= $prevText ;?>',
+				    nextText: '<?= $nextText ;?>',
+				    randomStart: <?= $randomStart ;?>,
+				    beforeChange: function(){},
+				    afterChange: function(){},
+				    slideshowEnd: function(){},
+				    lastSlide: function(){},
+				    afterLoad: function(){
+				    	$('#rokanthemes-slidebanner-<?php echo $slider->getId(); ?> .nivoSlider-loading-page-still-unsuc').css("display","none"); 
+				    }
+			  	});
+			});
+		});
+	</script>
+<?php		
+		}
+	}
+?>

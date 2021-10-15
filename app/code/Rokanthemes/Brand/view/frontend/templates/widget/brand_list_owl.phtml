@@ -1,0 +1,48 @@
+<?php
+$_brandCollection       = $block->getBrandCollection();
+$_helper                = $this->helper('Rokanthemes\Brand\Helper\Data');
+$title                  = $this->getConfig('widget_title');
+$show_brand_name        = $this->getConfig('show_brand_name');
+$rows        = $this->getConfig('rows') ? $this->getConfig('rows') : 1;
+$blockId = strtotime('now'); 
+?>
+
+<?php if ( $_brandCollection->count() ){ ?>
+<div class="block-widget-rokanthemes-brand section">
+	<?php if($title){ ?>
+	<div class="rokan-title"><h3 class="module-title"><?php echo $title ?></h3></div>
+	<?php } ?>
+	<div class="block-content">
+		<div class="owl-carousel owl-theme" 
+		data-rtl="false" data-items="<?php echo $this->getConfig('default_item');?>" data-bigdesktop="<?php echo $this->getConfig('destop_item');?>" data-smalldesktop="<?php echo $this->getConfig('small_destop_item');?>" data-bigtablet="<?php echo $this->getConfig('tablet_item');?>" 
+		data-tablet="<?php echo $this->getConfig('tablet_item');?>" data-smalltablet="<?php echo $this->getConfig('mobile_item');?>" data-mobile="<?php echo $this->getConfig('mobile_item');?>" 
+		data-margin="<?php echo $this->getConfig('data_margin');?>" data-loop="false" data-center="false" 
+		data-mousedrag="true" data-touchdrag="true" data-stagepadding="1" 
+		data-nav="<?php echo ($this->getConfig('show_navigation_control')) ? 'true' : 'false';?>" data-navnext="" data-navprev="" data-rewind="true" 
+		data-dots="<?php echo ($this->getConfig('show_next_back_control')) ? 'true' : 'false';?>" data-autoplay="<?php echo ($this->getConfig('auto_play_control')) ? 'true' : 'false';?>" data-speed="1200">
+			<?php  
+			$i = 0;
+			foreach ($_brandCollection as $_brand) { ?>
+				<?php if($i %$rows == 0): ?>
+	            <div class="item-load item-row-slider-brand"> 
+	            <?php endif; ?>
+					<div class="brand-item">
+						<div class="brand-image"><a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>"><img src="<?php echo $_brand->getThumbnailUrl(); ?>" alt="<?php echo $_brand->getName(); ?>"/></a></div>
+						<?php if($show_brand_name){ ?>
+						<div class="brand-name"><a href="<?php echo $_brand->getUrl(); ?>" title="<?php echo $_brand->getName(); ?>"><?php echo $_brand->getName() ?></a></div>
+						<?php } ?>
+					</div>
+				<?php $i++;?>
+				<?php if($i %$rows == 0): ?>
+	            </div>
+	            <?php endif; ?>
+			<?php } ?>
+			<?php if($i %$rows != 0) echo "</div>"; ?>
+		</div>
+	</div>
+</div>
+<?php }else{ ?>
+<div class="alert alert-danger">
+    <p><?= __('Brand does not exist. Please login admin go to Rokanthemes > Brand > Add New Brand.'); ?></p>
+</div>
+<?php } ?>

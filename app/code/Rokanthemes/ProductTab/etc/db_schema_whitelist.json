@@ -1,0 +1,50 @@
+{
+    "rokanthemes_sorting_bestsellect": {
+        "column": {
+            "index_id": true,
+            "product_id": true,
+            "store_id": true,
+            "bestseller": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "ROKANTHEMES_SORTING_BESTSELLECT_STORE_ID_PRODUCT_ID": true
+        }
+    },
+    "rokanthemes_sorting_most_viewed": {
+        "column": {
+            "index_id": true,
+            "product_id": true,
+            "store_id": true,
+            "viewed": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "ROKANTHEMES_SORTING_MOST_VIEWED_STORE_ID_PRODUCT_ID": true
+        }
+    },
+    "rokanthemes_sorting_review_rate": {
+        "column": {
+            "index_id": true,
+            "product_id": true,
+            "store_id": true,
+            "rate": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "ROKANTHEMES_SORTING_REVIEW_RATE_STORE_ID_PRODUCT_ID": true
+        }
+    },
+    "rokanthemes_sorting_bestseller": {
+        "column": {
+            "index_id": true,
+            "product_id": true,
+            "store_id": true,
+            "bestseller": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "ROKANTHEMES_SORTING_BESTSELLER_STORE_ID_PRODUCT_ID": true
+        }
+    }
+}

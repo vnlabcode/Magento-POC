@@ -1,0 +1,73 @@
+/* Custom Theme 2021-03-25 02:04:40: Do not change this file. */
+
+/* Page Width */
+
+/* Body Font */
+body {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Poppins, sans-serif;
+}
+button, .cart.table-wrapper .actions-toolbar > .action, .action-gift,
+.action.primary, .action-primary, .btn{
+	font-family: Poppins, sans-serif;
+}
+/* Heading Font Weight*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.rokanthemes-onepagecheckout .step-title,
+.rokanthemes-onepagecheckout #opc-sidebar .title,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .items-in-cart .title,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .table-totals,
+.rokanthemes-onepagecheckout #opc-sidebar .opc-block-summary .table-totals .mark,
+.super-deal .super-deal-banner-content .super-deal-countdown .number,
+.super-deal .item-deal-product .info-price-deal label,
+.wrapper_sub_category_tabs .widget-tabs ul > ul > li > a,
+blockquote,
+.super-deal-banner .super-deal-banner-content .super-deal-countdown .number,
+.super-deal .item-deal-product .info-price-deal label,
+.wrapper_sub_category_tabs .widget-tabs ul > ul > li > a,
+.product-item .product-label,
+.customer-account-create .form-create-account .fieldset:not(.additional_info) .legend,
+.customer-account-forgotpassword .forget .fieldset:not(.additional_info) .legend,
+.filter-options .filter-options-title, .sidebar .block .filter-options-title,
+.filter-options .block-title:not(.filter-title) strong,
+.sidebar .block .block-title:not(.filter-title) strong,
+.modal-popup .modal-title {
+	font-weight: 500;
+}
+
+/* Menu Font Weight*/
+.navigation.custommenu li.level0 .level-top,
+.navigation li.level0.parent .submenu .mega-columns .level1.parent > a,
+.verticalmenu.navigation li.level0>a{
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block-newsletter-form{
+}
+.contact-index-index .page-title-wrapper{
+background-image: url(http://azexchangeclub.com/outstock/media/rokanthemes/Contactusbanner/default/shop-1.jpg); padding: 24.5rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: right center;width: 100vw;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-cart-index .page-title-wrapper{
+background-image: url(http://azexchangeclub.com/outstock/media/rokanthemes/Cartbackground/default/shop-1_1.jpg); padding: 24.5rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: right center;width: 100vw;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-index-index .page-title-wrapper{
+background-image: url(http://azexchangeclub.com/outstock/media/rokanthemes/Cartbackground/default/shop-1_1.jpg); padding: 24.5rem 0; color: #fff; margin-top: 0; background-repeat: no-repeat; background-size: cover; background-position: right center;width: 100vw !important;position: relative;left: calc((-1 * (100vw - 100%)/2));}
+.checkout-cart-index .page-header {position: absolute}.checkout-index-index .page-header {position: absolute}.checkout-index-index .authentication-wrapper {z-index: 99}.contact-index-index .page-header {position: absolute}

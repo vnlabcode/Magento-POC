@@ -1,0 +1,188 @@
+<?php 
+	use Magento\Framework\App\Action\Action;
+	$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::DEFAULT_VIEW;
+	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $StockState = $objectManager->get('\Magento\CatalogInventory\Api\StockStateInterface');
+
+    $owl_item_default = $block->getConfig('owl_item_default');
+    $owl_item_desktop = $block->getConfig('owl_item_desktop');
+    $owl_item_small_desktop = $block->getConfig('owl_item_small_desktop');
+    $owl_item_big_tablet = $block->getConfig('owl_item_big_tablet');
+    $owl_item_tablet = $block->getConfig('owl_item_tablet');
+    $owl_item_small_tablet = $block->getConfig('owl_item_small_tablet');
+    $owl_item_mobile = $block->getConfig('owl_item_mobile');
+    $rows = $block->getConfig('rows');
+	$speed = $this->getConfig('speed');
+	$owl_margin = $this->getConfig('owl_margin');
+	$auto = (1 == $this->getConfig('auto')) ? 'true' : 'false';
+	$next_back = (1 == $this->getConfig('next_back')) ? 'true' : 'false';
+	$owl_dots = (1 == $this->getConfig('owl_dots')) ? 'true' : 'false';
+	$owl_loop = (1 == $this->getConfig('owl_loop')) ? 'true' : 'false';
+	$owl_center = (1 == $this->getConfig('owl_center')) ? 'true' : 'false';	
+	
+	$category_load = $block->getCategory();
+	
+	if($category_load && strtotime($block->getConfig('end_date')) >= strtotime($block->getCurrentTime())){ 
+		$image = 'category_page_grid';
+		$width = $block->getConfig('width');
+		if(!$width){
+			$width = 550;
+		}
+		$height = $block->getConfig('height');
+		if(!$height){
+			$height = 550;
+		}
+		$enabled_hover = $block->getConfig('enabled_hover');
+		$image_type = $block->getConfig('image_type');
+		$image_type_hover = $block->getConfig('image_type_hover');
+?>
+<?php if($this->getConfig('title_deal')){?>
+	<div class="rokan-title">
+		<h3 class="module-title"><?php echo $this->getConfig('title_deal')?> </h3>
+		<?php if($this->getConfig('description_deal')){?>
+			<div class="rokan-description"><p><?php echo $this->getConfig('description_deal')?></p></div>
+		<?php }?>
+	</div>
+<?php }?>
+<div class="section section-products-blue hot-deal-tab-slider hot-deal-tab-slider-customcss section-product">
+	<div class="products wrapper grid products-grid ">
+		<div class="products list items product-items owl-carousel owl-theme"
+			data-rtl="false" data-items="<?= $owl_item_default ?>" data-bigdesktop="<?= $owl_item_desktop ?>" data-smalldesktop="<?= $owl_item_small_desktop ?>" data-bigtablet="<?= $owl_item_big_tablet ?>" 
+			data-tablet="<?= $owl_item_tablet ?>" data-smalltablet="<?= $owl_item_small_tablet ?>" data-mobile="<?= $owl_item_mobile ?>"  
+			data-margin="<?= $owl_margin ?>" data-loop="<?= $owl_loop ?>" data-center="<?= $owl_center ?>" 
+			data-mousedrag="true" data-touchdrag="true" data-stagepadding="1" 
+			data-nav="<?= $next_back ?>" data-navnext="" data-navprev="" data-rewind="true" 
+			data-dots="<?= $owl_dots ?>" data-autoplay="true" data-speed="<?= $speed ?>"> 
+		<?php 
+			$newItems =  $block->getProducts();
+			$i=0;
+			foreach($newItems as $_item) {  
+				$resizedImageUrl = $block->resizeImage($_item, $image_type, $width, $height)->getUrl();
+				if($i %$rows == 0){
+					echo '<div class="item-load group-rows-fixed-supper-deal">';
+				}
+				$i ++;
+			?>
+				<div class="item product product-item">
+					<div class="product-item-info">
+						<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" class="product photo product-item-photo" tabindex="-1">
+							<span class="image0 image-switch">
+								<img class="product-image" src="<?= $resizedImageUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+							</span>
+							<?php if($enabled_hover){ 
+								$resizedImageHoverUrl = $block->resizeImage($_item, $image_type_hover, $width, $height)->getUrl();
+							?>
+								<span class="image1 image_hover">
+									<img class="product-image" src="<?= $resizedImageHoverUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+								</span>
+							<?php } ?>
+						</a>
+						<?php if ( $_item->getFinalPrice() < $_item->getPrice() ): ?>
+							<span class="product-label onsale">
+								<span class="value"><?= 100 - round(($_item->getFinalPrice() / $_item->getPrice() * 100)) ?>%</span>
+							</span>
+						<?php endif; ?>
+						<div class="product details product-item-details">	
+							<strong class="product name product-item-name">
+								<a class="product-item-link"
+								   href="<?= $block->escapeUrl($_item->getProductUrl()) ?>">
+									<?php echo $_item->getName(); ?>
+								</a>
+							</strong>									
+							<div class="info-price">
+								<?php /* @escapeNotVerified */ echo $this->helper('Rokanthemes\Themeoption\Helper\Data')->getPriceDisplayCustom($block->getProductPrice($_item)) ?>
+								<?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
+							</div>
+							<div class="countdown_block">
+								<div class="super-deal-countdown" data-date="<?php echo $block->getConfig('end_date');?>"></div>
+							</div>
+							<div class="product-sold">
+								<?php 
+									$numbertotal = $StockState->getStockQty($_item->getId());
+									if($numbertotal > 0){
+									$sale_qty = $this->helper('Rokanthemes\RokanBase\Helper\Data')->getSalableQuantityDataBySku($_item->getSku());
+									$numbersold = $numbertotal - $sale_qty;
+									$calculator = (($numbertotal - $sale_qty) / $numbertotal) * 100;
+								?>
+								
+								<div class="count-sold-available">
+									<div class="count-available">
+									<?php echo __('Available:') ?>
+									<span>
+										<?php 
+											echo $sale_qty;
+										?>
+								   </span>
+									</div>
+									<div class="count-sold">
+									<?php echo __('Sold:') ?>
+									<span>
+										<?php 
+											echo $numbersold;
+										?>
+									</span>
+									</div>
+									
+								</div>
+								<div class="ruler-sold">
+									<div class="ruler-sold-count" style="width: <?php 
+										echo $calculator; ?>%;">
+									</div>
+								</div>
+								<?php } ?>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			<?php if($i %$rows == 0) echo "</div>"; ?>
+			<?php 
+			}
+			?>
+			<?php if($i %$rows != 0) echo "</div>"; ?>
+		</div>
+		<?php if(count($newItems) == 0){ ?>
+        <div class="alert alert-danger">
+            <p><?= __('Products does not exist. Please login admin go to Rokanthemes > Configuration > Super Deals Settings.'); ?></p>
+        </div>
+        <?php } ?>
+	</div>
+</div>
+<script>
+require(["jquery", 'mage/mage','rokanthemes/timecircles', "rokanthemes/owl"], function($){
+	'use strict';
+	$( document ).ready(function() {
+		if($('.super-deal-countdown').length>0){
+			$(".super-deal-countdown").TimeCircles({
+				fg_width: 0.01,
+				bg_width: 1.2,
+				text_size: 0.07,
+				circle_bg_color: "#ffffff",
+				time: {
+					Days: {
+						show: true,
+						text: "Days",
+						color: "#f9bc02"
+					},
+					Hours: {
+						show: true,
+						text: "Hours",
+						color: "#f9bc02"
+					},
+					Minutes: {
+						show: true,
+						text: "Mins",
+						color: "#f9bc02"
+					},
+					Seconds: {
+						show: true,
+						text: "Secs",
+						color: "#f9bc02"
+					}
+				}
+			}); 
+		}
+	});
+});
+</script>
+<?php } ?>

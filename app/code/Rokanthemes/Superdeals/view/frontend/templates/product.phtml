@@ -1,0 +1,127 @@
+<?php 
+	use Magento\Framework\App\Action\Action;
+	$category_load = $block->getCategory();
+	$owl_item_default = $block->getConfig('owl_item_default');
+    $owl_item_desktop = $block->getConfig('owl_item_desktop');
+    $owl_item_small_desktop = $block->getConfig('owl_item_small_desktop');
+    $owl_item_big_tablet = $block->getConfig('owl_item_big_tablet');
+    $owl_item_tablet = $block->getConfig('owl_item_tablet');
+    $owl_item_small_tablet = $block->getConfig('owl_item_small_tablet');
+    $owl_item_mobile = $block->getConfig('owl_item_mobile');
+    $rows = $block->getConfig('rows');
+	$speed = $this->getConfig('speed');
+	$owl_margin = $this->getConfig('owl_margin');
+	$auto = (1 == $this->getConfig('auto')) ? 'true' : 'false';
+	$next_back = (1 == $this->getConfig('next_back')) ? 'true' : 'false';
+	$owl_dots = (1 == $this->getConfig('owl_dots')) ? 'true' : 'false';
+	$owl_loop = (1 == $this->getConfig('owl_loop')) ? 'true' : 'false';
+	$owl_center = (1 == $this->getConfig('owl_center')) ? 'true' : 'false';	
+	if($category_load && strtotime($block->getConfig('end_date')) >= strtotime($block->getCurrentTime())){ 
+		$image = 'category_page_grid';
+	$width = $block->getConfig('width');
+	if(!$width){
+		$width = 550;
+	}
+	$height = $block->getConfig('height');
+	if(!$height){
+		$height = 550;
+	}
+	$enabled_hover = $block->getConfig('enabled_hover');
+	$image_type = $block->getConfig('image_type');
+	$image_type_hover = $block->getConfig('image_type_hover');
+?>
+<div class="section super-deal section-products-blue"> 
+	<div class="row"> 
+		<div class="col-md-6 col-sm-6 col-xs-12 deal-product">
+			<div class="owl-carousel owl-theme" data-rtl="false" data-items="<?= $owl_item_default ?>" data-bigdesktop="<?= $owl_item_desktop ?>" data-smalldesktop="<?= $owl_item_small_desktop ?>" data-bigtablet="<?= $owl_item_big_tablet ?>" 
+			data-tablet="<?= $owl_item_tablet ?>" data-smalltablet="<?= $owl_item_small_tablet ?>" data-mobile="<?= $owl_item_mobile ?>"  
+			data-margin="<?= $owl_margin ?>" data-loop="<?= $owl_loop ?>" data-center="<?= $owl_center ?>" 
+			data-mousedrag="true" data-touchdrag="true" data-stagepadding="1" 
+			data-nav="<?= $next_back ?>" data-navnext="" data-navprev="" data-rewind="true" 
+			data-dots="<?= $owl_dots ?>" data-autoplay="true" data-speed="<?= $speed ?>">
+				<?php 
+					$newItems =  $block->getProducts();
+				?>
+				<?php
+				foreach($newItems as $_item) {
+					$resizedImageUrl = $block->resizeImage($_item, $image_type, $width, $height)->getUrl();
+				?>
+					<div class="item-load item-deal-product product-item"> 
+						<div class="product-thumb">
+							<a href="<?php /* @escapeNotVerified */ echo $_item->getProductUrl() ?>" class="product photo product-item-photo">
+								<span class="image0 image-switch">
+									<img class="product-image" src="<?= $resizedImageUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+								</span>
+								<?php if($enabled_hover){ 
+									$resizedImageHoverUrl = $block->resizeImage($_item, $image_type_hover, $width, $height)->getUrl();
+								?>
+									<span class="image1 image_hover">
+										<img class="product-image" src="<?= $resizedImageHoverUrl ?>" width="<?= $width ?>" height="<?= $height ?>" alt="<?php echo $_item->getName();?>">
+									</span>
+								<?php } ?>
+							</a>
+							<div class="info-price-deal">
+								<?php echo __('Sale') ?>
+								<?php echo $block->showLableSalePrice($_item); ?>
+							</div>
+						</div>
+					</div>
+				<?php } ?>
+				<?php if(count($newItems) == 0){ ?>
+		        <div class="alert alert-danger">
+		            <p><?= __("We can't find products matching the selection."); ?></p>
+		        </div>
+		        <?php } ?>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="supper-deal-title">
+				<?php if($this->getConfig('sub_title')){?><h5 class="sub-title-deal"><?php echo $block->getConfig('sub_title');?></h5><?php }?>
+				<?php if($this->getConfig('title_deal')){?><h2 class="title-deal"><?php echo $block->getConfig('title_deal');?></h2><?php }?>
+				<?php if($this->getConfig('description_deal')){?><p class="short-des"><?php echo $block->getConfig('description_deal');?></p><?php }?>
+				<div class="super-deal-countdown" data-date="<?php echo $block->getConfig('end_date');?>"></div>
+				<a href="<?php echo $category_load->getUrl();?>" class="view-all-deal btn" data-hover="<?php echo __('Shop now') ?>"><span><?php echo __('Shop now') ?></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    require([
+        'jquery',
+        'rokanthemes/timecircles'
+    ], function ($) {
+		$( document ).ready(function() {
+			if($('.super-deal-countdown').length>0){
+				$(".super-deal-countdown").TimeCircles({
+					fg_width: 0.01,
+					bg_width: 1.2,
+					text_size: 0.07,
+					circle_bg_color: "#ffffff",
+					time: {
+						Days: {
+							show: true,
+							text: "Days",
+							color: "#f9bc02"
+						},
+						Hours: {
+							show: true,
+							text: "Hours",
+							color: "#f9bc02"
+						},
+						Minutes: {
+							show: true,
+							text: "Mins",
+							color: "#f9bc02"
+						},
+						Seconds: {
+							show: true,
+							text: "Secs",
+							color: "#f9bc02"
+						}
+					}
+				}); 
+			}
+		});
+    });
+</script>
+<?php } ?>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<move element="product.info.stock.sku" destination="product.info.main" after="page.main.title"/>
+		<move element="page.main.title" destination="product.info.main" before="-"/> 
+		<move element="product.info.review" destination="product.info.main" after="page.main.title"/>
+		<move element="product.info.type" destination="product.info.main" after="product.info.price"/>
+		<move element="product.info.overview" destination="product.info.main" after="product.info.type"/>
+		<referenceContainer name="product.info.main">
+			<container name="product-category" htmlTag="div" htmlClass="product-category" before="product.info.brand">
+				<block class="Magento\Catalog\Block\Product\View" name="product.category.name" template="product/view/productscategory.phtml">
+				</block>
+			</container>
+		</referenceContainer>
+		<referenceBlock name="product.info.stock.sku" remove="true"/>
+		<referenceBlock name="product.info.brand" remove="true"/>
+		<!-- <referenceBlock name="product.info.social" remove="true"/> -->
+	</body>
+</page>

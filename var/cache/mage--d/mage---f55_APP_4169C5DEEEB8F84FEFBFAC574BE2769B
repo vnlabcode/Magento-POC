@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1634208005;s:6:"expire";i:1634215205;s:4:"tags";s:49:"f55_STORE,f55_CONFIG,f55_COLLECTION_DATA,f55_MAGE";}
+[{"store_id":"1","code":"en","website_id":"1","group_id":"1","name":"English","sort_order":"0","is_active":"1"},{"store_id":"17","code":"kr","website_id":"1","group_id":"1","name":"Korean","sort_order":"0","is_active":"1"}]

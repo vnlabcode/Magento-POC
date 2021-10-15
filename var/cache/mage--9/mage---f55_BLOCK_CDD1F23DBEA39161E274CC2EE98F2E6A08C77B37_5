@@ -1,0 +1,32 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1634208015;s:6:"expire";i:1634211615;s:4:"tags";s:45:"f55_BLOCK_HTML,f55_CAT_P_5,f55_CAT_P,f55_MAGE";}
+                <div class="swatch-opt-5"
+         data-role="swatch-option-5"></div>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=swatch-option-5]": {
+                "Magento_Swatches/js/swatch-renderer": {
+                    "selectorProduct": ".product-item-details",
+                    "onlySwatches": true,
+                    "enableControlLabel": false,
+                    "numberToShow": 16,
+                    "jsonConfig": {"attributes":{"93":{"id":"93","code":"color","label":"Color","options":[{"id":"7","label":"Green","products":["20"]},{"id":"8","label":"Violet","products":["21"]},{"id":"9","label":"Pink","products":["22"]}],"position":"0"}},"template":"$<%- data.price %>","currencyFormat":"$%s","optionPrices":{"20":{"baseOldPrice":{"amount":364},"oldPrice":{"amount":364},"basePrice":{"amount":360},"finalPrice":{"amount":360},"tierPrices":[],"msrpPrice":{"amount":0}},"21":{"baseOldPrice":{"amount":364},"oldPrice":{"amount":364},"basePrice":{"amount":360},"finalPrice":{"amount":360},"tierPrices":[],"msrpPrice":{"amount":0}},"22":{"baseOldPrice":{"amount":364},"oldPrice":{"amount":364},"basePrice":{"amount":360},"finalPrice":{"amount":360},"tierPrices":[],"msrpPrice":{"amount":0}}},"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"prices":{"baseOldPrice":{"amount":364},"oldPrice":{"amount":364},"basePrice":{"amount":360},"finalPrice":{"amount":360}},"productId":"5","chooseText":"Choose an Option...","images":[],"index":{"20":{"93":"7"},"21":{"93":"8"},"22":{"93":"9"}},"channel":"website","salesChannelCode":"base","sku":{"20":"Suspension Cuisine Brenda-Green","21":"Suspension Cuisine Brenda-Violet","22":"Suspension Cuisine Brenda-Pink"}},
+                    "jsonSwatchConfig": [],
+                    "mediaCallback": "http\u003A\u002F\u002Fmagentopoc.com\u002Fen\u002Fswatches\u002Fajax\u002Fmedia\u002F",
+                    "jsonSwatchImageSizeConfig": {"swatchImage":{"width":30,"height":20},"swatchThumb":{"height":90,"width":110}},
+                    "showTooltip": 1                }
+            }
+        }
+    </script>
+
+    <script type="text/x-magento-init">
+        {
+            "[data-role=priceBox][data-price-box=product-id-5]": {
+                "priceBox": {
+                    "priceConfig": {
+                        "priceFormat": {"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},
+                        "prices": {"baseOldPrice":{"amount":364},"oldPrice":{"amount":364},"basePrice":{"amount":360},"finalPrice":{"amount":360}}                    }
+                }
+            }
+        }
+    </script>

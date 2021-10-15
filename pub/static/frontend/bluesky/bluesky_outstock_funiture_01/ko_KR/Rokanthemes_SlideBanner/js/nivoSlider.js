@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/app/code/Rokanthemes/SlideBanner/view/frontend/web/js/nivoSlider.js

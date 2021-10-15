@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-checkout/view/frontend/web/js/sidebar.js

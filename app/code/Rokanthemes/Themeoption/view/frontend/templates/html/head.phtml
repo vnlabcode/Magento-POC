@@ -1,0 +1,96 @@
+<?php 
+	$data = $block->getConfig();
+    $_helper = $this->helper('Rokanthemes\Themeoption\Helper\Themeconfig');
+	$arr_font = array();
+	$arr_body_subset = array();
+	$arr_heading_subset = array();
+	$arr_menu_subset = array();
+	$arr_price_subset = array();
+	if(isset($data['font']['font_family']) && $data['font']['font_family'] == 'google'){
+		$use_google_font = str_replace(' ', '+', $data['font']['google_font_family']);
+		if (isset($data['font']['customize']) && trim($data['font']['customize']) != ''){
+			$use_google_font .= ':'.trim($data['font']['customize']);
+		}
+		else{
+			$use_google_font .= ':300,300i,400,400i,500,500i,700,700i';
+		}
+		$arr_font[] = $use_google_font;
+		if (isset($data['font']['char_subset']) && trim($data['font']['char_subset']) != ''){
+			$arr_body_subset = explode(",", trim($data['font']['char_subset']));
+		}
+	}
+
+	if(isset($data['font']['heading_family']) && $data['font']['heading_family'] == 'google'){
+		$use_heading_family = str_replace(' ', '+', $data['font']['google_heading_family']);
+		if (isset($data['font']['customize_heading_family']) && trim($data['font']['customize_heading_family']) != ''){
+			$use_heading_family .= ':'.trim($data['font']['customize_heading_family']);
+		}
+		else{
+			$use_heading_family .= ':300,300i,400,400i,500,500i,700,700i';
+		}
+		$arr_font[] = $use_heading_family;
+		if (isset($data['font']['char_subset_heading_family']) && trim($data['font']['char_subset_heading_family']) != ''){
+			$arr_heading_subset = explode(",", trim($data['font']['char_subset_heading_family']));
+		}
+	}
+	if(isset($data['font']['price_font_family']) && $data['font']['price_font_family'] == 'google'){
+		$use_price_family = str_replace(' ', '+', $data['font']['google_price_family']);
+		if (isset($data['font']['customize_price_family']) && trim($data['font']['customize_price_family']) != ''){
+			$use_price_family .= ':'.trim($data['font']['customize_price_family']);
+		}
+		else{
+			$use_price_family .= ':300,300i,400,400i,500,500i,700,700i';
+		}
+		$arr_font[] = $use_price_family;
+		if (isset($data['font']['char_subset_price_family']) && trim($data['font']['char_subset_price_family']) != ''){
+			$arr_price_subset = explode(",", trim($data['font']['char_subset_price_family']));
+		}
+	}
+
+	if(isset($data['font']['menu_family']) && $data['font']['menu_family'] == 'google'){
+		$use_menu_family = str_replace(' ', '+', $data['font']['google_menu_family']);
+		if (isset($data['font']['customize_menu_family']) && trim($data['font']['customize_menu_family']) != ''){
+			$use_menu_family .= ':'.trim($data['font']['customize_menu_family']);
+		}
+		else{
+			$use_menu_family .= ':300,300i,400,400i,500,500i,700,700i';
+		}
+		$arr_font[] = $use_menu_family;
+		if (isset($data['font']['char_subset_menu_family']) && trim($data['font']['char_subset_menu_family']) != ''){
+			$arr_menu_subset = explode(",", trim($data['font']['char_subset_menu_family']));
+		}
+	}
+
+	$arr_subset = $arr_body_subset;
+	if(count($arr_heading_subset) > 0){
+		foreach ($arr_heading_subset as $key => $value) {
+			if(!in_array($value, $arr_subset)){
+				$arr_subset[] = $value;
+			}
+		}
+	}
+	if(count($arr_menu_subset) > 0){
+		foreach ($arr_menu_subset as $key2 => $value2) {
+			if(!in_array($value2, $arr_subset)){
+				$arr_subset[] = $value2;
+			}
+		}
+	}
+	$font = '';
+	if(count($arr_font) > 0){
+		$font = implode("%7C", $arr_font);
+		if(count($arr_subset) > 0){
+			$string_subset = implode(",", $arr_subset);
+			$font .= '&subset='.$string_subset;
+		}
+	}
+?>
+<?php if($font != ''){ ?>
+<link href="https://fonts.googleapis.com/css?family=<?php echo $font; ?>&display=swap" rel="stylesheet">
+<?php } ?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo $_helper->getThemeOption()?>">
+<style>
+.lazyload-image .not-found-img img[data-src]{
+    padding-top: calc(499px / 556 * 100);
+}
+</style>

@@ -1,0 +1,351 @@
+/*  Typogrphy */
+//Body
+//  _____________________________________________
+
+@font-size-ratio__base: 1.4;
+@font-size__base: unit(@font-size-unit-ratio * @font-size-ratio__base, px); // Base font size value in <b>px</b>
+@line-height__base: 1.71428571;
+@text-weight: @font-weight__regular; 
+@text__color: @color-gray40; // #666 Body text color
+
+//
+//  Layout variables
+//  _____________________________________________
+@layout__max-width: 1200px;  // Main content max-width
+@layout-indent__width: 15px;
+
+//  Variables for layout columns depending on layout used
+//  _____________________________________________
+
+@layout-column__sidebar-width: 3; // Side bar column width (3/12)
+@layout-column-main__sidebar-offset: 3rem; // Spacing bettween sidebar and content
+
+//  Line heights
+
+@line-height__computed: round(@font-size__base * @line-height__base);
+//  _____________________________________________
+// Heading
+
+@heading__color__base: #222;
+@heading__font-weight__base: @font-weight__semibold;
+@heading__line-height__base: 1.1;
+@heading__margin-top__base: @indent__base;
+@heading__margin-bottom__base: @indent__base;
+
+// h1
+
+@h1__font-size: ceil((@font-size__base * 2.71428)); // 38px
+@h1__font-size-desktop: ceil((@font-size__base * 3.42857)); //48px H1 on destop font size
+@h1__margin-bottom__desktop: @h1__margin-bottom;
+@h1__margin-top: 0; 
+@h1__margin-bottom: 30px;  
+
+// h2
+
+@h2__font-size: ceil((@font-size__base * 2.1428)); // 30px
+@h2__margin-top: 0;
+@h2__margin-bottom: 20px;
+
+// h3
+
+@h3__font-size: ceil((@font-size__base * 1.71428)); // 24px  
+@h3__margin-top: 0;
+@h3__margin-bottom: 17px;
+
+// h4
+
+@h4__font-size: ceil((@font-size__base * 1.2857)); // 18px
+@h4__font-weight: @heading__font-weight__base;
+
+// h5
+
+@h5__font-size: ceil((@font-size__base * 1.071428)); // 15px
+@h5__font-weight: @heading__font-weight__base;
+
+// h6
+
+@h6__font-weight: @heading__font-weight__base;
+
+// p
+@p__margin-bottom: @indent__base;
+
+//ul, ol
+
+@list__margin-bottom: @indent__base; // ul, ol margin bottom
+
+// 
+//  Navigation variables
+//  _____________________________________________
+
+@navigation__background: @color-white; // Menu background color
+
+@navigation-desktop__font-size: 1.4rem; // Destop navigation font size
+
+// Level 0
+//  _____________________________________________
+// Level 0 mobile
+
+@navigation-level0-item__color: #a3a3a3; //Level 0 color 
+@navigation-level0-item__font-size: 14px; // font-size
+@navigation-level0-item__font-family: @heading__font-family__base; // Font family
+@navigation-level0-item__font-weight: @font-weight__semibold; // Font weight
+@navigation-level0-item__padding: 10px @indent__xl 10px 15px; // Padding bettween
+@navigation-level0-item__text-transform: capitalize;
+@navigation-level0-item__border: 1px solid @border-color__base; // Border in mobile menu
+@navigation-level0-item__active__color: @active__color;
+@navigation-level0-item__active__border-width: 0; // remove border when active
+// Level 0 destop
+
+@navigation-desktop-level0-item__color: @navigation-level0-item__color;
+@navigation-desktop-level0-item__hover__color: @link__hover__color;
+@navigation-desktop-level0-item__active__border-style: false;
+@navigation-desktop-level0-item__line-height: 50px; // Line height
+@navigation-desktop-level0-item__margin: 0 @indent__s 0 0;
+@navigation-desktop-level0-item__padding: 0 15.5px; // Padding bettween level 0 aply in a tag
+
+// Sub menu
+//  _____________________________________________
+
+// Desktop
+
+@submenu-desktop__background: @color-white; // Sub menu background
+@submenu-desktop__border-width: @border-width__base; // Boder width
+@submenu-desktop__border-style: solid;
+@submenu-desktop__border-color: @border-color__base; // Border submenu color
+@submenu-desktop__box-shadow: false; // Submenu shadow
+@submenu-desktop__font-size: 12px; // Submenu font size
+@submenu-desktop__font-weight: @font-weight__regular; // Sub menu font weight
+@submenu-desktop__min-width: 230px; // Submenu min-width
+@submenu-desktop__padding: 20px 15px; // Submenu padding (except submenu type full width and static width)
+
+@submenu-desktop-item__padding: 3px 15px; // Submenu Item padding
+@submenu-desktop-item__color: @text__color; // Submenu item color
+
+@submenu-desktop-item__hover__background: false; //Item submenu in desktop hover background
+
+@submenu-desktop-item__active__border-width: 0 0 0 0;
+@submenu-desktop-item__active__color: @navigation-desktop-level0-item__hover__color;
+
+//================
+// Mobile
+
+@submenu__background: @color-white;
+@submenu__padding-top: 5px;
+@submenu__padding-right: 0;
+@submenu__padding-bottom: 5px;
+@submenu__padding-left: 15px;
+@submenu__font-size: 14px;
+@submenu__font-weight: @font-weight__regular;
+@submenu-item__line-height: 1.3;
+//========================================
+//Breadcrumbs
+
+@breadcrumbs__font-size: @font-size__s; 
+@breadcrumbs-icon__font-vertical-align: middle;
+@breadcrumbs__font-size: @font-size__base;
+@breadcrumbs-current__color: @heading__color__base;
+@breadcrumbs-link__color: @text__color;
+@breadcrumbs__container-margin: 0 0 4rem;
+//==============================================
+/* Button Default = secondary button */
+@button__font-family: @font-family__base;
+@button__border-radius: 9rem; //Define in variables.less
+@button__background: @theme__color__primary;
+@button__border: 2px solid transparent;
+@button__hover__background: darken(@theme__color__primary, 5%);
+@button__hover__border: 2px solid transparent;
+@button__font-size: unit(@font-size-unit-ratio * 1.4, px); // Base font size value in <b>px</b>
+@button__font-weight: @font-weight__bold;
+@button__color: @primary__color__darker;
+@button__hover__color: @primary__color__darker;
+@button__hover__gradient-color-start: false;
+@button__hover__gradient-color-end: false;
+@button__padding: 12.5px 45px; // is set up to false when buttons don't depend on side paddings or have fixed width
+@button_mobile_padding: 12.5px 30px;
+@button__text_transform: uppercase;
+/*  Primary button */
+@button-primary__background: @button__background;
+@button-primary__border: @button__border;
+@button-primary__hover__background: @button__hover__background;
+@button-primary__hover__border: @button__hover__border;
+@button-primary__color: @button__color;
+  
+/*  Large button */
+@button__font-size__l: @button__font-size;
+@button__line-height__l: @button__line-height;
+@button__padding__l: @button__padding;
+@button__shadow: inset 0 2px 1px rgba(0,0,0,.12);
+//===================================
+//Tab
+
+@tab-control__background-color: transparent;
+@tab-content__border: 0;
+@tab-control__color: @darkcolor; //color tab
+@tab-control__active__color: @theme__color__primary; //color tab active
+@tab-control__font-size: @font-size__base + 4px;
+@tab-control__font-weight: @font-weight__regular;
+@tab-control__height: 100%;
+@tab-content__margin-top: 5.1rem;
+@tab-control__padding-top: 1.7rem;
+@tab-control__padding-bottom: @tab-control__padding-top;
+
+//tab content
+
+@tab-content__padding-top: 2rem;
+@tab-content__padding-right: 2rem;
+@tab-content__padding-bottom: 3.7rem;
+@tab-content__padding-left: @tab-content__padding-right;
+@accordion-control__height: false; //Remove default tab height in product view on mobile version
+
+//===================================
+/* Rating */
+
+@rating-icon__content: "\f005";
+@rating-icon__font: "Font Awesome 5 Free";
+@rating-icon__font-size: 1.2rem;
+@rating-icon__letter-spacing: 1px;
+@rating-icon__color: @color-gray78;
+@rating-icon__active__color: @theme__color__primary;
+
+//Swatch 
+@swatch-option-text__background: @color-white;
+@swatch-option-text__color: @heading__color__base;
+@swatch-option__hover__border: 2px solid @theme__color__primary;
+@swatch-option__border: 2px solid @border-color__base;
+@swatch-option__selected__outline: false;
+@swatch-option__hover__outline: false;
+@swatch-option-link-layered__focus__box-shadow: false;
+@img-color-swatch-option__hover__border: false;
+@img-color-swatch-option__hover__outline: false;
+
+//  Focus
+//  ---------------------------------------------
+
+@focus__color: @theme__color__primary;
+@focus__box-shadow: none;
+
+//
+//COLOR
+//=================================
+//  Color nesting
+//  ---------------------------------------------
+@theme__color__primary: #bc8246;
+@theme__color__primary-alt: @theme__color__primary;
+@theme__color__secondary: @theme__color__primary;
+
+@primary__color: @color-very-dark-gray; // #666 Using as body color
+@primary__color__dark: darken(@primary__color, 35%); // #000
+@primary__color__darker: @color-black_dark; // #333
+@primary__color__lighter: lighten(@primary__color, 29%); // #7d7d7d
+@primary__color__light: lighten(@primary__color, 45%); // #a6a6a6
+
+@secondary__color: @color-gray91;
+@secondary__color__light: lighten(@secondary__color, 5%);
+
+@page__background-color: @color-white;
+@panel__background-color: darken(@page__background-color, 6%);
+
+@active__color: @theme__color__secondary;
+@error__color: @color-red10;
+
+//==============================
+/* link color */
+
+@link__hover__color: @theme__color__primary;
+@link__hover__text-decoration: none;
+@link__active__text-decoration: none;
+@link__visited__text-decoration: none;
+//==============================
+//  Borders
+//  ---------------------------------------------
+
+@border-color__base: #ebebeb;
+@shadown_inset: 0 0 0 2px @border-color__base inset;
+@shadown_hover_inset: 0 0 0 2px @theme__color__primary inset;
+
+//
+//  Blockquotes
+//  ---------------------------------------------
+@blockquote__border-color: @theme__color__primary;
+@blockquote__border-width: 2px;
+@blockquote__font-size: 1.8rem;
+@blockquote__font-style: normal;
+@blockquote__margin: 0;
+@blockquote__padding: 5% 10%;
+
+//  Input in form 
+//  ---------------------------------------------
+@form-element-input__border-color: @border-color__base;
+@form-element-input__border-radius: 0;
+@form-element-input__height: 45px;
+//  Placeholder
+@form-element-input-placeholder__color: @text__color; //Placeholder color
+
+//  Form field control
+@form-field-type-control-inline__width: 100%;
+//
+//  Field
+//  ---------------------------------------------
+@form-field-label__font-weight: @font-weight__regular;
+
+@form-field-type-label-inline__width: false; //Remove default control width
+//
+//  Fieldset
+//  ---------------------------------------------
+
+@form-fieldset__margin: @form-field-type-inline__margin; //Field and fieldset have same margin
+@form-field__vertical-indent__desktop: 20px;
+
+//  Pager variables pages-items
+@pager__font-size: @font-size__base;
+@pager__font-weight: @font-weight__semibold;
+@pager__line-height: 38px;
+@pager-item__margin: 0 10px 0 0;
+@pager-item__padding: 0 16px;
+
+@pager__background: @color-white-smoke; // #f5f5f5
+@pager__color: @heading__color__base;
+
+//  Pager link.action hover
+@pager__hover__background:  @theme__color__primary;
+@pager__hover__color:  @button__hover__color;
+
+//  Pager current page
+@pager-current__background: @pager__hover__background;
+@pager-current__color: @button__hover__color;
+ //  Pager link.action default
+ @pager-action__color: @heading__color__base;
+ @pager-icon__font-size: 36px;
+ @pager-icon__font-margin: 0 0 0 0;
+
+//  Theme variables (Redefine in modul magento_theme)
+//  _____________________________________________
+@header__background-color: @color-white;
+@header-icons-color: @heading__color__base;
+@header-icons-color-hover: @theme__color__primary;
+@headerpadding: 15px; // Make header height bigger than menu height
+@header-border-color: @border-color__base;
+
+@header_sticky_bg: @header__background-color;
+@header_sticky_border: @border-color__base;
+
+@addto-color: @heading__color__base;
+@addto-hover-color: @primary__color;
+
+@minicart-icons-color: @header-icons-color;
+@minicart-icons-color-hover: @header-icons-color-hover;
+
+
+
+@h1__margin-bottom__desktop: @h1__margin-bottom;
+
+@page__background-color: @color-white;
+
+// Redefine vairable in listing.less Magento_Catalog
+@product-name-link__color: @heading__color__base;
+@product-name-link__color__active: @link__hover__color;
+@product-name-link__color__hover: @link__hover__color;
+@product-name-link__color__visited: @heading__color__base;
+
+// Loader
+@loader-overlay__background-color: rgba(255, 255, 255, .9);

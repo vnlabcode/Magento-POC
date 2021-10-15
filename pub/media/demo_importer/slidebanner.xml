@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<root>
+  <slider>
+    <item>
+      <slider_id><![CDATA[1]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_01]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 01 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"4000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"false"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-03 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[2]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_02]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 02 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"6000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"false"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-03 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[3]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_04]]></slider_identifier>
+      <slider_title><![CDATA[Funiture  04 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"0","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"false"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-04 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[4]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_03]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 03 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"4000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-07 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[5]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_05]]></slider_identifier>
+      <slider_title><![CDATA[Funiture  05 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"0","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"4000","startSlide":"1","directionNav":"false","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"false"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-06 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[6]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_06]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 06 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"4000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-07 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[7]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_07]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 07 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-04-23 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[8]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_08]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 08 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"0","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"false","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-13 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[9]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_09]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 09 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"false","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-18 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[10]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_10]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 10 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"0","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-23 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[11]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_11]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 11 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slider_id><![CDATA[12]]></slider_id>
+      <slider_identifier><![CDATA[bluesky_outstock_funiture_12]]></slider_identifier>
+      <slider_title><![CDATA[Funiture 12 slider]]></slider_title>
+      <slider_status><![CDATA[1]]></slider_status>
+      <slider_setting><![CDATA[{"fullwidth":"1","effect":"random","slices":"15","boxCols":"8","boxRows":"4","animSpeed":"500","pauseTime":"40000000","startSlide":"1","directionNav":"true","controlNav":"true","controlNavThumbs":"false","pauseOnHover":"false","manualAdvance":"false","nextText":"Next","prevText":"Prev","randomStart":"false","progressBar":"true"}]]></slider_setting>
+      <created_at><![CDATA[2021-05-27 00:00:00]]></created_at>
+    </item>
+  </slider>
+  <slide>
+    <item>
+      <slide_id><![CDATA[1]]></slide_id>
+      <slider_id><![CDATA[1]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-1_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"fadeInLeft","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop will make your <br> morning ritual a special occasion every day. ","display":"6","animated":"fadeInRight","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"fadeInUp","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-27 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[2]]></slide_id>
+      <slider_id><![CDATA[1]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2_2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Think different & <br> Do otherwise","display":"3","animated":"fadeIn","color":"#323232","customclass":""},{"text":"Claritas est etiam processus dynamicus, qui sequitur mutationem <br> consuetudium lectorum.","display":"6","animated":"fadeIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"fadeIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-03-25 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[3]]></slide_id>
+      <slider_id><![CDATA[1]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-3_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"High Beam <br> by Tom Chung","display":"3","animated":"fadeInLeft","color":"#323232","customclass":""},{"text":"High Beam is an adjustable desk or shelf light that offers a wide variety of <br> lighting possibilities.","display":"6","animated":"fadeInLeft","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"fadeInLeft","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-03-25 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[4]]></slide_id>
+      <slider_id><![CDATA[2]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-3.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Clock <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-03-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[5]]></slide_id>
+      <slider_id><![CDATA[2]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Lighting <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-10 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[6]]></slide_id>
+      <slider_id><![CDATA[2]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Drop Chair <br> The Black Leather","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"The Drop\u2122 chair was designed by Arne Jacobsen in 1958 as part of his masterpiece,<br> the legendary Radisson Blu Royal Hotel in Copenhagen.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-03-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[7]]></slide_id>
+      <slider_id><![CDATA[3]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1_2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-1_4.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop <br> will make your morning ritual a special occasion every day. ","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-20 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[8]]></slide_id>
+      <slider_id><![CDATA[3]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2_5.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Think different & <br> Do otherwise","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"Claritas est etiam processus dynamicus, qui sequitur mutationem <br> consuetudium lectorum.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-20 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[9]]></slide_id>
+      <slider_id><![CDATA[3]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-3_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-3_4.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop <br> will make your morning ritual a special occasion every day. ","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-20 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[10]]></slide_id>
+      <slider_id><![CDATA[4]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1_3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-1_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Drop Chair <br> The Black Leather","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"The Drop\u2122 chair was designed by Arne Jacobsen in 1958 as part of his masterpiece,<br> the legendary Radisson Blu Royal Hotel in Copenhagen.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-04-03 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[11]]></slide_id>
+      <slider_id><![CDATA[4]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-2_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-2_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Lighting <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-10 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[12]]></slide_id>
+      <slider_id><![CDATA[4]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-3_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2-3_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Clock <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-04-03 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[13]]></slide_id>
+      <slider_id><![CDATA[5]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[7]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-3_1_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider_3_h5_mobie.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop <br> will make your morning ritual a special occasion every day. ","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-27 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[14]]></slide_id>
+      <slider_id><![CDATA[5]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[5]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2_1_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider_2_h5_mobie.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Think different & <br> Do otherwise","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"Claritas est etiam processus dynamicus, qui sequitur mutationem <br> consuetudium lectorum.","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-27 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[15]]></slide_id>
+      <slider_id><![CDATA[5]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[6]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1_2_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider_1_h5_mobie.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop <br> will make your morning ritual a special occasion every day. ","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-27 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[16]]></slide_id>
+      <slider_id><![CDATA[6]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-2_1_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider_1_h6_mobile.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Lighting <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-10 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[17]]></slide_id>
+      <slider_id><![CDATA[6]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[1]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2-2_2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider_2_h6_mobile.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Lighting <br> Creative Furniture","display":"3","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"From luxury watches and chronographs to wall clocks <br> and weather stations, Henning Koppel's.","display":"6","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-10 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[18]]></slide_id>
+      <slider_id><![CDATA[7]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-2_2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-2_2_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Think different & <br> Do otherwise","display":"3","animated":"fadeIn","color":"#323232","customclass":""},{"text":"Claritas est etiam processus dynamicus, qui sequitur mutationem <br> consuetudium lectorum.","display":"6","animated":"fadeIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"fadeIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-04-22 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[19]]></slide_id>
+      <slider_id><![CDATA[7]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-1_4.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-1_1_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Handmade <br> Hand Carved Coffee","display":"3","animated":"zoomIn","color":"#323232","customclass":""},{"text":"As rich and unique as the coffee beans it is intended for, this little scoop will make your <br> morning ritual a special occasion every day. ","display":"6","animated":"zoomIn","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"zoomIn","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-04-23 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[20]]></slide_id>
+      <slider_id><![CDATA[7]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider-3_2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile-3_1_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"High Beam <br> by Tom Chung","display":"3","animated":"fadeInLeft","color":"#323232","customclass":""},{"text":"High Beam is an adjustable desk or shelf light that offers a wide variety of <br> lighting possibilities.","display":"6","animated":"fadeInLeft","color":"#323232","customclass":""},{"text":"discover now","display":"7","animated":"fadeInLeft","color":"#323232","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-04-23 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[21]]></slide_id>
+      <slider_id><![CDATA[8]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Up to 50% Off","display":"5","animated":"fadeInDown","color":"#222222","customclass":""},{"text":"Minimal Wood","display":"2","animated":"fadeInLeft","color":"#7AB532","customclass":""},{"text":" Shelves Collection","display":"2","animated":"fadeInRight","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"fadeInUp","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[22]]></slide_id>
+      <slider_id><![CDATA[8]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider2.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile2_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Up to 50% Off","display":"5","animated":"fadeIn","color":"#222222","customclass":""},{"text":"Chair & Table  ","display":"2","animated":"fadeInLeft","color":"#7AB532","customclass":""},{"text":"Room Sets For Sale","display":"2","animated":"fadeInDown","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"fadeInUp","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[23]]></slide_id>
+      <slider_id><![CDATA[8]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile3_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"fadeInRight","color":"#222222","customclass":""},{"text":"Big Sale  ","display":"2","animated":"fadeInUp","color":"#7AB532","customclass":""},{"text":"New Arrivals 2021","display":"2","animated":"fadeInDown","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"fadeInLeft","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[24]]></slide_id>
+      <slider_id><![CDATA[9]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider1_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/s/l/slider1c.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"slideInLeft","color":"#FFFFFF","customclass":""},{"text":"Sale  ","display":"2","animated":"slideInDown","color":"#FFFFFF","customclass":""},{"text":" With The All ","display":"2","animated":"slideInRight","color":"#FFFFFF","customclass":""},{"text":"New Chair","display":"2","animated":"bounceInDown","color":"#FFFFFF","customclass":""},{"text":"shopping Now","display":"7","animated":"bounceIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[25]]></slide_id>
+      <slider_id><![CDATA[9]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider2_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile_1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"slideInUp","color":"#FFFFFF","customclass":""},{"text":"Big Sale  ","display":"2","animated":"fadeInRight","color":"#FFFFFF","customclass":""},{"text":"Genuine Product ","display":"2","animated":"fadeInDown","color":"#FFFFFF","customclass":""},{"text":"New Lamp","display":"2","animated":"zoomIn","color":"#FFFFFF","customclass":""},{"text":"shopping Now","display":"7","animated":"bounceInUp","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[26]]></slide_id>
+      <slider_id><![CDATA[9]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider3_1.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile3_2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"fadeInDown","color":"#FFFFFF","customclass":""},{"text":"Big Sale  ","display":"2","animated":"fadeInLeft","color":"#FFFFFF","customclass":""},{"text":"New Arrivals ","display":"2","animated":"fadeInRight","color":"#FFFFFF","customclass":""},{"text":"Chair","display":"2","animated":"fadeInUp","color":"#FFFFFF","customclass":""},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-26 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[27]]></slide_id>
+      <slider_id><![CDATA[10]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider1_3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile1-1.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"fadeInDown","color":"#222222","customclass":""},{"text":"Big Sale  ","display":"2","animated":"fadeInLeft","color":"#7AB532","customclass":""},{"text":"New Arrivals 2021","display":"2","animated":"fadeInTopRight","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"fadeInUp","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_top]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[28]]></slide_id>
+      <slider_id><![CDATA[10]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider2_3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile2_2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"slideInUp","color":"#222222","customclass":""},{"text":"Wooden Chairs  ","display":"2","animated":"fadeInLeft","color":"#7AB532","customclass":""},{"text":"Great In Your Home ","display":"2","animated":"fadeIn","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"slideInUp","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[29]]></slide_id>
+      <slider_id><![CDATA[10]]></slider_id>
+      <store_ids><![CDATA[["10"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider3_3.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile_2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Best seller this month","display":"5","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Big Sale  ","display":"2","animated":"zoomIn","color":"#7AB532","customclass":""},{"text":"Trending 2021","display":"2","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Outstock with a tool that makes design simple for everyone.","display":"6","animated":"zoomIn","color":"#222222","customclass":"d-none d-sm-block"},{"text":"shopping Now","display":"7","animated":"zoomIn","color":"#222222","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-01 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[30]]></slide_id>
+      <slider_id><![CDATA[11]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider1_4.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile1_2.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Featured Products","display":"5","animated":"fadeIn","color":"#222222","customclass":""},{"text":"Lamp Collection","display":"2","animated":"slideInUp","color":"#222222","customclass":""},{"text":"Form is designed by Puik Store and is part of the Form series. It is an  <br>armless modern chair with great back support. ","display":"6","animated":"slideInUp","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-31 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[31]]></slide_id>
+      <slider_id><![CDATA[11]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider2_4.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile2_3.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Top Sale Of The Month","display":"5","animated":"fadeInLeft","color":"#222222","customclass":""},{"text":"Top Collection","display":"2","animated":"fadeInRight","color":"#222222","customclass":""},{"text":"Form is designed by Puik Store and is part of the Form series. It is an <br> armless modern chair with great back support. ","display":"6","animated":"fadeInUp","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-31 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[32]]></slide_id>
+      <slider_id><![CDATA[11]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider3_4.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile3_3.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Hot Deal Off The Day","display":"5","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Creative Interior","display":"2","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Form is designed by Puik Store and is part of the Form series. It is an  <br>armless modern chair with great back support. ","display":"6","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-28 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[33]]></slide_id>
+      <slider_id><![CDATA[12]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider1_5.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile11.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Designed by PUIK Store","display":"5","animated":"zoomIn","color":"#222222","customclass":""},{"text":"barstool","display":"2","animated":"zoomIn","color":"#222222","customclass":""},{"text":"The name Barstool reflects the designers inspiration drawn from the design of chairs <br>throughout history.","display":"6","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-28 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[34]]></slide_id>
+      <slider_id><![CDATA[12]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider2_5.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile2_4.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Designed by PUIK Store","display":"5","animated":"slideInUp","color":"#222222","customclass":""},{"text":"PENGUIN","display":"2","animated":"slideInRight","color":"#222222","customclass":""},{"text":"The name Barstool reflects the designers inspiration drawn from the design of chairs <br>throughout history.","display":"6","animated":"slideInLeft","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-05-28 00:00:00]]></created_at>
+    </item>
+    <item>
+      <slide_id><![CDATA[35]]></slide_id>
+      <slider_id><![CDATA[12]]></slider_id>
+      <store_ids><![CDATA[["0"]]]></store_ids>
+      <slide_status><![CDATA[1]]></slide_status>
+      <slide_position><![CDATA[0]]></slide_position>
+      <slide_type><![CDATA[]]></slide_type>
+      <slide_video><![CDATA[]]></slide_video>
+      <slide_image><![CDATA[slidebanner/s/l/slider3_5.jpg]]></slide_image>
+      <slide_image_mobile><![CDATA[slidebanner/m/o/mobile3_4.jpg]]></slide_image_mobile>
+      <slide_link><![CDATA[]]></slide_link>
+      <opennewtab><![CDATA[no]]></opennewtab>
+      <slide_text><![CDATA[[{"text":"Designed by PUIK Store","display":"5","animated":"zoomIn","color":"#222222","customclass":""},{"text":"decorate ","display":"2","animated":"zoomIn","color":"#222222","customclass":""},{"text":"The Echasse Vase combines the classic elegance of a traditional glass vase with <br>a playful, light expression.","display":"6","animated":"zoomIn","color":"#222222","customclass":""},{"text":"Discover now","display":"7","animated":"zoomIn","color":"#FFFFFF","customclass":""}]]]></slide_text>
+      <text_position><![CDATA[left_center]]></text_position>
+      <text_animate><![CDATA[yes]]></text_animate>
+      <created_at><![CDATA[2021-06-02 00:00:00]]></created_at>
+    </item>
+  </slide>
+</root>

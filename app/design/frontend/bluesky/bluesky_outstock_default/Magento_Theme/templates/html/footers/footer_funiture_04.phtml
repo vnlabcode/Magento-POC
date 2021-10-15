@@ -1,0 +1,65 @@
+<?php
+$imageUrl = '';
+if ($this->helper('Rokanthemes\Themeoption\Helper\Themeconfig')->getFooterLogo()) {
+	$imageUrl = $this->helper('Rokanthemes\Themeoption\Helper\Themeconfig')->getFooterLogo();
+}
+?>
+<div class="footer-4">
+	<div id="back-top" class=""><i class="fa fa-long-arrow-alt-up"></i></div>
+	<div class="footer-newselter">
+		<div class="container-fluid">
+			<div class="container">
+				<?php echo $this->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('Magento_Newsletter::subscribe.phtml')->toHtml(); ?>
+			</div>
+		</div>
+	</div>
+	<div class="footer-container container-fluid">
+		<div class="footer-top">
+			<div class="footer content">
+				<div class="container-inner">
+					<div class="footer-static_link flex-layout space-between">
+							<div class="footer-links">
+							<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_outstock_funiture_04_footer_myaccount')->toHtml(); ?>
+						</div>
+							<div class="footer-links">
+							<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bluesky_outstock_funiture_04_footer_quick_links')->toHtml(); ?>
+						</div>
+						<div class="footer-links">
+							<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_information')->toHtml(); ?>
+						</div>
+						<div class="footer-links">
+							<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_customer_service')->toHtml(); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom border-top">
+			<div class="footer content">
+				<div class="container-inner">
+					<div class="row">
+						<div class="col-lg-6">
+							<?php echo $this->getChildHtml("copyright"); ?>
+						</div>
+						<div class="col-lg-6">
+							<div class="hozital-menu social-link-footer">
+								<?php echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('default_footer_social_icon')->toHtml(); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fixed-bottom d-block d-md-none">
+		<div class="link-on-bottom">
+			<ul class="mobile-bottom-link flex-layout space-between list-unstyled">
+				<li><a href="<?php echo $this->getUrl(''); ?>"><span class="icon main-icon-house"></span><?= $block->escapeHtml(__('Home')) ?></a></li>
+				<li><a href="#" class="toggle-nav-footer"><span class="icon main-icon-menu-1"></span><?= $block->escapeHtml(__('Menu')) ?></a></li>
+				<li><a href="<?php echo $this->getUrl('customer/account/'); ?>"><span class="icon main-icon-user"></span><?= $block->escapeHtml(__('Account')) ?></a></li>
+				<li><a href="<?php echo $this->getUrl('checkout/cart/'); ?>"><span class="main-icon-cart"></span><?= $block->escapeHtml(__('Cart')) ?></a></li>
+
+			</ul>
+		</div>
+	</div>
+</div>

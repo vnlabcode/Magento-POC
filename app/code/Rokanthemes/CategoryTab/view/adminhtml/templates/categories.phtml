@@ -1,0 +1,25 @@
+<?php
+/**
+ * @var  $block \Rokanthemes\CategoryTab\Block\Adminhtml\Category\Form\Element\Category
+ *
+ */
+?>
+<div class="col-sm-4">
+    <div class="dropdown-mul-1">
+        <select style="display:none"  multiple placeholder="Select">
+            <?= $block->getOptionsCategory(); ?>
+        </select>
+        <input id="category_ids" type="hidden" value="<?= $block->getValue(); ?>" name="parameters[category_ids]" />
+    </div>
+</div>
+<script>
+    require(['jquery', 'Rokanthemes_CategoryTab/js/jquery.dropdown'], function($){
+        $('.dropdown-mul-1').dropdown({
+            limitCount: 40,
+            multipleMode: 'label',
+            choice: function () {
+                $('#category_ids').val(this.$select.val());
+            }
+        });
+    });
+</script>

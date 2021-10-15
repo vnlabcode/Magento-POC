@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 tokitheme.com. All rights reserved.
+
+* @author Blue Sky Team <contact@tokitheme.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<type name="Magento\Widget\Model\Widget">
+        <plugin name="superdeals" type="Rokanthemes\Superdeals\Plugin\Widget\Model\Widget" sortOrder="1" disabled="false"/>
+    </type>
+</config>

@@ -1,0 +1,52 @@
+<?php
+/**
+ * Copyright © 2015 RokanThemes.com. All rights reserved.
+
+ * @author RokanThemes Team <contact@rokanthemes.com>
+ */
+?>
+<?php
+/**
+ * Blog post list item template
+ *
+ * @var $block \Rokanthemes\Blog\Block\Post\AbstractPost
+ */
+?>
+<?php
+    $_post = $this->getPost();
+    $_postUrl = $_post->getPostUrl();
+    $_postName = $block->escapeHtml($_post->getTitle(), null, true);
+?>
+<div class="item-post-full col-sm-6 col-xl-6 post-holder-<?php echo $_post->getId() ?>">
+	<div class="blog-post-thumb">
+		<div class="zoom-image-thumb">
+			<a href="<?php echo $_post->getPostUrl() ?>">
+				<?php if ($featuredImage = $_post->getFeaturedImage()) { ?>
+					<?php
+						$featuredImgAlt = $_post->getData('featured_img_alt');
+					if (!$featuredImgAlt) {
+						$featuredImgAlt = $_postName;
+					}
+					?>
+						<img src="<?= $block->escapeUrl($featuredImage) ?>"
+							 alt="<?= $block->escapeHtml($featuredImgAlt) ?>" />
+				<?php } ?>
+			</a>
+		</div>			
+	</div>
+	<div class="blog-post-info">
+		<div class="post-category-name">
+				<?php echo $this->getInfoHtml() ?>
+		</div>
+		<h3 class="post-title"><a title="<?php echo $_postUrl ?>" href="<?php echo $_postUrl ?>"> <?php echo $_postName; ?></a></h3>
+		<div class="post-date"><span><?php echo date('d', strtotime($_post->getPublishTime())); ?></span> <span><?php echo date('M, Y', strtotime($_post->getPublishTime())); ?></span></div>
+
+		<div class="desc">
+			<?php echo $_post->getShortContent() ?>
+		</div>
+		<div class="post-info-bottom clearfix">
+			<a href="<?php echo $_post->getPostUrl() ?>" class="post-readmore pull-left btn"><?php echo __('Read More');?></a>
+			
+		</div>
+	</div>
+</div>

@@ -1,0 +1,186 @@
+<?php
+use Magento\Framework\App\Action\Action;
+
+$helper = $this->helper('Rokanthemes\RokanBase\Helper\Data');
+$enable = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/enabled');
+if($enable){
+	$show_price = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/show_price');
+	$showCart = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/addtocart');
+	$showWishlist = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/addtowishlist');
+	$showCompare = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/addtocompare');
+	$show_label = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/show_label');
+	$review = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/review');
+	$quickview = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/quickview');
+	$check_enable_module_quickview = $helper->checkEnableModuleQuickview();
+	$show_qty = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/show_qty');
+	$show_short_description = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/show_short_description');
+	$limit_short_description = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/limit_short_description');
+	$product_limit = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/product_limit');
+	$image_width = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/image_width');
+	$image_height = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/image_height');
+	$first_image = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/first_image');
+	$second_image = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/second_image');
+	$display_mode = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/display_mode');
+	$title = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/title');
+	$description = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/description');
+	$product_types = $helper->getConfigData('bestsellerproduct/bestsellerproduct_general/product_types');
+	
+	$rows = $this->getConfig('bestsellerproduct/bestsellerproduct_config/row_show');
+	$items = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items');
+	$items_bigdesktop = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_bigdesktop');
+	$items_smalldesktop = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_smalldesktop');
+	$items_bigtablet = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_bigtablet');
+	$items_tablet = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_tablet');
+	$items_smalltablet = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_smalltablet');
+	$items_mobile = $this->getConfig('bestsellerproduct/bestsellerproduct_config/items_mobile');
+	$auto = $this->getConfig('bestsellerproduct/bestsellerproduct_config/auto') ? 'true' : 'false';
+	$autoplaytimeout = $this->getConfig('bestsellerproduct/bestsellerproduct_config/autoplaytimeout');
+	$autoplayhoverpause = $this->getConfig('bestsellerproduct/bestsellerproduct_config/autoplayhoverpause') ? 'true' : 'false';
+	$dots = $this->getConfig('bestsellerproduct/bestsellerproduct_config/dots') ? 'true' : 'false';
+	$rewind = $this->getConfig('bestsellerproduct/bestsellerproduct_config/rewind') ? 'true' : 'false';
+	$nav = $this->getConfig('bestsellerproduct/bestsellerproduct_config/nav') ? 'true' : 'false';
+	$navnext = $this->getConfig('bestsellerproduct/bestsellerproduct_config/navnext');
+	$navprev = $this->getConfig('bestsellerproduct/bestsellerproduct_config/navprev');
+	$stagepadding = $this->getConfig('bestsellerproduct/bestsellerproduct_config/stagepadding');
+	$touchdrag = $this->getConfig('bestsellerproduct/bestsellerproduct_config/touchdrag') ? 'true' : 'false';
+	$mousedrag = $this->getConfig('bestsellerproduct/bestsellerproduct_config/mousedrag') ? 'true' : 'false';
+	$center = $this->getConfig('bestsellerproduct/bestsellerproduct_config/center') ? 'true' : 'false';
+	$loop = $this->getConfig('bestsellerproduct/bestsellerproduct_config/loop') ? 'true' : 'false';
+	$margin = $this->getConfig('bestsellerproduct/bestsellerproduct_config/margin');
+	$speed = $this->getConfig('bestsellerproduct/bestsellerproduct_config/speed');
+	$rtl = $this->getConfig('bestsellerproduct/bestsellerproduct_config/rtl') ? 'true' : 'false';
+	
+	$templateType = \Magento\Catalog\Block\Product\ReviewRendererInterface::SHORT_VIEW;
+	$_helperCatalog = $this->helper('Magento\Catalog\Helper\Output');
+	$_productCollection = $this->getProducts();
+?>
+<div class="container-bestseller-products">
+	<div class="magento-title">
+		<?php if($title && $title != ''){?>
+			<div class="rokan-title rokan-bestseller-title"><h3><span><?php echo trim($title);?></span></h3></div>
+		<?php }?>
+		
+		<?php if($description && $description != ''){?>
+			<div class="rokan-description rokan-bestseller-description"><p><?php echo nl2br($description);?></p></div>
+		<?php }?>
+	</div>
+	
+	<?php if(!$_productCollection->getSize()){ ?>
+		<div class="rokan-bestseller-no-products-matching">	
+			<p class="note-msg"><?php echo __('There are no products matching the selection.') ?></p>
+		</div>
+	<?php }else{ ?>
+		<div class="content-bestseller-products show-product-mode-<?php echo $display_mode;?>">	
+			<ol class="product-items owl-carousel owl-theme" data-rtl="<?php echo $rtl;?>" data-items="<?php echo $items;?>" data-bigdesktop="<?php echo $items_bigdesktop;?>" data-smalldesktop="<?php echo $items_smalldesktop;?>" data-bigtablet="<?php echo $items_bigtablet;?>" data-tablet="<?php echo $items_tablet;?>" data-smalltablet="<?php echo $items_smalltablet;?>" data-mobile="<?php echo $items_mobile;?>" data-margin="<?php echo $margin;?>" data-loop="<?php echo $loop;?>" data-center="<?php echo $center;?>" data-mousedrag="<?php echo $mousedrag;?>" data-touchdrag="<?php echo $touchdrag;?>" data-stagepadding="<?php echo $stagepadding;?>" data-nav="<?php echo $nav;?>" data-navnext="<?php echo $navnext;?>" data-navprev="<?php echo $navprev;?>" data-rewind="<?php echo $rewind;?>" data-dots="<?php echo $dots;?>" data-autoplay="<?php echo $auto;?>" data-speed="<?php echo $speed;?>">
+				<?php 
+					$i=0;
+					foreach ($_productCollection as $_item){
+				?>
+					<?php if($i %$rows == 0) echo '<li class="item-load product-item">'; ?>
+						<div class="product-item-info">
+							<div class="product-item-images">
+								<a href="<?= $block->escapeUrl($_item->getProductUrl()) ?>" class="product-item-photo">
+									<?php if($first_image != ''){ 
+										$first_image_url = $helper->resizeProductImage($_item, $first_image, $image_width, $image_height);
+									?>
+	                                <span class="product-image-on-first"><?= $first_image_url; ?></span>
+									<?php } ?>
+									<?php if($second_image != ''){ 
+										$second_image_url = $helper->resizeProductImage($_item, $second_image, $image_width, $image_height);
+									?>
+	                                <span class="product-image-on-hover"><?= $second_image_url; ?></span>
+									<?php } ?>
+	                            </a>
+
+								<div class="product-item-inner">
+									<div class="product-item-action">
+										<?php if ($showWishlist || $showCompare): ?>
+											<div class="actions-secondary" data-role="add-to-links">
+												<?php if ($block->getAddToCompareUrl() && $showCompare): ?>
+													<?php $compareHelper = $this->helper('Magento\Catalog\Helper\Product\Compare');?>
+													<a href="#" class="action tocompare" data-post='<?= /* @noEscape */ $compareHelper->getPostDataParams($_item) ?>' title="<?= $block->escapeHtmlAttr(__('Add to Compare')) ?>">
+														<span><?= $block->escapeHtml(__('Add to Compare')) ?></span>
+													</a>
+												<?php endif; ?>
+												<?php if ($this->helper('Magento\Wishlist\Helper\Data')->isAllow() && $showWishlist): ?>
+													<a href="#"
+													   data-post='<?= /* @noEscape */ $block->getAddToWishlistParams($_item) ?>' class="action towishlist" data-action="add-to-wishlist" title="<?= $block->escapeHtmlAttr(__('Add to Wish List')) ?>">
+														<span><?= $block->escapeHtml(__('Add to Wish List')) ?></span>
+													</a>
+												<?php endif; ?>
+											</div>
+										<?php endif; ?>
+
+										<?php if ($showCart): ?>
+											<div class="actions-primary">
+												<?php if ($_item->isSaleable()): ?>
+													<?php if($helper->checkHasAddToCartProduct($_item)){ ?>
+													<?php $postParams = $block->getAddToCartPostParams($_item); ?>
+													<form data-role="tocart-form" data-product-sku="<?= $block->escapeHtml($_item->getSku()) ?>" action="<?= /* @NoEscape */ $postParams['action'] ?>" method="post">
+														<input type="hidden" name="product" value="<?= /* @escapeNotVerified */ $postParams['data']['product'] ?>">
+														<input type="hidden" name="<?= /* @escapeNotVerified */ Action::PARAM_NAME_URL_ENCODED ?>" value="<?= /* @escapeNotVerified */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
+														<?= $block->getBlockHtml('formkey') ?>
+														<button type="submit"
+																title="<?= $block->escapeHtml(__('Add to Cart')) ?>"
+																class="action tocart primary">
+															<span><?= /* @escapeNotVerified */ __('Add to Cart') ?></span>
+														</button>
+													</form>
+													<?php }else{ ?>
+													<div class="link-product-view-detail">
+														<button title="<?= $block->escapeHtml($_item->getName()) ?>" type="button" class="action primary" onclick="location.href='<?= $block->escapeUrl($_item->getProductUrl()) ?>';">
+															<span><?= $block->escapeHtml(__('View products')) ?></span>
+														</button>
+													</div>
+													<?php } ?>
+												<?php else: ?>
+													<?php if ($_item->getIsSalable()): ?>
+														<div class="stock available"><span><?= $block->escapeHtml(__('In stock')) ?></span></div>
+													<?php else: ?>
+														<div class="stock unavailable"><span><?= $block->escapeHtml(__('Out of stock')) ?></span></div>
+													<?php endif; ?>
+												<?php endif; ?>
+											</div>
+										<?php endif; ?>
+	
+									</div>
+								</div>
+                      	  	</div>
+
+							<div class="product-item-details">
+
+								<?php if($show_short_description){?>
+								<p class="product-item-short-description">
+									<?= $helper->cutStringCommon($block->stripTags($_item->getShortDescription()), $limit_short_description) ?>
+								</p>
+								<?php } ?>
+
+								 <h3 class="product-item-name">
+                                    <a title="<?= $block->escapeHtml($_item->getName()) ?>"
+                                       href="<?= $block->escapeUrl($_item->getProductUrl()) ?>"
+                                       class="product-item-link">
+                                        <?= $block->escapeHtml($_item->getName()) ?>
+                                    </a>
+                                </h3>
+								<div class="bottom-actions">
+										<?php if ($show_price): ?>
+										<?= $block->getProductPrice($_item) ?>
+										<?php endif; ?>
+
+										<?php if ($review && $templateType): ?>
+		                                    <?= $block->getReviewsSummaryHtml($_item, $templateType) ?>
+		                                <?php endif; ?>
+								</div>
+                            </div>
+						</div>
+						<?php $i++;?>
+						<?php if($i %$rows == 0) echo "</li>"; ?>
+				<?php } ?>
+				<?php if($i %$rows != 0) echo "</li>"; ?>
+			</ol>
+		</div>
+	<?php } ?>
+</div>
+<?php 
+} 
+?>

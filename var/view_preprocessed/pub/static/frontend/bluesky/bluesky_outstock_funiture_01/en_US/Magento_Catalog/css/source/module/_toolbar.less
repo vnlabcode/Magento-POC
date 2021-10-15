@@ -1,0 +1,263 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Variables
+//  ---------------------------------------------
+
+@toolbar-mode-icon-font-size: 24px;
+@toolbar-element-background: @panel__background-color;
+@toolbar-bg: #f5f5f5;
+@toolbar-clor: #222;
+@pages-bg: #f5f5f5;
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .page-products {
+        .columns {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .toolbar {
+        &:extend(.abs-add-clearfix all);
+    }
+
+    .toolbar-amount {
+        display: block;
+        line-height: @toolbar-mode-icon-font-size + 2;
+        margin: 0;
+        padding: 8px 0 0;
+        vertical-align: middle;
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+    }
+    .toolbar-products {
+        &:not(:last-child){
+            .lib-css(background, @toolbar-bg);
+            .lib-css(color, @toolbar-clor);
+            padding: 0;
+            margin-bottom: 2rem;
+            margin-top: -6px;
+            label,
+            .sorter-action{
+                .lib-css(color, @toolbar-clor);
+            }
+        }
+        &:extend(.abs-add-clearfix all);
+        select{
+            height: 30px;
+            padding: 0;
+            border-radius: 0;
+        }
+        .pages {
+            display: none;
+            .products.wrapper ~ & {
+                display: block;
+            }
+        }
+
+        .limiter {
+            .control {
+                display: inline-block;
+            }
+        }
+    }
+
+    .sorter {
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+
+        .sorter-action {
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .sorter-options {
+        margin: 0 0 0 7px;
+        width: auto;
+        background-color: transparent;
+        border: none;
+    }
+
+    .sorter-action {
+        vertical-align: top;
+        .lib-icon-font(
+            @icon-arrow-up,
+            @_icon-font-size: 28px,
+            @_icon-font-line-height: 32px,
+            @_icon-font-color: inherit,
+            @_icon-font-color-hover: @header-icons-color-hover,
+            @_icon-font-text-hide: true
+        );
+    }
+
+    .sorter {
+        .sort-desc {
+            &:before {
+                content: @icon-arrow-down;
+            }
+        }
+    }
+
+    .modes {
+        display: none;
+    }
+
+    .limiter-options {
+        margin: 0 5px 0 7px;
+        width: auto;
+    }
+
+    .limiter-label {
+        font-weight: @font-weight__regular;
+    }
+
+    .limiter {
+        .page-products .toolbar & {
+            display: none;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .page-products {
+        .columns {
+            padding-top: 0;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .toolbar {
+        .products.wrapper ~ & .pages {
+            float: left;
+        }
+    }
+
+    .toolbar-amount {
+        float: left;
+    }
+
+    .sorter {
+        float: right;
+        position: relative;
+        top: 5px;
+    }
+
+    .modes {
+        display: inline-block;
+        float: right;
+        margin-left: @indent__base;
+        .products.wrapper ~ .toolbar & {
+            display: none;
+        }
+    }
+
+    .modes-label {
+        &:extend(.abs-visually-hidden-desktop all);
+    }
+
+    .modes-mode {
+        &.active {
+            opacity: 1;
+        }
+        opacity: 0.5;
+        font-size: 0;
+        &::before{
+            content: "";
+            min-width: 30px;
+            height: 16px;
+            display: inline-flex;
+            align-items: center;
+            -webkit-mask: url("../images/grid.svg") no-repeat center center;
+            -moz-mask: url("../images/grid.svg") no-repeat center center;
+            -ms-mask: url("../images/grid.svg") no-repeat center center;
+            mask: url("../images/grid.svg") no-repeat center center;
+            background-color: @price_color;
+        }
+    }
+
+    .mode-list {
+      &::before{
+        -webkit-mask:  url("../images/list.svg") no-repeat center center;
+        -moz-mask:  url("../images/list.svg") no-repeat center center;
+        -ms-mask:  url("../images/list.svg") no-repeat center center;
+        mask:  url("../images/list.svg") no-repeat center center;
+      }
+    }
+
+    .toolbar {
+        .products.wrapper ~ & .limiter {
+            display: block;
+            float: right;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .toolbar-products{
+        .flex();
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background: transparent !important;
+        padding: 0 !important;
+        > *{
+            padding: 5px 0;
+        }
+        &:after, &:before{
+            display: none;
+        }
+    }
+    .toolbar-products:not(:last-child){
+        .toolbar-sorter {
+            .sorter-label{
+                display: none;
+            }
+        }
+        .toolbar-amount{
+            display: none;
+        }
+        select{
+            margin: 0;
+            border: 0;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+            background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 6px;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 6px 10px;
+            height: auto;
+            padding-right: 2.5rem;
+        }
+        .sorter .sorter-action{
+            top: 0;
+        }
+        .limiter{
+            display: block;
+            order: 2;
+            label,
+            .limiter-text{
+                display: none;
+            }
+        }
+    }
+}

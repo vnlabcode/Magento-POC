@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<!-- Start custom header -->
+		<referenceContainer name="header.container"> 
+            <block class="Rokanthemes\Themeoption\Block\Html\Header" name="bluesky.header" before="-">
+                <block class="MageWorx\SearchSuiteAutocomplete\Block\Autocomplete" name="mageworx-search-autocomplete-wrapper" template="MageWorx_SearchSuiteAutocomplete::autocomplete.phtml"/>
+				<block class="Rokanthemes\CustomMenu\Block\Topmenu" name="rokanthemes.horizontal.menu" template="Rokanthemes_CustomMenu::topmenu.phtml"/>
+				<block class="Rokanthemes\VerticalMenu\Block\Verticalmenu" name="rokanthemes.vertical.menu" template="Rokanthemes_VerticalMenu::verticalmenu.phtml"/>
+			</block>
+        </referenceContainer>
+		<move element="currency" destination="bluesky.header"/>
+        <move element="logo" destination="bluesky.header"/>
+        <move element="store_language" destination="bluesky.header"/>
+        <move element="top.search" destination="bluesky.header"/>
+        <move element="minicart" destination="bluesky.header"/>
+        <move element="store.menu" destination="bluesky.header"/>
+		<move element="top.links" destination="bluesky.header" />
+		<!-- End custom header -->
+		
+		<!-- Start remove top.links --> 
+		<referenceBlock name="header" remove="true"/>
+		<referenceBlock name="catalog.compare.link" remove="true"/>
+		<referenceBlock name="wish-list-link" remove="true"/>
+		<referenceBlock name="my-account-link" remove="true"/>
+		<referenceBlock name="store.menu" remove="true"/>
+		<!-- End remove top.links -->
+		
+		<!-- Start remove navigation.sections -->
+		<referenceBlock name="navigation.sections" remove="true"/>
+		<!-- End remove navigation.sections -->
+		
+		<!-- Start custom footer -->
+		<referenceContainer name="footer-container">
+            <block class="Rokanthemes\Themeoption\Block\Html\Footer" name="bluesky.footer" before="-"/>
+        </referenceContainer>
+		<!-- End custom footer -->
+		<!-- Start move all content footer core to bluesky.footer -->
+		<move element="store_switcher" destination="bluesky.footer"/>
+		<move element="footer_links" destination="bluesky.footer"/>
+		<move element="copyright" destination="bluesky.footer"/>
+		<move element="form.subscribe" destination="bluesky.footer"/>
+		<!-- End move all content footer core to bluesky.footer -->
+		<!-- remove default block on footer -->
+		<referenceBlock name="report.bugs" remove="true"/>
+		<!-- End remove default block on footer -->
+    </body>
+</page>

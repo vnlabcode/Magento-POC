@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <item>
+      <title><![CDATA[404 Not Found]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[Page keywords]]></meta_keywords>
+      <meta_description><![CDATA[Page description]]></meta_description>
+      <identifier><![CDATA[no-route]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="container">
+<h1>404</h1>
+<h4>component not found</h4>
+<h2>Nothing To See Here!</h2>
+<p>The page are looking for has been moved or doesn’t exist anymore, if you like you can return to our homepage. If the problem persists, please send us an email to tokithemes@gmail.com</p>
+<ul class="disc">
+<li><a class="btn" href="{{store url=""}}">Go home</a></li>
+</ul>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 01 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_01]]></identifier>
+      <content_heading><![CDATA[Home Page]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="1"}}</div>
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_01_banner_top"}}</div>
+<div class="section tab-product-margin">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="default_banner_middle"}}</div>
+<div class="section">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Sale Off" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>
+<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Enable Cookies]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[enable-cookies]]></identifier>
+      <content_heading><![CDATA[What are Cookies?]]></content_heading>
+      <content><![CDATA[<div class="enable-cookies cms-content">
+<p>"Cookies" are little pieces of data we send when you visit our store. Cookies help us get to know you better and personalize your experience. Plus they help protect you and other shoppers from fraud.</p>
+<p style="margin-bottom: 20px;">Set your browser to accept cookies so you can buy items, save items, and receive customized recommendations. Here’s how:</p>
+<ul>
+<li><a href="https://support.google.com/accounts/answer/61416?hl=en" target="_blank">Google Chrome</a></li>
+<li><a href="http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+<li><a href="http://support.apple.com/kb/PH19214" target="_blank">Safari</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Mozilla/Firefox</a></li>
+</ul>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Privacy and Cookie Policy]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[privacy-policy-cookie-restriction-mode]]></identifier>
+      <content_heading><![CDATA[Privacy and Cookie Policy]]></content_heading>
+      <content><![CDATA[<div class="privacy-policy cms-content">
+    <div class="message info">
+        <span>
+            Please replace this text with you Privacy Policy.
+            Please add any additional cookies your website uses below (e.g. Google Analytics).
+        </span>
+    </div>
+    <p>
+        This privacy policy sets out how this website (hereafter "the Store") uses and protects any information that
+        you give the Store while using this website. The Store is committed to ensuring that your privacy is protected.
+        Should we ask you to provide certain information by which you can be identified when using this website, then
+        you can be assured that it will only be used in accordance with this privacy statement. The Store may change
+        this policy from time to time by updating this page. You should check this page from time to time to ensure
+        that you are happy with any changes.
+    </p>
+    <h2>What we collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+        <li>name</li>
+        <li>contact information including email address</li>
+        <li>demographic information such as postcode, preferences and interests</li>
+        <li>other information relevant to customer surveys and/or offers</li>
+    </ul>
+    <p>
+        For the exhaustive list of cookies we collect see the <a href="#list">List of cookies we collect</a> section.
+    </p>
+    <h2>What we do with the information we gather</h2>
+    <p>
+        We require this information to understand your needs and provide you with a better service,
+        and in particular for the following reasons:
+    </p>
+    <ul>
+        <li>Internal record keeping.</li>
+        <li>We may use the information to improve our products and services.</li>
+        <li>
+            We may periodically send promotional emails about new products, special offers or other information which we
+            think you may find interesting using the email address which you have provided.
+        </li>
+        <li>
+            From time to time, we may also use your information to contact you for market research purposes.
+            We may contact you by email, phone, fax or mail. We may use the information to customise the website
+            according to your interests.
+        </li>
+    </ul>
+    <h2>Security</h2>
+    <p>
+        We are committed to ensuring that your information is secure. In order to prevent unauthorised access or
+        disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and
+        secure the information we collect online.
+    </p>
+    <h2>How we use cookies</h2>
+    <p>
+        A cookie is a small file which asks permission to be placed on your computer's hard drive.
+        Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit
+        a particular site. Cookies allow web applications to respond to you as an individual. The web application
+        can tailor its operations to your needs, likes and dislikes by gathering and remembering information about
+        your preferences.
+    </p>
+    <p>
+        We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page
+        traffic and improve our website in order to tailor it to customer needs. We only use this information for
+        statistical analysis purposes and then the data is removed from the system.
+    </p>
+    <p>
+        Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find
+        useful and which you do not. A cookie in no way gives us access to your computer or any information about you,
+        other than the data you choose to share with us. You can choose to accept or decline cookies.
+        Most web browsers automatically accept cookies, but you can usually modify your browser setting
+        to decline cookies if you prefer. This may prevent you from taking full advantage of the website.
+    </p>
+    <h2>Links to other websites</h2>
+    <p>
+        Our website may contain links to other websites of interest. However, once you have used these links
+        to leave our site, you should note that we do not have any control over that other website.
+        Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst
+        visiting such sites and such sites are not governed by this privacy statement.
+        You should exercise caution and look at the privacy statement applicable to the website in question.
+    </p>
+    <h2>Controlling your personal information</h2>
+    <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+    <ul>
+        <li>
+            whenever you are asked to fill in a form on the website, look for the box that you can click to indicate
+            that you do not want the information to be used by anybody for direct marketing purposes
+        </li>
+        <li>
+            if you have previously agreed to us using your personal information for direct marketing purposes,
+            you may change your mind at any time by letting us know using our Contact Us information
+        </li>
+    </ul>
+    <p>
+        We will not sell, distribute or lease your personal information to third parties unless we have your permission
+        or are required by law to do so. We may use your personal information to send you promotional information
+        about third parties which we think you may find interesting if you tell us that you wish this to happen.
+    </p>
+    <p>
+        You may request details of personal information which we hold about you under the Data Protection Act 1998.
+        A small fee will be payable. If you would like a copy of the information held on you please email us this
+        request using our Contact Us information.
+    </p>
+    <p>
+        If you believe that any information we are holding on you is incorrect or incomplete,
+        please write to or email us as soon as possible, at the above address.
+        We will promptly correct any information found to be incorrect.
+    </p>
+    <h2><a name="list"></a>List of cookies we collect</h2>
+    <p>The table below lists the cookies we collect and what information they store.</p>
+    <table class="data-table data-table-definition-list">
+        <thead>
+        <tr>
+            <th>Cookie Name</th>
+            <th>Cookie Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>FORM_KEY</th>
+                <td>Stores randomly generated key used to prevent forged requests.</td>
+            </tr>
+            <tr>
+                <th>PHPSESSID</th>
+                <td>Your session ID on the server.</td>
+            </tr>
+            <tr>
+                <th>GUEST-VIEW</th>
+                <td>Allows guests to view and edit their orders.</td>
+            </tr>
+            <tr>
+                <th>PERSISTENT_SHOPPING_CART</th>
+                <td>A link to information about your cart and viewing history, if you have asked for this.</td>
+            </tr>
+            <tr>
+                <th>STF</th>
+                <td>Information on products you have emailed to friends.</td>
+            </tr>
+            <tr>
+                <th>STORE</th>
+                <td>The store view or language you have selected.</td>
+            </tr>
+            <tr>
+                <th>USER_ALLOWED_SAVE_COOKIE</th>
+                <td>Indicates whether a customer allowed to use cookies.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-SESSID</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE-SECTION-INVALIDATION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-TIMEOUT</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>SECTION-DATA-IDS</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>PRIVATE_CONTENT_VERSION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>X-MAGENTO-VARY</th>
+                <td>Facilitates caching of content on the server to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-FILE-VERSION</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-STORAGE</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 02 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_02]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="2"}}</div>
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="default_banner_top"}}</div>
+<div class="rokan-title">
+<h3 class="module-title">Trending Products</h3>
+<div class="short_description">Mirum est notare quam littera gothica quam nunc putamus parum claram!</div>
+</div>
+<div class="full-width section selling-home2">
+<div class="container-fluid">
+<div class="row">
+<div class="banner-left  col-lg-6 col-md-12">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_02_banner_trending"}}</div>
+<div class="content-right col-lg-6 col-md-12">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="3" owl_items="3" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+</div>
+</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="default_banner_middle"}}</div>
+<div class="rokan-title">
+<h3 class="module-title">Sale Off</h3>
+<div class="short_description">Mirum est notare quam littera gothica quam nunc putamus parum claram!</div>
+</div>
+<div class="full-width section block-sale">
+<div class="container-fluid">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="7" limit="12" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="6" owl_items="5" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+<div class="block-blog-2">{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" category_id="0" tag_id="0" author_id="0"}}</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 03 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_03]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="4"}}</div>
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="default_banner_top"}}</div>
+<div class="product-tab-3">
+<div class="rokan-title">
+<h3 class="module-title">Trending Products</h3>
+<div class="short_description">Mirum est notare quam littera gothica quam nunc putamus parum claram!</div>
+</div>
+<div class="row flex-mobile">
+<div class="col-md-6">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="4" limit="10" sorting="position" tab_postions="horizontal" number_row="1" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="2" owl_items="2" owl_smalldesktop="2" owl_bigtablet="2" owl_tablet="2" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="col-md-6 image-1">
+<div class="overflow">
+<div class="banner">
+<div class="col-banner left bottom">
+<div class="banner-img"><img src="{{media url=&quot;wysiwyg/banner-2_1.jpg&quot;}}" alt=""></div>
+<div class="content">
+<h4>Creative Design<br>Juicy Pendant Lamp</h4>
+<a class="btn" title="shop now" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 image-2">
+<div class="overflow">
+<div class="banner">
+<div class="col-banner left bottom">
+<div class="banner-img"><img src="{{media url=&quot;wysiwyg/banner-1_1.jpg&quot;}}" alt=""></div>
+<div class="content">
+<h4>Creative Design<br>Juicy Pendant Lamp</h4>
+<a class="btn" title="shop now" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="2" owl_items="2" owl_smalldesktop="2" owl_bigtablet="2" owl_tablet="2" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="default_banner_middle"}}</div>
+<div class="rokan-title">
+<h3 class="module-title">Sale Off</h3>
+<div class="short_description">Mirum est notare quam littera gothica quam nunc putamus parum claram!</div>
+</div>
+<div class="block-sale">
+<div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="7" limit="12" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+<div class="section banner-home3 full-width">
+<div class="container-fluid ">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_03_banner_bottom"}}</div>
+</div>
+<div class="product-list-custome">
+<div class="row">
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Seller Products" types="1" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="On Sale Products" types="2" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Rated Products" types="3" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>
+<div class="footer-newselter section full-width">
+<div class=" container-fluid ">{{block class="Magento\Newsletter\Block\Subscribe" template="Magento_Newsletter::subscribe.phtml"}}</div>
+</div>
+<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" category_id="0" tag_id="0" author_id="0"}}</div>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 04 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_04]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="slider">{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="3"}}</div>
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="default_banner_top"}}</div>
+<div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_04_banner_middle"}}</div>
+<div class="product-list-custome">
+<div class="row">
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Seller Products" types="1" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="On Sale Products" types="2" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-4">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Rated Products" types="3" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1" owl_margin="30"}}</div>
+</div>
+<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" category_id="0" tag_id="0" author_id="0"}}</div>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 05 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_05]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="slider">{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="bluesky_outstock_funiture_05"}}</div>
+<div class="section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_05_banner_top"}}</div>
+<div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="3" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Rokanthemes\Testimonial\Block\Widget\Testimonial" background_image="bgtechnogical.jpg" qty="3" rows="1" owl_item_default="1" speed="500" owl_loop="0" owl_center="0" nav="0" dots="1" auto="1" owl_item_desktop="1" owl_item_small_desktop="1" owl_item_big_tablet="1" owl_item_tablet="1" owl_item_small_tablet="1" owl_item_mobile="1"}}</div>
+<div class="product-list-custome">
+<div class="row">
+<div class="col-lg-3">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Sale Off" types="6" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-3">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Featured" types="2" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-3">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Mostviewed" types="3" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="30"}}</div>
+<div class="col-lg-3">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="New Products" types="4" limit="12" sorting="position" tab_postions="horizontal" number_row="3" mode_view="list" hide_tocompare="1" hide_towishlist="1" product_image="small_image" image_width="90" image_height="110" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="2" owl_smalltablet="2" owl_mobile="1" owl_margin="30"}}</div>
+</div>
+<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" category_id="0" tag_id="0" author_id="0"}}</div>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 06 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_06]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="bluesky_outstock_funiture_06"}}</div>
+<div class="homepage_6">
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_06_banner_top"}}</div>
+<div class="product-tab-6">
+<div class="rokan-title">
+<h3 class="module-title">New Products</h3>
+<div class="short_description">Mirum est notare quam littera gothica quam nunc putamus parum claram!</div>
+</div>
+<div class="row flex-mobile">
+<div class="col-md-6">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="4" limit="10" sorting="position" tab_postions="horizontal" number_row="1" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="660" image_height="840" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="2" owl_items="2" owl_smalldesktop="2" owl_bigtablet="2" owl_tablet="2" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="col-md-6 image-1">
+<div class="overflow">
+<div class="banner">
+<div class="col-banner left bottom">
+<div class="banner-img"><img src="{{media url=&quot;wysiwyg/banner-2_1.jpg&quot;}}" alt=""></div>
+<div class="content">
+<h4>Creative Design<br>Juicy Pendant Lamp</h4>
+<a class="btn" title="shop now" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 image-2">
+<div class="overflow">
+<div class="banner">
+<div class="col-banner left bottom">
+<div class="banner-img"><img src="{{media url=&quot;wysiwyg/banner-1_1.jpg&quot;}}" alt=""></div>
+<div class="content">
+<h4>Creative Design<br>Juicy Pendant Lamp</h4>
+<a class="btn" title="shop now" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="660" image_height="840" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="2" owl_items="2" owl_smalldesktop="2" owl_bigtablet="2" owl_tablet="2" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+</div>
+<div class="section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_06_banner_middle"}}</div>
+<div class="block-sale">
+<div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="12" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="281" image_height="358" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="3" owl_mobile="2" owl_margin="30"}}</div>
+</div>
+<div>{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" category_id="0" tag_id="0" author_id="0"}}</div>
+</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 07 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_07]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="7"}}</div>
+<div class="banner-top-home section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_01_banner_top"}}</div>
+<div class="section products-tab">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" types="2,3,4" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_07_banner_middle"}}</div>
+<div class="section">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Mirum est notare quam littera gothica quam nunc putamus parum claram!" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Magefan\Blog\Block\Widget\Recent" title="Our Blog Posts" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>
+<div class="section">{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 08 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_08]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="8"}}</div>
+<div>{{widget type="Rokanthemes\WidgetSubCategory\Block\Widget\CateTabs" category_ids="5,8,22,33" tab_postions="horizontal" show_product_count="1" show_category_image="thumbnail" show_category_image_type="horizontal" enable_owl="0" number_row="1"}}</div>
+<div>{{widget type="Rokanthemes\CategoryTab\Block\Widget\CateTabs" title="FEATURED PRODUCTS" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada consectetuer" category_ids="5,8,33" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" show_thumbnail="0" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Magefan\Blog\Block\Widget\Recent" title="FROM OUR BLOG" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>
+<div class="section-middle">
+<div class="row">
+<div class="col-lg-6">{{block class="Rokanthemes\Testimonial\Block\Testimonial" name="Testimonial" template="testimonial.phtml"}}</div>
+<div class="col-lg-6">{{widget type="Rokanthemes\Instagram\Block\Widget\Instagram" title="OUTSTOCK ON INSTAGRAM" description="#Follow Instagram" image_format="square" show_captions="no" show_instagram_icon="no" image_resolution="original" rows="2" next_back="0" owl_dots="0" owl_item_desktop="3" owl_item_default="3" owl_item_small_desktop="3" owl_item_big_tablet="3" owl_item_tablet="3" owl_item_small_tablet="3" owl_item_mobile="3" owl_margin="10"}}</div>
+</div>
+</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 09 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_09]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="9"}} {{widget type="Rokanthemes\WidgetSubCategory\Block\Widget\CateTabs" category_ids="6,10,11,29,32,34" tab_postions="horizontal" show_product_count="1" show_category_image="thumbnail" show_category_image_type="horizontal" enable_owl="1" number_row="1" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="6" owl_items="6" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div>{{widget type="Rokanthemes\CategoryTab\Block\Widget\CateTabs" title="FEATURED PRODUCTS" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada consectetuer" category_ids="5,8,33" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" show_thumbnail="0" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Magefan\Blog\Block\Widget\Recent" title="FROM OUR BLOG" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>
+<div class="section-middle ">
+<div class="row">
+<div class="col-lg-6">{{block class="Rokanthemes\Testimonial\Block\Testimonial" name="Testimonial" template="testimonial.phtml"}}</div>
+<div class="col-lg-6">{{widget type="Rokanthemes\Instagram\Block\Widget\Instagram" title="OUTSTOCK ON INSTAGRAM" description="#Follow Instagram" image_format="square" show_captions="no" show_instagram_icon="no" image_resolution="original" rows="2" next_back="0" owl_dots="0" owl_item_desktop="3" owl_item_default="3" owl_item_small_desktop="3" owl_item_big_tablet="3" owl_item_tablet="3" owl_item_small_tablet="3" owl_item_mobile="3" owl_margin="10"}}</div>
+</div>
+</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Test]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[test]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="test">{{widget type="Rokanthemes\Instagram\Block\Widget\Instagram" image_format="square" show_captions="no" show_instagram_icon="no" image_resolution="original" rows="3" next_back="0" owl_dots="0" owl_item_desktop="3" owl_item_default="3" owl_item_small_desktop="3" owl_item_big_tablet="3" owl_item_tablet="3" owl_item_small_tablet="3" owl_item_mobile="3"}}</div>
+<p>{{widget type="Rokanthemes\CategoryTab\Block\Widget\CateTabs" title="Top Rate Products" category_ids="4,5,8" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" show_thumbnail="0" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="300" image_height="300" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="3" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="1"}}</p>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 10 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_10]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class=" section slider_home10 full-width">
+<div class="container flex-layout no-wrap-desktop">
+<div class="left-banner">{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="10"}}</div>
+<div class="right-banner d-none d-lg-block">{{block class="Magento\Cms\Block\Block" block_id="bluesky_oustock_funiture_10_banner_top"}}</div>
+</div>
+</div>
+<div>{{widget type="Rokanthemes\WidgetSubCategory\Block\Widget\CateTabs" category_ids="6,10,11,29,32,34" tab_postions="horizontal" show_product_count="1" show_category_image="thumbnail" show_category_image_type="horizontal" enable_owl="1" number_row="1" owl_nav="true" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="6" owl_items="6" owl_smalldesktop="4" owl_bigtablet="4" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}} {{widget type="Rokanthemes\CategoryTab\Block\Widget\CateTabs" title="FEATURED PRODUCTS" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada consectetuer" category_ids="5,8,33" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" show_thumbnail="0" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="default_banner_middle"}}</div>
+<div>{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="LATEST ARRIVALS" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas sed urna malesuada consectetuer" types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" product_image_hover="thumbnail" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">{{widget type="Magefan\Blog\Block\Widget\Recent" title="FROM OUR BLOG" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>
+<div>{{widget type="Rokanthemes\Brand\Block\Widget\Brandlist" show_brand_name="0" brand_groups="1,2,3,4,5" rows="1" number_item="12" default_item="5" destop_item="5" small_destop_item="4" tablet_item="3" mobile_item="2" data_margin="30" show_next_back_control="0" show_navigation_control="0" auto_play_control="0"}}</div>
+<div class="section">{{widget type="Rokanthemes\Instagram\Block\Widget\Instagram" title="#Follow Instagram" image_format="square" show_captions="no" show_instagram_icon="no" image_resolution="original" rows="1" next_back="0" owl_dots="0" owl_item_desktop="6" owl_item_default="5" owl_item_small_desktop="4" owl_item_big_tablet="3" owl_item_tablet="3" owl_item_small_tablet="3" owl_item_mobile="3" owl_margin="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 11- Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_11]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="11"}}</div>
+<div class="section full-width">{{widget type="Rokanthemes\WidgetSubCategory\Block\Widget\CateTabs" category_ids="4,7,9" tab_postions="horizontal" show_product_count="1" show_category_image="thumbnail" show_category_image_type="horizontal" enable_owl="0" number_row="1"}}</div>
+<div class="bestseller-product">
+<div class="text-inner">Explore The Lookbook</div>
+{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Selling Products" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas." types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="2" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="3" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}
+<div class="shop-all-now "><a class="btn" href="#">Shop all now</a></div>
+</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_11_banner_middle"}}</div>
+<div class="trending-product">
+<div class="text-inner">Explore The Lookbook</div>
+{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas." types="4" limit="12" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="true" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section">
+<div class="text-inner">Explore The Blog</div>
+{{widget type="Magefan\Blog\Block\Widget\Recent" title="Latest Blog Posts" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[Outstock Home 12 - Clean, minimal Magento theme!]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[bluesky_outstock_funiture_12]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div>{{widget type="Rokanthemes\SlideBanner\Block\Widget\SlideBannerWidget" slider_id="12"}}</div>
+<p>{{block class="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="bluesky_outstock_funiture_12_banner_top"}}</p>
+<div class="bestseller-product">
+<div class="text-inner">Explore The Lookbook</div>
+{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Top Selling Products" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas." types="1" limit="10" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="4" owl_items="4" owl_smalldesktop="3" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}
+<div class="shop-all-now "><a class="btn" href="#">Shop all now</a></div>
+</div>
+<div class="section full-width">{{block class="Magento\Cms\Block\Block" block_id="bluesky_outstock_funiture_11_banner_middle"}}</div>
+<div>
+<div class="text-inner">Explore The Lookbook</div>
+{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Trending Products" short_description="Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas." types="4" limit="12" sorting="position" tab_postions="horizontal" number_row="1" height_default_loading="300" mode_view="grid" hide_tocart="0" hide_tocompare="0" hide_towishlist="0" hide_quickview="0" product_image="small_image" image_width="540" image_height="685" owl_nav="false" owl_dots="true" owl_center="false" owl_loop="false" owl_bigdesktop="5" owl_items="5" owl_smalldesktop="4" owl_bigtablet="3" owl_tablet="3" owl_smalltablet="2" owl_mobile="2" owl_margin="30"}}</div>
+<div class="section blog-block">
+<div class="text-inner">Explore The Blog</div>
+{{widget type="Magefan\Blog\Block\Widget\Recent" title="Latest Blog Posts" number_of_posts="10" category_id="1" tag_id="0" author_id="0"}}</div>
+<p>{{block class="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="bluesky_outstock_funiture_12_ shipping_support"}}</p>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+    <item>
+      <title><![CDATA[About us]]></title>
+      <page_layout><![CDATA[1column]]></page_layout>
+      <meta_keywords><![CDATA[]]></meta_keywords>
+      <meta_description><![CDATA[]]></meta_description>
+      <identifier><![CDATA[about-us]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<section class="full-width">
+<div class="banner-about-top absolute-content"><img src="{{media url="wysiwyg/banner-about-us.jpg"}}" alt="">
+<div class="content">
+<h1 class="size-60 regular" style="text-align: center;"><span style="color: #ffffff;">About Us</span></h1>
+<p style="text-align: center;"><span style="color: #ddd;">A wonderful serenity has taken possession of my entire soul, like these<br>sweet mornings of spring which I enjoy with my whole heart.</span></p>
+<div class="action-more flex-layout no-wrap" style="text-align: center; margin-top: 3rem;"><a class="btn" style="border: none;" title="View more" href="#">View more</a><a class="btn" style="border: none;" title="See project" href="#">See project</a></div>
+</div>
+</div>
+</section>
+<section class="about-top">
+<div class="row">
+<div class="about-left col-md-7">
+<h5 class="color_primary size-14 uppercase" style="text-align: left;">About Our Online Store</h5>
+<h2 class="size-36 light margin_bottom_0">Hello,</h2>
+<h2 class="size-36">With 25+ Years Of Experience</h2>
+<p class="size-18"><span style="color: #222; line-height: 2;">"Over 25 years Outstock helping companies reach their <br>financial and branding goals.</span></p>
+<p style="line-height: 2;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography. The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+</div>
+<div class="about-right col-sm-5 d-none d-md-block">
+<div><img src="{{media url="wysiwyg/banner-about-us1.png"}}" alt=""></div>
+</div>
+</div>
+</section>
+<section class="section how-it-work section full-width" style="background: #f3f5f6;">
+<div class="container">
+<div class="title-block">
+<h5 class="color_primary uppercase size-14  margin_0" style="text-align: center;">How it works</h5>
+<h2 class="size-36" style="text-align: center;">Complete Customer Ideas</h2>
+<p style="text-align: center;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit<br>in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+</div>
+<div class="owl-carousel owl-theme" data-items="3" data-bigdesktop="3" data-smalldesktop="3" data-bigtablet="3" data-tablet="3" data-smalltablet="2" data-mobile="1" data-margin="30" data-loop="true" data-center="false" data-stagepadding="" data-nav="false" data-navnext="" data-navprev="" data-dots="true" data-autoplay="false">
+<div class="col-content">
+<div class="flex-layout no-wrap space-between center_vertical">
+<p><img src="{{media url="wysiwyg/icon-about-1.png"}}" alt=""></p>
+<p class="size-80">01</p>
+</div>
+<h3 class="size-18" style="text-align: left;">Admin Verify Details</h3>
+<p style="text-align: left;">Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam rem aperiam, eaqueipsa quae veritatis.</p>
+</div>
+<div class="col-content">
+<div class="flex-layout no-wrap space-between center_vertical">
+<p><img src="{{media url="wysiwyg/icon-about-2.png"}}" alt=""></p>
+<p class="size-80">02</p>
+</div>
+<h3 class="size-18" style="text-align: left;">Send The Solution</h3>
+<p style="text-align: left;">Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam rem aperiam, eaqueipsa quae veritatis.</p>
+</div>
+<div class="col-content">
+<div class="flex-layout no-wrap space-between center_vertical">
+<p><img src="{{media url="wysiwyg/icon-about-3.png"}}" alt=""></p>
+<p class="size-80">03</p>
+</div>
+<h3 class="size-18" style="text-align: left;">Complete Profile</h3>
+<p style="text-align: left;">Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque laudantium totam  rem aperiam, eaqueipsa quae veritatis.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="setcion creative ">
+<div class="title-block">
+<h5 class="color_primary uppercase size-14  margin_0" style="text-align: center;">TECHNOLOGY INDEX</h5>
+<h2 class="size-36" style="text-align: center;">Let’s Get Creative</h2>
+<p style="text-align: center;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit<br>in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="col-img"><img src="{{media url="wysiwyg/banner-about-us-2.jpg"}}" alt=""></div>
+<div class="col-content">
+<div class="row">
+<div class="col-6">
+<div class="flex-layout">
+<div class="img"><img src="{{media url="wysiwyg/icon-about-4.png"}}" alt=""></div>
+<h2 class="margin_0">8262+</h2>
+</div>
+<h3 class="size-18">Active Clients</h3>
+<p>Sed ut perspiciatis unde omnis iste natus<br>sit accusantium doloremque laudantium totam.</p>
+</div>
+<div class="col-6">
+<div class="flex-layout">
+<div class="img"><img src="{{media url="wysiwyg/icon-about-4.png"}}" alt=""></div>
+<h2 class="margin_0">4268+</h2>
+</div>
+<h3 class="size-18">Projects Done</h3>
+<p>Sed ut perspiciatis unde omnis iste natus<br>sit accusantium doloremque laudantium totam.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="col-img"><img src="{{media url="wysiwyg/banner-about-us-3.jpg"}}" alt=""></div>
+<div class="col-content">
+<div class="row">
+<div class="col-6">
+<div class="flex-layout">
+<div class="img"><img src="{{media url="wysiwyg/icon-about-4.png"}}" alt=""></div>
+<h2 class="margin_0">643+</h2>
+</div>
+<h3 class="size-18">Team Advisors</h3>
+<p>Sed ut perspiciatis unde omnis iste natus<br>sit accusantium doloremque laudantium totam.</p>
+</div>
+<div class="col-6">
+<div class="flex-layout">
+<div class="img"><img src="{{media url="wysiwyg/icon-about-4.png"}}" alt=""></div>
+<h2 class="margin_0">269k</h2>
+</div>
+<h3 class="size-18">Users Online</h3>
+<p>Sed ut perspiciatis unde omnis iste natus<br>sit accusantium doloremque laudantium totam.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section our-team section full-width" style="background: #f3f5f6;">
+<div class="container">
+<div class="title-block">
+<h5 class="color_primary uppercase size-14  margin_0" style="text-align: center;">THE TEAM</h5>
+<h2 class="size-36" style="text-align: center;">Meet Our Team</h2>
+<p style="text-align: center;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit<br>in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+</div>
+<div class="owl-carousel owl-theme" data-items="3" data-bigdesktop="3" data-smalldesktop="3" data-bigtablet="3" data-tablet="3" data-smalltablet="2" data-mobile="1" data-margin="30" data-loop="true" data-center="false" data-stagepadding="" data-nav="false" data-navnext="" data-navprev="" data-dots="true" data-autoplay="false">
+<div class="col-content" style="text-align: center;">
+<div class="border-radius border-3"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{media url="wysiwyg/team1.png"}}" alt=""></div>
+<div class="col-infor" style="text-align: center;">
+<h5 class="size-14 uppercase margin_0">John Doe</h5>
+<p><span style="color: #999999;">CEO &amp; Pounder</span></p>
+<p>Sed ut perspiciatis unde omnis iste<br>natus error sitaccusantium doloremque laudan<br>totam rem aperiam.</p>
+</div>
+</div>
+<div class="col-content" style="text-align: center;">
+<div class="border-radius border-3" style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{media url="wysiwyg/team2.png"}}" alt=""></div>
+<div class="col-infor">
+<h5 class="size-14 uppercase margin_0">Youngly</h5>
+<p><span style="color: #999999;">Finace Manager</span></p>
+<p>Sed ut perspiciatis unde omnis iste<br>natus error sitaccusantium doloremque laudan<br>totam rem aperiam.</p>
+</div>
+</div>
+<div class="col-content">
+<div class="border-radius border-3" style="text-align: center;"><img style="display: block; margin-left: auto; margin-right: auto;" src="{{media url="wysiwyg/team3.png"}}" alt=""></div>
+<div class="col-infor">
+<h5 class="size-14 uppercase margin_0" style="text-align: center;">Erenteam</h5>
+<p style="text-align: center;"><span style="color: #999999;">Design Manager</span></p>
+<p style="text-align: center;">Sed ut perspiciatis unde omnis iste<br>natus error sitaccusantium doloremque laudan<br>totam rem aperiam.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section connect margin_0">
+<div class="title-block">
+<h5 class="color_primary uppercase size-14  margin_0" style="text-align: center;">location store</h5>
+<h2 class="size-36" style="text-align: center;">Where We Are</h2>
+<p style="text-align: center;">The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit<br>in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.</p>
+</div>
+<div class="owl-carousel owl-theme" data-items="4" data-bigdesktop="4" data-smalldesktop="3" data-bigtablet="3" data-tablet="3" data-smalltablet="2" data-mobile="1" data-margin="30" data-loop="true" data-center="false" data-stagepadding="" data-nav="false" data-navnext="" data-navprev="" data-dots="true" data-autoplay="false">
+<div class="col-content"><img src="{{media url="wysiwyg/about-store-1.png"}}" alt="">
+<div class="top">
+<h4 class="size-16">92 Rue Pelleport - Paris</h4>
+</div>
+<p>Adress: Example Street 68, <br>Phone: (+800) 123 456 7891<br>Email: armania@gmail.com</p>
+</div>
+<div class="col-content"><img src="{{media url="wysiwyg/about-store-2.png"}}" alt="">
+<div class="top">
+<h4 class="size-16">26 Stanley Rd - London</h4>
+</div>
+<p>Adress: Example Street 68, <br>Phone: (+800) 123 456 7891<br>Email: armania@gmail.com</p>
+</div>
+<div class="col-content"><img src="{{media url="wysiwyg/about-store-3.png"}}" alt="">
+<div class="top">
+<h4 class="size-16">32 Prospect Heights - New York</h4>
+</div>
+<p>Adress: Example Street 68,<br>Phone: (+800) 123 456 7891<br>Email: armania@gmail.com</p>
+</div>
+<div class="col-content"><img src="{{media url="wysiwyg/about-store-2.png"}}" alt="">
+<div class="top">
+<h4 class="size-16">86 Georgia Rd - Turkey</h4>
+</div>
+<p>Adress: Example Street 68, <br>Phone: (+800) 123 456 7891<br>Email: armania@gmail.com</p>
+</div>
+</div>
+</section>]]></content>
+      <meta_title><![CDATA[]]></meta_title>
+    </item>
+  </pages>
+</root>

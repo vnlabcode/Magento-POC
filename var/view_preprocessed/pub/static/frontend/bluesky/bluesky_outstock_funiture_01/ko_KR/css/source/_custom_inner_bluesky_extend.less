@@ -1,0 +1,32 @@
+
+@button__border-radius: none;
+@button__hover__border: 2px solid hsl(0, 0%, 20%);
+@header_sticky_bg: #f5f5f5;
+@nivo-controlNav-veritcal-postion: 185px;
+
+& when (@media-common = true){
+	.banner-top-home{
+		.row{
+			padding: 0 10px;
+			margin: 0 -20px;
+		}
+	}
+	.block-widget-rokanthemes-brand {
+		.block-content {
+			.lib-css(margin-top, -4rem);
+		}
+	}
+	.nivoslider-show-loading-in-web{
+		padding-top: 48.59375%;
+	}
+	.nivoslider-show-loading-in-mobile{
+		padding-top: 83.49206349206349%;
+	}
+}
+
+// min width 1199
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__l){
+	.banner-top-home{
+		margin-top: -14rem;
+	}
+}

@@ -1,0 +1,56 @@
+// /**
+//  * Copyright © BlueskyTechco, Inc. All rights reserved.
+//  */
+@loader-icon__background-image: false;
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .load.indicator {
+        .lib-loader();
+        position: absolute;
+
+        > span {
+            display: none;
+        }
+    }
+
+    .loading-mask,
+    #loading-page-ready-browser {
+        .lib-loading-mask();
+        .lib-css(background-color, @loader-overlay__background-color);
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;   
+        justify-content: center;
+        align-items: center;
+        .loader,
+        .browser-loader {
+            // @transform: translate(-50%, -50%);
+            // .lib-css{transform, @_transform};
+            .cricle-snipper();
+            margin: auto;
+            > img, > p{
+               display: none;
+            }
+        }
+    }
+
+    body {
+        > .loading-mask {
+            z-index: @loader-overlay__z-index;
+        }
+    }
+
+    ._block-content-loading {
+        position: relative;
+    }
+
+    [data-role='main-css-loader'] {
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="widget_pricecountdown_list" class="Rokanthemes\PriceCountdown\Block\Widget\PriceCountdown" is_email_compatible="true" placeholder_image="Magento_Catalog::images/category_widget_link.png" ttl="86400">
+        <label translate="true">PriceCountdown Settings</label> 
+		<description translate="true">List PriceCountdown Settings</description>  
+        <parameters>
+			<parameter name="activate_pricecountdown" xsi:type="select" required="false" visible="true" sort_order="10" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Activate Price Countdown</label>
+				<description translate="true">Activate Product Timer</description>
+            </parameter>
+			<parameter name="title" xsi:type="block" required="false" visible="true" sort_order="50">
+                <label translate="true">Title</label>
+				<block class="Rokanthemes\PriceCountdown\Block\Adminhtml\Widget\Textarea" />
+            </parameter>
+			<parameter name="short_description" xsi:type="block" required="false" visible="true" sort_order="50">
+                <label translate="true">Shore Description</label>
+				<block class="Rokanthemes\PriceCountdown\Block\Adminhtml\Widget\Textarea" />
+            </parameter>
+			<parameter name="show_price" xsi:type="select" required="false" visible="true" sort_order="60" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Price:</label>
+            </parameter>
+			<parameter name="image_type" xsi:type="select" required="false" visible="true" sort_order="70" source_model="Rokanthemes\Themeoption\Model\Config\ListImageType">
+                <label translate="true">Type Image</label>
+            </parameter>
+			<parameter name="width" xsi:type="text" required="false" visible="true" sort_order="80">
+                <label translate="true">Width Image</label>
+				<value>500</value>
+            </parameter>
+			<parameter name="height" xsi:type="text" required="false" visible="true" sort_order="90">
+                <label translate="true">Height Image</label>
+				<value>500</value>
+            </parameter>
+			<parameter name="enabled_hover" xsi:type="select" required="false" visible="true" sort_order="100" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Enabled Product Hover Image</label>
+            </parameter>
+			<parameter name="image_type_hover" xsi:type="select" required="false" visible="true" sort_order="110" source_model="Rokanthemes\Themeoption\Model\Config\ListImageType">
+                <label translate="true">Type Hover Image</label>
+				<depends>
+                    <parameter name="enabled_hover" value="1" /> 
+                </depends>
+            </parameter>
+	
+			
+			<parameter name="addtocart" xsi:type="select" required="false" visible="false" sort_order="120" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Add to cart:</label>
+            </parameter>
+			<parameter name="addtowishlist" xsi:type="select" required="false" visible="true" sort_order="130" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Add to Wishlist:</label>
+            </parameter>
+			<parameter name="addtocompare" xsi:type="select" required="false" visible="true" sort_order="140" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Add to Compare:</label>
+            </parameter>
+			<parameter name="review" xsi:type="select" required="false" visible="true" sort_order="150" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Review Rating:</label>
+            </parameter>
+			<parameter name="description" xsi:type="select" required="false" visible="true" sort_order="160" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Short Description:</label>
+            </parameter>
+			<parameter name="maxlength" xsi:type="text" required="false" visible="true" sort_order="170">
+                <label translate="true">Short Description Max Length:</label>
+				<description translate="true">Empty for display all short description.</description>
+				<value>130</value>
+            </parameter>
+			<parameter name="qty" xsi:type="text" required="true" visible="true" sort_order="180">
+                <label translate="true">Qty of Product:</label>
+				<value>8</value>
+            </parameter>
+			
+            <parameter name="row_show" xsi:type="select" required="true" visible="true" sort_order="190">
+                <label translate="true">Number Rows Show:</label>
+                <options>
+                    <option name="default" value="1" selected="true">
+                        <label translate="true">1 Row</label>
+                    </option>
+                    <option name="item2" value="2">
+                        <label translate="true">2 Rows</label>
+                    </option>
+                    <option name="item3" value="3">
+                        <label translate="true">3 Rows</label>
+                    </option>
+                    <option name="item4" value="4">
+                        <label translate="true">4 Rows</label>
+                    </option>
+                    <option name="item5" value="5">
+                        <label translate="true">5 Rows</label>
+                    </option>
+                </options>
+            </parameter>
+			<parameter name="next_back" xsi:type="select" required="true" visible="true" sort_order="200" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Show Next/Back control</label>
+            </parameter>
+			<parameter name="auto" xsi:type="select" required="false" visible="true" sort_order="210" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Auto slide</label>
+            </parameter>
+			<parameter name="owl_center" xsi:type="select" required="false" visible="true" sort_order="210" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Owl Center</label>
+            </parameter>
+			<parameter name="owl_dots" xsi:type="select" required="false" visible="true" sort_order="210" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Owl Dots</label>
+            </parameter>
+			<parameter name="owl_loop" xsi:type="select" required="false" visible="true" sort_order="210" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Loop</label>
+            </parameter>
+			<parameter name="speed" xsi:type="text" required="false" visible="true" sort_order="210">
+                <label translate="true">Slideshow Speed</label>
+				<value>500</value>
+            </parameter>
+			<parameter name="owl_margin" xsi:type="text" required="false" visible="true" sort_order="210">
+                <label translate="true">Owl Margin</label>
+            </parameter>
+			<parameter name="itemsDefault" xsi:type="text" required="true" visible="true" sort_order="230">
+                <label translate="true">Owl Items On Mobile</label>
+				<value>5</value>
+            </parameter>
+			<parameter name="itemsDesktop" xsi:type="text" required="true" visible="true" sort_order="240">
+                <label translate="true">Owl Items On Mobile</label>
+				<value>4</value>
+            </parameter>
+			<parameter name="itemsDesktopSmall" xsi:type="text" required="true" visible="true" sort_order="250">
+                <label translate="true">Owl Items On Mobile</label>
+				<value>3</value>
+            </parameter>
+			<parameter name="itemsTablet" xsi:type="text" required="true" visible="true" sort_order="260">
+                <label translate="true">Owl Items On Mobile</label>
+				<value>2</value>
+            </parameter>
+			<parameter name="itemsMobile" xsi:type="text" required="true" visible="true" sort_order="270">
+                <label translate="true">Owl Items On Mobile</label>
+				<value>1</value>
+            </parameter>
+			
+        </parameters>
+        <containers>
+            <container name="content">
+                <template name="grid" value="default" />
+            </container>
+            <container name="content.top">
+                <template name="grid" value="default" />
+            </container>
+            <container name="content.bottom">
+                <template name="grid" value="default" />
+            </container>
+        </containers>
+    </widget>
+</widgets>

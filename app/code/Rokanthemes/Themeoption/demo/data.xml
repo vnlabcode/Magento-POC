@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<root>
+  <rokanthemes>
+    <item>
+        <id><![CDATA[21207400]]></id>
+        <name><![CDATA[Outstock - Clean, minimal Magento theme!]]></name>
+        <des><![CDATA[You need install theme before use importer. Importing demo data is the easiest way to setup your theme. It will allow you to quickly edit everything. You can select import theme for each store view. Reload storefront after imported.]]></des>
+        <theme>
+            <title><![CDATA[Outstock Home 01]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_01]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_01.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en1]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 02]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_02]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_02.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en2]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 03]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_03]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_03.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en3]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 04]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_04]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_04.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en4]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 05]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_05]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_05.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en5]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 06]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_06]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_06.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en6]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 07]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_07]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_07.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en7]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 08]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_08]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_08.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en8]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 09]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_09]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_09.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en1]]></linkpreview>
+        </theme>
+        <theme>
+            <title><![CDATA[Outstock Home 10]]></title>
+            <identifier><![CDATA[bluesky_outstock_funiture_10]]></identifier>
+            <image><![CDATA[bluesky_outstock_funiture_10.jpg]]></image>
+            <linkpreview><![CDATA[azexchangeclub.com/outstock/en10]]></linkpreview>
+        </theme>
+    </item>
+  </rokanthemes>
+</root>

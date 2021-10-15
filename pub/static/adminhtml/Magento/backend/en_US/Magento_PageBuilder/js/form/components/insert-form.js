@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-page-builder/view/adminhtml/web/js/form/components/insert-form.js

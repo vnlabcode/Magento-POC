@@ -1,0 +1,52 @@
+<?php
+/**
+ * Copyright © 2016 TuanHatay. All rights reserved.
+ */
+
+?>
+<?php
+/**
+ * Top menu for store
+ *
+ * @see \Rokanthemes\CustomMenu\Block\Topmenu
+ */
+?>
+<?php
+    $_helper = $this->helper('Rokanthemes\CustomMenu\Helper\Data');
+    $_config = $_helper->getConfig('custommenu');
+    $columnsLimit = 0;
+    if($_config['general']['enable']) {
+?>
+<?php $_menu = $block->getCustomMenuHtml(); ?>
+<span data-action="toggle-nav" class="action nav-toggle d-xl-none sticky-toggle"><span><?php echo __('Toggle Nav') ?></span></span> 
+<div class="navigation custommenu main-nav nav-sections" role="navigation">
+	
+	<div class="menu-mobile-title d-block d-xl-none"><?= $block->escapeHtml(__('Menu')) ?><a href="#" id="close-menu"></a></div>
+    <ul>
+        <?php echo $_menu; ?> 
+    </ul>
+</div>
+
+<script>
+    require([
+        'jquery',
+        'rokanthemes/custommenu'
+    ], function ($) {
+        $(".custommenu").CustomMenu();
+    });
+</script>
+<?php
+    } else {
+?>
+<?php $_menu = $block->getHtml('level-top', 'submenu', $columnsLimit); ?>
+
+<div class="navigation custommenu main-nav nav-sections" role="navigation">
+	<div class="menu-mobile-title d-block d-xl-none"><?= $block->escapeHtml(__('Menu')) ?><a href="#" id="close-menu"></a></div>
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <?php /* @escapeNotVerified */ echo $_menu; ?>
+    </ul>
+</div>
+
+<?php
+    }
+?>

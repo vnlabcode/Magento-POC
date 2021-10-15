@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu> 
+		<add id="Rokanthemes_SetProduct::setproduct" title="Set Products" module="Rokanthemes_SetProduct" sortOrder="30"  parent="Rokanthemes_RokanBase::rokanbase_setting" action="addproductsset/productset/index"  resource="Rokanthemes_RokanBase::setproduct"/>
+	</menu>
+</config>

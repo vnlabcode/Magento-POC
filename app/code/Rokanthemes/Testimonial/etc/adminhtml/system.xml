@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+* Copyright © 2015 tokitheme.com. All rights reserved.
+
+* @author Blue Sky Team <contact@tokitheme.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="testimonial" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Testimonial Slider</label>
+            <tab>rokanthemes</tab>
+            <resource>Rokanthemes_Testimonial::settings</resource>
+            <group id="general" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable_frontend" translate="label comment" type="select" sortOrder="0"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <comment>Enable frontend</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+				<field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+				<field id="des" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description</label>             
+                </field>
+                <field id="background_image" translate="label" type="image" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Background image</label>
+                    <comment>Allowed file types:PNG, JPG, JPEG. Gif</comment>
+                    <backend_model>Rokanthemes\Testimonial\Model\Config\Backgroundimage</backend_model>
+                    <base_url type="media" scope_info="1">rokanthemes/testimonial</base_url>
+                </field>
+                <field id="qty" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Limit Items</label>
+                </field>
+				<field id="customers_submit" translate="label comment" type="select" sortOrder="50"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Allow customers to submit testimonial</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+				<field id="allow_guest" translate="label comment" type="select" sortOrder="60"  showInDefault="1" showInWebsite="1" showInStore="1">
+					<depends>
+						<field id="customers_submit">1</field>
+					</depends>
+                    <label>Allow guest to write testimonials</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+				<field id="approve_testimonials" translate="label comment" type="select" sortOrder="70"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Approve testimonials</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+				<field id="per_page" translate="label" type="text" sortOrder="75" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Testimonials Per Page</label>
+                </field>
+				<field id="footer_link" translate="label comment" type="select" sortOrder="80"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Footer Link</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="rows" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Rows</label>
+                </field>
+                <field id="auto" translate="label comment" type="select" sortOrder="92"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Auto Play</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="dots" translate="label comment" type="select" sortOrder="94"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Dots</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="nav" translate="label comment" type="select" sortOrder="96"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Navigation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="owl_item_default" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items Default</label>
+                </field>
+                <field id="owl_item_desktop" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Desktop</label>
+                </field>
+                <field id="owl_item_small_desktop" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Small Desktop</label>
+                </field>
+                <field id="owl_item_big_tablet" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Big Tablet</label>
+                </field>
+                <field id="owl_item_tablet" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Tablet</label>
+                </field>
+                <field id="owl_item_small_tablet" translate="label" type="text" sortOrder="600" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Small Tablet</label>
+                </field>
+                <field id="owl_item_mobile" translate="label" type="text" sortOrder="700" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Owl Items On Mobile</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

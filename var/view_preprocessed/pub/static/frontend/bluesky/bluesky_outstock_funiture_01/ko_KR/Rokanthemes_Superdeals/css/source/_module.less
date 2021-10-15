@@ -1,0 +1,319 @@
+// Module Supperdeal
+//  Variables
+//  _____________________________________________
+@deal_product_name_size: 1.8rem;
+@deal_number_bg: #eee;
+@deal_number_font-family: @heading__font-family__base;
+@deal_number_font-size: 2.4rem;
+@deal_number_font-weight: 600;
+@deal_number_color: #222;
+@deal_number_width: 5rem;
+
+// Banner supper deal
+@banner_padding: 11.5rem 0;
+@banner_moible-padding: 10vh 0;
+
+// 
+@deal-title-margin: 3.2rem;
+@deal-countdonw-margin: 3.2rem;
+//Number
+@banner_deal_number-size: 3.6rem;
+@banner_deal_number-bg: false;
+@banner_deal_number-border-radius: false;
+@banner_deal_number-size-mobile: 3rem;
+@banner_deal_number-color: @heading__color__base;
+@banner_deal_number-font-family: @heading__font-family__base;
+@banner_deal_number-font-weight: @heading__font-weight__base;
+// Sub title
+@sub_title_supper_deal-font-size: 1.6rem;
+@sub_title_supper_deal-color: #888;
+@sub-title_supper_deal_letter-spacing: false;
+@sub-title_supper_deal_font-weight: false;
+@sub-title_supper_deal_font-family: false;
+@sub-title_supper_deal_margin: false;
+// Title
+
+@title_supper_deal_color: false;
+@title_supper_deal_size: 5.2rem;
+@title_supper_deal_mobile_size: 3.4rem;
+@title_supper_deal_font-weight: false;
+@title_supper_deal_letter-spacing: false;
+@title_supper_deal_letter-family: false;
+@title_supper_deal_margin: false;
+// Short des
+
+@des_supper_deal_color: @heading__color__base;
+@des_supper_deal_size: 1.6rem;
+@des_supper_deal_font-weight: false;
+@des_supper_deal_letter-spacing: false;
+@des_supper_deal_letter-family: false;
+@des_supper_deal_margin: false;
+
+& when (@media-common = true) {
+	.super-deal{
+		canvas{
+			display: none;
+		}
+		.supper-deal-title{
+			padding: 1.5rem 0 3rem;
+			.title-deal{
+				span{
+					color: @theme__color__primary;
+				}
+			}
+		}
+		.super-deal-countdown{
+			margin-bottom: 3rem;
+		}
+		.row{
+			align-items: center;
+		}
+		.deal-product{
+			overflow: hidden;
+		}
+		.time_circles{
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;   
+			flex-wrap: wrap;
+			margin: 0 -@layout-indent__width;
+			> div{
+				padding: 0 @layout-indent__width;
+				text-align: center;
+				width: auto !important;
+				> *{
+					display: block;
+				}
+			}
+			.number{
+				display: block;
+			}
+			.text{
+				.lib-font-size(16);
+			}
+		}
+		.item-deal-product{
+			position: relative;
+			text-align: center;
+			.info-price-deal{
+				position: absolute;
+				top: 20%;
+				right: 13%;
+				background: @theme__color__primary;
+				border-radius: 50%;
+				color: @heading__color__base;
+				z-index: 1;
+				min-width: 86px;
+			    height: 86px;
+			    display: inline-flex;
+			    align-items: center;
+			    justify-content: center;
+			    flex-direction: column;
+				label{
+					display: block;
+					.lib-font-size(30);
+					font-family: @heading__font-family__base;
+					font-weight: @heading__font-weight__base;
+					line-height: 1;
+				}
+			}
+		}
+	}
+	// Hot deal product,
+	// Banner deal
+	.hot-deal-tab-slider,
+	.super-deal-banner-content{
+		.super-deal-countdown{
+			.time_circles{
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				display: -ms-flexbox;      /* TWEENER - IE 10 */
+				display: -webkit-flex;     /* NEW - Chrome */
+				display: flex;   
+				flex-wrap: wrap;
+				canvas{
+					display: none;
+				}
+				.number{
+					.lib-css(width, @deal_number_width);
+					.lib-css(height, @deal_number_width);
+					.lib-css(background, @deal_number_bg);
+					.lib-css(color, @deal_number_color);
+					.lib-css(font-weight, @deal_number_font-weight);
+					.lib-css(font-family, @deal_number_font-family);
+					.lib-css(font-size, @deal_number_font-size);
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					line-height: 1;
+				}
+				.text{
+					display: block;
+				}
+				> div{
+					width: auto !important;
+					text-align: center;
+					&:not(:last-child){
+						margin-right: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+	// Hot deal product
+	.hot-deal-tab-slider{
+		.products-grid .product-items .product-item-info{
+			padding: 3rem;
+			.reviews-actions{
+				display: none;
+			}
+		}
+		.product-item-name,.info-price{
+			.lib-css(font-size, @deal_product_name_size);
+		}
+		.info-price{
+			border: 1px solid @border-color__base;
+			border-width: 1px 0;
+			margin: 2.5rem 0 2.5rem;
+			padding: 1rem 0;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			display: -ms-flexbox;      /* TWEENER - IE 10 */
+			display: -webkit-flex;     /* NEW - Chrome */
+			display: flex;   
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.super-deal-countdown{
+			margin-bottom: 1.5rem;
+		}
+		.product-sold{
+			.count-sold-available{
+				display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				display: -ms-flexbox;      /* TWEENER - IE 10 */
+				display: -webkit-flex;     /* NEW - Chrome */
+				display: flex;   
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: 0.8rem;
+				.count-available{
+					span{
+						.lib-css(color, @deal_number_color);
+					}
+				}
+			}
+			.ruler-sold{
+				height: 10px;
+				width: 100%;
+				.lib-css(background, @deal_number_bg);
+				position: relative;
+				.ruler-sold-count{
+					background: @theme__color__primary;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+	}
+	.super-deal,
+	.super-deal-banner{
+		.lib-css(padding, @banner_padding);
+		.time_circles,
+		.super-deal-banner-content .super-deal-countdown{
+			.number{
+				.lib-css(color, @banner_deal_number-color);
+				.lib-css(font-family, @banner_deal_number-font-family);
+				.lib-css(font-weight, @banner_deal_number-font-weight);
+				.lib-css(background, @banner_deal_number-bg);
+				.lib-css(border-radius, @banner_deal_number-border-radius);
+			}
+		}
+		.sub-title-deal{
+			.lib-css(font-size, @sub_title_supper_deal-font-size);
+			.lib-css(color, @sub_title_supper_deal-color);
+			.lib-css(letter-spacing, @sub-title_supper_deal_letter-spacing);
+			.lib-css(font-weight, @sub-title_supper_deal_font-weight);
+			.lib-css(font-family, @sub-title_supper_deal_font-family);
+			.lib-css(margin, @sub-title_supper_deal_margin);
+		}
+		.title-deal{
+			.lib-css(color, @title_supper_deal_color);
+			.lib-css(letter-spacing, @title_supper_deal_letter-spacing);
+			.lib-css(font-weight, @title_supper_deal_font-weight);
+			.lib-css(font-family, @title_supper_deal_letter-family);
+			.lib-css(margin, @title_supper_deal_margin);
+		}
+		.short-des{
+			.lib-css(font-size, @des_supper_deal_size);
+			.lib-css(color, @des_supper_deal_color);
+			.lib-css(letter-spacing, @des_supper_deal_letter-spacing);
+			.lib-css(font-weight, @des_supper_deal_font-weight);
+			.lib-css(font-family, @des_supper_deal_letter-family);
+			.lib-css(margin, @des_supper_deal_margin);
+		}
+	}
+	// Banner deal
+	.super-deal-banner{
+		background-position: left center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    .super-deal-banner-content{
+	    	.supper-deal-title{
+	    		.lib-css(margin-bottom, @deal-title-margin);
+	    	}
+	    	.super-deal-countdown{
+	    		.lib-css(margin-bottom, @deal-countdonw-margin);
+	    	}
+	    }
+	   
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	.super-deal,
+	.super-deal-banner{
+		.time_circles{
+			.number{
+				.lib-css(font-size, @banner_deal_number-size);
+			}
+		}
+		.title-deal{
+			.lib-css(font-size, @title_supper_deal_size);
+		}
+	}
+	// Banner deal
+	.super-deal-banner{
+	   	.lib-css(padding, @banner_padding);
+	}
+}
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+	body {
+		.super-deal{
+			.supper-deal-title{
+				.sub-title-deal{
+					margin-bottom: 1.7rem;
+				}
+			}
+			
+		}
+		.super-deal,
+		.super-deal-banner{
+			.time_circles{
+				.number{
+					.lib-css(font-size, @banner_deal_number-size-mobile);
+				}
+			}
+			.title-deal{
+				.lib-css(font-size, @title_supper_deal_mobile_size);
+			}
+		}
+		// Banner deal
+		.super-deal-banner{
+		   .lib-css(padding, @banner_moible-padding);  
+		}
+	}
+}

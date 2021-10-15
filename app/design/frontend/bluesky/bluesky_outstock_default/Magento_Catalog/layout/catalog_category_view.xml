@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="category.view.container" destination="columns" before="-"/>
+        <referenceContainer name="content">
+            <container name="category.view.container.custom.move.content" htmlTag="div" htmlClass="category-view-custom-move-content" before="-" />
+        </referenceContainer>
+        <referenceContainer name="page.wrapper">
+            <container name="category.view.breadcrumbs.banner" htmlTag="div" htmlClass="category-view-breadcrumbs-banner" after="header.container" />
+        </referenceContainer>
+        <referenceContainer name="sidebar.main">
+            <block class="Rokanthemes\Brand\Block\GroupList" name="group_list" template="Rokanthemes_Brand::grouplist.phtml"/>
+        </referenceContainer>
+        <block class="Magento\Cms\Block\Block" name="default_feature_block">
+            <arguments>
+                <argument name="block_id" xsi:type="string">default_feature_block</argument>
+            </arguments>
+        </block>
+        <move element="default_feature_block" destination="sidebar.main" after="-"/>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <move element="category.view.container" destination="category.view.container.custom.move.content"/>
+		<move element="page.main.title" destination="category.view.breadcrumbs.banner" before="-" />
+		<move element="category.image" destination="category.view.breadcrumbs.banner"/>
+		<move element="breadcrumbs" destination="category.view.breadcrumbs.banner"/>
+    </body>
+</page>

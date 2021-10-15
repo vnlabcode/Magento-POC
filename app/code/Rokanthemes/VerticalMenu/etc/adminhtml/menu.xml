@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Rokanthemes_VerticalMenu::verticalmenusetting" title="Vertical Menu" module="Rokanthemes_VerticalMenu" sortOrder="30" parent="Rokanthemes_RokanBase::rokanbase" resource="Rokanthemes_VerticalMenu::verticalmenusetting" />
+        <add id="Rokanthemes_VerticalMenu::verticalmenu" title="Configuration" module="Rokanthemes_VerticalMenu" sortOrder="10" parent="Rokanthemes_VerticalMenu::verticalmenusetting" resource="Rokanthemes_VerticalMenu::verticalmenu" action="adminhtml/system_config/edit/section/verticalmenu" />
+    </menu>
+</config>

@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/app/code/Magefan/Translation/view/adminhtml/web/js/form/element/is-special.js

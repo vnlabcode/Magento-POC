@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-release-notification/view/adminhtml/web/js/modal/component.js

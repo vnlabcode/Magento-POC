@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <quickview>
+            <general>
+                <enabled>1</enabled>
+                <label>Quick View</label>
+				<position>append</position>
+				<class_position>.actions-secondary</class_position>
+            </general>
+        </quickview>
+    </default>
+</config>

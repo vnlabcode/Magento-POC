@@ -1,0 +1,1 @@
+/Users/mz01-hungpq/Megazone/magentopoc/vendor/magento/module-variable/view/adminhtml/web/js/config-directive-generator.js

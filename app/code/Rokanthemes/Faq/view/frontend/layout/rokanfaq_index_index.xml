@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<!--
+  Copyright © 2019 Rokanthemes. All rights reserved.
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" >
+    <body>
+      <referenceContainer name="page.wrapper">  
+		    <container name="banner.wrapper.image" htmlTag="div" htmlClass="banner-wrapper-image" after="header.container">
+				<block class="Rokanthemes\Faq\Block\FaqList" name="faq-banner" template="Rokanthemes_Faq::banner.phtml" />
+			</container>
+		</referenceContainer>
+      <referenceBlock name="breadcrumbs">
+        <action method="addCrumb">
+          <argument name="crumbName" xsi:type="string">Home</argument>
+          <argument name="crumbInfo" xsi:type="array">
+            <item name="title" xsi:type="string">Home</item>
+            <item name="label" xsi:type="string">Home</item>
+            <item name="link" xsi:type="string">{{baseUrl}}</item>
+          </argument>
+        </action>
+        <action method="addCrumb">
+          <argument name="crumbName" xsi:type="string">FAQs</argument>
+          <argument name="crumbInfo" xsi:type="array">
+            <item name="title" xsi:type="string">FAQs</item>
+            <item name="label" xsi:type="string">FAQs</item>
+          </argument>
+        </action>
+      </referenceBlock>
+        <referenceContainer name="content">  
+            <block class="Rokanthemes\Faq\Block\FaqList" name="faq.list" template="Rokanthemes_Faq::faq/faqlist.phtml" ifconfig="faq_setting/faq_rokan/enable"></block>
+        </referenceContainer>
+		<move element="page.main.title" destination="faq-banner" before="-" />
+		<move element="breadcrumbs" destination="faq-banner" before="-" />
+    </body>
+</page>

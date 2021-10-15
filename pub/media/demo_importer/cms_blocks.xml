@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <item>
+      <title><![CDATA[Default Footer Static]]></title>
+      <identifier><![CDATA[default-footer-static]]></identifier>
+      <content><![CDATA[<div><img src="{{media url=wysiwyg/logo-footer.png}}" alt=""></div>
+<div class="footer-link-contact">
+<p>Outstock is a premium Templates theme with advanced admin module. It’s extremely customizable, easy to use and fully responsive and retina ready.</p>
+<ul class="ft-contactus">
+<li class="address"><i class="fa fa-map-marker-alt">&nbsp;</i>1234 Heaven Stress, Beverly Hill.</li>
+<li class="email"><i class="fas fa-envelope-open-text">&nbsp;</i>Email: info@thebuesky.com</li>
+<li class="phone"><i class="fas fa-phone-alt">&nbsp;</i>Telephone: +01 234 567 89</li>
+</ul>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Custom Link Before]]></title>
+      <identifier><![CDATA[default_menu_custom_links_before]]></identifier>
+      <content><![CDATA[<ul>
+<li class="ui-menu-item level0 classic"><a class="level-top" href="{{store url=''}}">Home</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Custom Link After]]></title>
+      <identifier><![CDATA[default_menu_custom_links_after]]></identifier>
+      <content><![CDATA[<ul>
+<li class="ui-menu-item level0 classic parent ">
+<div class="open-children-toggle">&nbsp;</div>
+<a class="level-top"> Pages </a>
+<div class="level0 submenu">
+<ul class="subchildmenu ">
+<li class="ui-menu-item level1"><a href="{{store url=""}}blog">Blog</a></li>
+<li class="ui-menu-item level1 "><a href="{{store url=""}}contact">Contact Us</a></li>
+<li class="ui-menu-item level1 "><a href="{{store url=""}}about-us">About Us</a></li>
+<li class="ui-menu-item level1 "><a href="{{store url=""}}store-locator">Store Locator</a></li>
+<li class="ui-menu-item level1 "><a href="{{store url=""}}404"> Page 404 </a></li>
+<li class="ui-menu-item level1 "><a href="{{store url=""}}rokanfaq"> FAQs Page </a></li>
+</ul>
+</div>
+</li>
+<li class="ui-menu-item level0 classic "><a class="level-top" href="{{store url=''}}rokanthemes-brand.html"> Brands </a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default  -  Header Contact]]></title>
+      <identifier><![CDATA[default_header_contact]]></identifier>
+      <content><![CDATA[<div class="settings-contact">
+<h3 class="title-setting">Contact</h3>
+<div class="contact-info-wrap">
+<div class="contact-info">
+<div class="icon"><span class="main-icon-plane-paper">&nbsp;</span></div>
+<div class="content">No. Rosecrans Ave, Suite 200 El Segundo, CA 90245. USA</div>
+</div>
+<div class="contact-info">
+<div class="icon"><span class="main-icon-phone-call1">&nbsp;</span></div>
+<div class="content">Call: <a href="tel:+1(202)861-5567">+1 (202) 861-5567</a></div>
+</div>
+<div class="contact-info">
+<div class="icon"><span class="main-icon-envelope">&nbsp;</span></div>
+<div class="content">Email: <a href="mailto:Support@demo.com">Support@demo.com</a></div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default - Social Icon]]></title>
+      <identifier><![CDATA[default_social_icon]]></identifier>
+      <content><![CDATA[<ul class="social-link flex-layout">
+<li><a href="https://facebook.com/" target="_blank" rel="noopener"> <span class="icon fab fa-facebook-f"><span class="text">Facebook</span></span> </a></li>
+<li><a href="https://twitter.com/" target="_blank" rel="noopener"> <span class="icon fab fa-twitter"><span class="text">Twitter</span></span> </a></li>
+<li><a href="https://instagram.com/" target="_blank" rel="noopener"> <span class="icon fab fa-instagram"><span class="text">Instagram</span></span> </a></li>
+<li><a href="https://dribbble.com/" target="_blank" rel="noopener"> <span class="icon fab fa-dribbble"><span class="text">Dribbble</span></span> </a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 01 - Banner Top]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_01_banner_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-1.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>British Made Pocket Knife - Oak</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top2 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-2.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Chair Kimi No Isu Project</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top3 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-3.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Merino Lambswool Scarf Moss</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default - Banner Middle]]></title>
+      <identifier><![CDATA[default_banner_middle]]></identifier>
+      <content><![CDATA[<div class="banner-middle">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-xs-12 col-left absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main1.jpg"}}" alt="">
+<div class="text">
+<p>Products Essentials</p>
+<h4>Bottle With Wooden Cork</h4>
+<p class="d-none d-sm-block">The Newtown sofa range is the first product Jonas Wagellhas</p>
+<p class="d-none d-sm-block">designed for Zaozuo, but one of the last to be finalized and launched.</p>
+<a class="btn" href="#">Buy now / $196.98</a></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 col-right absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main2.jpg"}}" alt="">
+<div class="text">
+<p>Products Furniture</p>
+<h4>Hauteville Plywood Chair</h4>
+<p class="d-none d-sm-block">Mirum est notare quam littera gothica, quam nunc</p>
+<p class="d-none d-sm-block">putamusparum claram, anteposuerit litterarum formas.</p>
+<a class="btn" href="#">Buy now / $196.98</a></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Footer Information]]></title>
+      <identifier><![CDATA[default_footer_information]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">information</h4>
+<ul class="footer-contents">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Delivery Inforamtion</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms &amp; Condition</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Footer Customer Service]]></title>
+      <identifier><![CDATA[default_footer_customer_service]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">Customer Service</h4>
+<ul class="footer-contents">
+<li><a href="#">Shipping Policy</a></li>
+<li><a href="#">Help &amp; Contact Us</a></li>
+<li><a href="#">Returns &amp; Refunds</a></li>
+<li><a href="#">Online Stores</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Footer Social Icon]]></title>
+      <identifier><![CDATA[default_footer_social_icon]]></identifier>
+      <content><![CDATA[<ul class="link-follow">
+<li class="first"><a class="twitter fab fa-twitter" href="#">twitter</a></li>
+<li><a class="facebook fab fa-facebook-f" href="#">facebook</a></li>
+<li><a class="google fab fa-google-plus-g" href="#">google</a></li>
+<li><a class="linkedin fab fa-linkedin-in" href="#">linkedin</a></li>
+<li><a class="fa fa-rss" href="#">rss</a></li>
+</ul>
+]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Feature Block Sidebar]]></title>
+      <identifier><![CDATA[default_feature_block]]></identifier>
+      <content><![CDATA[<div class="sidebar-featured">{{widget type="Rokanthemes\ProductTab\Block\Widget\Tabs" title="Featured Products" types="2" limit="10" sorting="position" tab_postions="vertical" number_row="4" height_default_loading="300" mode_view="grid" hide_tocart="1" hide_tocompare="1" hide_towishlist="1" hide_quickview="1" product_image="small_image" product_image_hover="thumbnail" image_width="85" image_height="110" owl_nav="false" owl_dots="false" owl_center="false" owl_loop="false" owl_bigdesktop="1" owl_items="1" owl_smalldesktop="1" owl_bigtablet="1" owl_tablet="1" owl_smalltablet="1" owl_mobile="1"}}</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Contact Map]]></title>
+      <identifier><![CDATA[default-contact-map]]></identifier>
+      <content><![CDATA[<p class="map"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24201.246844804893!2d-111.94405300000001!3d40.692565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90cf6256d98a62eb!2sValley+Fair+Mall!5e0!3m2!1sen!2sus!4v1487152442332" width="1920" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default Contact Info]]></title>
+      <identifier><![CDATA[default-contact-info]]></identifier>
+      <content><![CDATA[<h3>Find us here.</h3>
+<ul>
+<li class="address">
+<h4>Our Address</h4>
+<p>1234 Heaven Stress, Beverly Hill.</p>
+</li>
+<li class="phone">
+<h4>Phone Number</h4>
+<p>Office: (800) 123 456 789</p>
+</li>
+<li class="email">
+<h4>Email address</h4>
+<p>Email: Erentheme@gmail.com</p>
+</li>
+</ul>
+<div class="short-des">Outstock is a premium Templates theme with advanced admin module. It’s extremely customizable, easy to use and fully responsive and retina ready. Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis.</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 02 - Banner Trending]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_02_banner_trending]]></identifier>
+      <content><![CDATA[<div class="banner " style="background-color: #f5f5f5;">
+<div class="col-banner left bottom absolute-content-image">
+<div class="banner-img"><img src="{{media url="wysiwyg/banner-h2.jpg"}}" alt=""></div>
+<div class="content center">
+<h4>Creative Design<br>Juicy Pendant Lamp</h4>
+<a class="btn" title="shop now" href="#">Discover Now</a></div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Default - Banner Top]]></title>
+      <identifier><![CDATA[default_banner_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-1-2_1.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>British Made Pocket Knife - Oak</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top2 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-2-2_1.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Chair Kimi No Isu Project</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top3 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-3-2_1.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Merino Lambswool Scarf Moss</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 03 - Banner Bottom]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_03_banner_bottom]]></identifier>
+      <content><![CDATA[<div class="banner">
+<div class="col-banner center center absolute-content-image">
+<div class="banner-img_background no-animation" style="background-image: url({{media url="wysiwyg/img_bg.jpg"}})">&nbsp;</div>
+<div class="content_background center">
+<h4>Get in Touch With Us</h4>
+<h2>How Can We Help You?</h2>
+<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod.<br>Typi non habent claritatem insitam est usus legentis in iis qui facit eorum claritatem. Investigationes demonst<br>lectores legere me lius quod ii legunt saepius.</p>
+<a class="btn" style="padding: 17px 46px;" title="DISCOVER NOW" href="#">DISCOVER NOW</a></div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 04 - Banner Middle]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_04_banner_middle]]></identifier>
+      <content><![CDATA[<div class="banner-middle banner-middle-home4">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-xs-12 col-left absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main1.jpg"}}" alt="">
+<div class="text">
+<p>Products Essentials</p>
+<h4>Bottle With Wooden Cork</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 col-right absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main2.jpg"}}" alt="">
+<div class="text">
+<p>Products Furniture</p>
+<h4>Hauteville Plywood Chair</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 04 Footer My Account]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_04_footer_myaccount]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">My Account</h4>
+<ul class="footer-contents">
+<li><a href="#">My Account</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Shopping Cart</a></li>
+<li><a href="#">Wishlist</a></li>
+<li><a href="#">Custom Link</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 04 Footer Quick Links]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_04_footer_quick_links]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">Quick Links</h4>
+<ul class="footer-contents">
+<li><a href="#">Store Location</a></li>
+<li><a href="#">My Account</a></li>
+<li><a href="#">Orders Tracking</a></li>
+<li><a href="#">Size Guide</a></li>
+<li><a href="#">FAQs</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 05 Footer My Account]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_05_footer_myaccount]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">My Account</h4>
+<ul class="footer-contents">
+<li><a href="#">My Account</a></li>
+<li><a href="#">Checkout</a></li>
+<li><a href="#">Shopping Cart</a></li>
+<li><a href="#">Wishlist</a></li>
+<li><a href="#">Custom Link</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 05 Footer Quick Links]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_05_footer_quick_links]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">Quick Links</h4>
+<ul class="footer-contents">
+<li><a href="#">Contact us</a></li>
+<li><a href="#">About us</a></li>
+<li><a href="#">Size Guide</a></li>
+<li><a href="#">Orders Tracking</a></li>
+<li><a href="#">FAQs</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 05 - Banner Top]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_05_banner_top]]></identifier>
+      <content><![CDATA[<div class="banner-middle banner-middle-home4">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-xs-12 col-left absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main1.jpg"}}" alt="">
+<div class="text">
+<p>Products Essentials</p>
+<h4>Bottle With Wooden Cork</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 col-right absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main2.jpg"}}" alt="">
+<div class="text">
+<p>Products Furniture</p>
+<h4>Hauteville Plywood Chair</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 06 - Banner Top]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_06_banner_top]]></identifier>
+      <content><![CDATA[<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-1.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>British Made Pocket Knife - Oak</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top2 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-2.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Chair Kimi No Isu Project</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-xs-12 col-banner-top">
+<div class="banner-top banner-top3 absolute-content-image">
+<div class="bs-banner"><a href="#"><img src="{{media url="wysiwyg/banner-3.jpg"}}" alt=""></a></div>
+<div class="banner-infor">
+<h2>Merino Lambswool Scarf Moss</h2>
+<a href="#">Discover Now</a></div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 06 - Banner Middle]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_06_banner_middle]]></identifier>
+      <content><![CDATA[<div class="banner-middle banner-middle-home4">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-xs-12 col-left absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main1.jpg"}}" alt="">
+<div class="text">
+<p>Products Essentials</p>
+<h4>Bottle With Wooden Cork</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 col-right absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner-main2.jpg"}}" alt="">
+<div class="text">
+<p>Products Furniture</p>
+<h4>Hauteville Plywood Chair</h4>
+<a class="btn" href="#">Discover Now</a></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 07 - Banner Middle]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_07_banner_middle]]></identifier>
+      <content><![CDATA[<div class="banner-middle absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner.jpg"}}" alt="">
+<div class="text">
+<p>Products Furniture</p>
+<h4>Hauteville Plywood Chair</h4>
+<p class="d-none d-sm-block">Mirum est notare quam littera gothica, quam nunc</p>
+<p class="d-none d-sm-block">putamusparum claram, anteposuerit litterarum formas..</p>
+<a class="btn" href="#">Buy now / $196.98</a></div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Outstock - Footer Links]]></title>
+      <identifier><![CDATA[footer-links-outstock-08]]></identifier>
+      <content><![CDATA[<ul class="menu-footer">
+<li class="item"><a href="{{store url=""}}about-us">about</a></li>
+<li class="item"><a href="{{store url=""}}shop.html">shop</a></li>
+<li class="item"><a href="{{store url=""}}checkout/cart">cart</a></li>
+<li class="item"><a href="{{store url=""}}blog">blog</a></li>
+<li class="item"><a href="{{store url=""}}contact">contact</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 10 Banner Top]]></title>
+      <identifier><![CDATA[bluesky_oustock_funiture_10_banner_top]]></identifier>
+      <content><![CDATA[<div class="banner section">
+<div class="col-banner bottom right  radius absolute-content-image">
+<div class="banner-img "><img src="{{media url="wysiwyg/banner1.jpg"}}" alt=""></div>
+<div class="content">
+<p class="size-18 get-size-vw"><span style="color: #7ab532;">Sale 20% Off</span></p>
+<h3 class="size-18 get-size-vw"><a href="#"><span style="color: #222222;">Home Decor &amp; Lighting </span></a></h3>
+</div>
+</div>
+<div class="col-banner left center  radius absolute-content-image">
+<div class="banner-img "><img src="{{media url="wysiwyg/banner2.jpg"}}" alt=""></div>
+<div class="content">
+<h3 class="size-18 get-size-vw"><a href="#"><span style="color: #222222;"> Sale </span><br><span style="color: #222222;">Living Room </span></a></h3>
+<p class="size-14 get-size-vw"><span style="color: #7ab532;">Price: $298.99</span></p>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 10 _topbar]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_10_topbar]]></identifier>
+      <content><![CDATA[<div class="header-text text-center d-none d-md-block">
+<div class="container">Get free shipping and a worry - Free 30 day money back guarantee when you !</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 11 Footer ContactInfoInnter]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_11_footer_contactInfoInnter]]></identifier>
+      <content><![CDATA[<h4 class="footer-title">LOOKING FOR oustock ?</h4>
+<ul class="footer-contents">
+<li>Have a question? You may find an answer in our FAQs.<br>But you can also contact us:</li>
+<li>Call Us: S9 Heaven Stress, Beverly Hill, USA.<br>Phone: +1 (800) 123 456 789<br>Fax: +1 (800) 123 456 789</li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 11 Footer CopyRight]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_11_footer_copyRight]]></identifier>
+      <content><![CDATA[<div class="footerCopyRight">
+<div class="text-center">
+<div class="time">Opening Time: Mon-Fri: <span class="white-text">9:00 am – 9:00 pm.</span> Sat: 9:00 am – 6:00 pm. Sun: <span class="white-text">9:00 am – 6:00 pm.</span></div>
+<div class="copyright">Copyright © 2021 Blueskytechco. All rights reserved</div>
+<div class="logo_payment ">
+<p class="footer-contents"><img src="{{media url="wysiwyg/payment_1.png"}}" alt=""></p>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 11 TopbarCenter]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_11_topbarCenter]]></identifier>
+      <content><![CDATA[<div class="topbar-center d-none d-lg-block  ">Our stores are open — welcome back. COVID-19 Updates.</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Topbar menu]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_11_topbar_menu]]></identifier>
+      <content><![CDATA[<ul class="hozital-menu">
+<li><a title="Order Tracking" href="{{store url=''}}customer/account">My account</a></li>
+<li><a title="About Us" href="{{store url=''}}about-us/">About Us</a></li>
+<li><a title="Contact Us" href="{{store url=''}}contact/">Contact Us</a></li>
+<li><a title="FAQs" href="{{store url=''}}rokanfaq">FAQs</a></li>
+</ul>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 11 - Banner Middle]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_11_banner_middle]]></identifier>
+      <content><![CDATA[<div class="section full-width">
+<div class="banner-middle">
+<div class="row">
+<div class="col-lg-6 col-md-12 col-xs-12 absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner1_1.jpg"}}" alt="">
+<div class="text">
+<h5>FEATURED PRODUCTS</h5>
+<h4>Premium Small Bottle Grinder</h4>
+<p class="d-none d-sm-block">Price guarantee. Found it cheaper - we'll match</p>
+<a class="btn" href="#">Shop collection</a></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 col-xs-12 absolute-content-image">
+<div class="banner-content"><img src="{{media url="wysiwyg/banner2_1.jpg"}}" alt="">
+<div class="text">
+<h5>TRENDING PRODUCTS</h5>
+<h4>Lifestyle Accessories Parrot</h4>
+<p class="d-none d-sm-block">Secure &amp; encrypted checkout</p>
+<a class="btn" href="#">Shop collection</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Shipping support]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_12_ shipping_support]]></identifier>
+      <content><![CDATA[<div class="static-section">
+<div class="row">
+<div class="col-cms col-md-4 ">
+<div class="box_cms flex-layout center_vertical column"><img src="{{media url="wysiwyg/icon11.jpg"}}" alt="">
+<div class="txt_cms">
+<h2>Free Worldwide Shipping</h2>
+<p>All orders of £120 or more of eligible items across <br>any productcategory qualify.</p>
+</div>
+</div>
+</div>
+<div class="col-cms col-md-4">
+<div class="box_cms flex-layout center_vertical column"><img src="{{media url="wysiwyg/icon12.jpg"}}" alt="">
+<div class="txt_cms">
+<h2>24/7 Customer Service</h2>
+<p>Please contact us if you have any questions about <br>the purchase and warranty.</p>
+</div>
+</div>
+</div>
+<div class="col-cms col-md-4">
+<div class="box_cms flex-layout center_vertical column"><img src="{{media url="wysiwyg/icon13.jpg"}}" alt="">
+<div class="txt_cms">
+<h2>Money Back Guarantee</h2>
+<p>You can return any item purchased on Puik within <br>20 days of the delivery date.</p>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+    <item>
+      <title><![CDATA[Funiture 12 - Banner Top]]></title>
+      <identifier><![CDATA[bluesky_outstock_funiture_12_banner_top]]></identifier>
+      <content><![CDATA[<div class="banner section banner-top ">
+<div class="text-inner">SEE OUR COLLECTION</div>
+<div class="rokan-title">
+<h3 class="module-title">Feature Collection</h3>
+<div class="short_description">Commodo sociosqu venenatis cras dolor sagittis integer luctus sem primis eget maecenas.</div>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12 col-cms">
+<div class="col-banner absolute-content-image left top b_1">
+<div class="banner-img"><img src="{{media url="wysiwyg/baner1.jpg"}}" alt=""></div>
+<div class="content">
+<h5 class="size-14" style="color: #666666; text-transform: capitalize;">Premium Designs</h5>
+<h3 class="size-24" style="color: #222222; font-weight: 500;">Chair Collection</h3>
+<div class="button-wrap"><a class="size-16" style="color: #222222; font-weight: 600;" href="#">Shop Now</a></div>
+</div>
+</div>
+<div class="col-banner absolute-content-image left top b_2">
+<div class="banner-img"><img src="{{media url="wysiwyg/banner2_2.jpg"}}" alt=""></div>
+<div class="content">
+<h5 class="size-14" style="color: #666666; text-transform: capitalize;">New Collection</h5>
+<h3 class="size-24" style="color: #222222; font-weight: 500;">Home Accessories</h3>
+<div class="button-wrap"><a class="size-16" style="color: #222222; font-weight: 600;" href="#">Shop Now</a></div>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-sm-12 col-cms">
+<div class="col-banner absolute-content-image left top b_3">
+<div class="banner-img"><img src="{{media url="wysiwyg/banner3.jpg"}}" alt=""></div>
+<div class="content">
+<h5 class="size-14" style="color: #666666; text-transform: capitalize;">New Collection</h5>
+<h3 class="size-24" style="color: #222222; font-weight: 500;">Accessories Style</h3>
+<div class="button-wrap"><a class="size-16" style="color: #222222; font-weight: 600;" href="#">Shop Now</a></div>
+</div>
+</div>
+<div class="col-banner absolute-content-image left top b_4">
+<div class="banner-img"><img src="{{media url="wysiwyg/banner1_2.jpg"}}" alt=""></div>
+<div class="content">
+<h5 class="size-14" style="color: #666666; text-transform: capitalize;">Premium Designs</h5>
+<h3 class="size-24" style="color: #222222; font-weight: 500;">Lighting Style SS/21</h3>
+<div class="button-wrap"><a class="size-16" style="color: #222222; font-weight: 600;" href="#">Shop Now</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+    </item>
+  </blocks>
+</root>
