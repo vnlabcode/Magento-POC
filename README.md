@@ -1,7 +1,7 @@
 # Magento 2 POC
 ### How to download
 Use command line download
-> git clone https://bot.aimegazone.com:90/magento/simple-poc/
+> git clone https://github.com/vnlabcode/Magento-POC.git
 
 ### How to install
 1. Create new database and import database sample in folder "**database**". You can use database management tool such as phpMyAdmin
